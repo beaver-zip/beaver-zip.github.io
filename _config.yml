@@ -1,0 +1,30 @@
+name: "BEAVER.ZIP"
+description: "I love Kwangbae Kang"
+meta_description: "studying on air force"
+
+markdown: kramdown
+highlighter: rouge
+logo: false
+paginate: 15
+baseurl: /kasper/
+domain_name: "https://beaver-zip.github.io"
+google_analytics: "UA-XXXXXXXX-X"
+plugins: [jekyll-paginate]
+
+# Details for the RSS feed generator
+url: ""
+author: "Your Name"
+
+# Disqus config
+disqus-shortname: ""
+
+# Authors
+authors:
+  sal:
+    name: "beaver-zip"
+    display_name: "beaver-zip"
+    gravatar:
+    email: beaver.zip@gmail.com
+    web: https://beaver-zip.github.io
+    # twitter: https://twitter.com/username
+    description: "big fan of Kwangbae"
