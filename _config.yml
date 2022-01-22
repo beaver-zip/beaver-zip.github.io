@@ -6,7 +6,7 @@ markdown: kramdown
 highlighter: rouge
 logo: false
 paginate: 15
-baseurl: /beaver-zip.github.io/
+baseurl:  https://beaver-zip.github.io/
 domain_name: "https://beaver-zip.github.io"
 google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate]
