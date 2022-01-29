@@ -7,13 +7,13 @@ highlighter: rouge
 logo: false
 paginate: 15
 baseurl: ""
-domain_name: "beaver-zip.github.io"
+domain_name: beaver-zip.github.io
 google_analytics: "UA-XXXXXXXX-X"
 plugins: [jekyll-paginate]
 
 # Details for the RSS feed generator
 url: ""
-author: "beaver.zip"
+author: beaver.zip
 
 # Disqus config
 disqus-shortname: ""
@@ -21,10 +21,10 @@ disqus-shortname: ""
 # Authors
 authors:
   sal:
-    name: "beaver-zip"
-    display_name: "beaver-zip"
+    name: beaver-zip
+    display_name: beaver-zip
     gravatar:
     email: beaver.zip@gmail.com
     web: https://beaver-zip.github.io
     # twitter: https://twitter.com/username
-    description: "big fan of Kwangbae"
+    description: big fan of Kwangbae
