@@ -16,10 +16,10 @@
     .bar { max-width:1440px; margin:auto; padding:23px 4vw; display:flex; align-items:center; justify-content:space-between; gap:24px; }
     .name { font-size:17px; font-weight:750; letter-spacing:-.04em; text-decoration:none; }
     .bar a:last-child { font-size:13px; text-decoration:none; border-bottom:1px solid var(--ink); padding-bottom:2px; }
-    .intro { max-width:1440px; margin:auto; padding:84px 4vw 94px; }
+    .intro { max-width:1440px; margin:auto; padding:48px 4vw 58px; }
     .intro .eyebrow,.section-label,.index-title,.number,.kind { font-size:12px; letter-spacing:.11em; font-weight:700; color:var(--accent); }
-    .intro h1 { margin:12px 0 20px; font-size:clamp(50px,7.5vw,106px); line-height:1.08; letter-spacing:-.09em; font-weight:730; }
-    .intro p:last-child { max-width:600px; margin:0; font-size:18px; line-height:1.85; color:#4f5954; letter-spacing:-.03em; }
+    .intro h1 { margin:10px 0 16px; font-size:clamp(44px,6vw,76px); line-height:1.12; letter-spacing:-.08em; font-weight:730; }
+    .intro p:last-child { max-width:660px; margin:0; font-size:16px; line-height:1.8; color:#4f5954; letter-spacing:-.03em; }
     .layout { max-width:1440px; margin:auto; padding:0 4vw 100px; display:grid; grid-template-columns:minmax(188px,230px) minmax(0,1fr); gap:clamp(52px,7vw,120px); }
     .index { border-top:1px solid var(--ink); align-self:start; position:sticky; top:24px; padding-top:18px; }
     .index-title { margin:0 0 23px; color:var(--ink); }
@@ -59,11 +59,11 @@
       .layout { grid-template-columns:1fr; gap:42px; }
       .index { position:static; }
       .index nav { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:20px; }
-      .intro { padding-top:64px; padding-bottom:72px; }
+      .intro { padding-top:43px; padding-bottom:53px; }
     }
     @media (max-width:620px) {
       .bar,.intro,.layout,footer { padding-left:22px; padding-right:22px; }
-      .intro h1 { font-size:54px; }
+      .intro h1 { font-size:48px; }
       .intro p:last-child { font-size:16px; }
       .group-heading h2 { font-size:25px; }
       .body.with-visuals { grid-template-columns:1fr; }
@@ -79,9 +79,9 @@
 </head>
 <body>
   <header class="site-header"><div class="bar"><a class="name" href="#top">이한서</a><a href="https://github.com/beaver-zip" target="_blank" rel="noopener noreferrer">GitHub<span aria-hidden="true"> ↗</span></a></div></header>
-  <div class="intro" id="top"><p class="eyebrow">SELECTED PROJECTS / 10</p><h1>프로젝트 기록.</h1><p>검색·분류·생성 모델 실험부터 구직 추천과 브라우저 확장까지. 각 프로젝트에서 다룬 문제, 맡은 일, 확인한 결과를 정리했습니다.</p></div>
+  <div class="intro" id="top"><p class="eyebrow">10개의 프로젝트</p><h1>프로젝트 기록.</h1><p>검색·분류·생성 모델 실험부터 구직 추천과 브라우저 확장까지. 각 프로젝트에서 다룬 문제, 맡은 일, 확인한 결과를 정리했습니다.</p></div>
   <div class="layout">
-    <aside class="index" aria-label="프로젝트 목차"><p class="index-title">INDEX / PROJECTS</p><nav><a href="#insa"><span>01</span>인사를 부탁해</a><a href="#veteran"><span>02</span>Veteran</a><a href="#sillog"><span>03</span>Sillog</a><a href="#bbongguard"><span>04</span>BbongGuard</a><a href="#finsight"><span>05</span>Finsight</a><a href="#sos"><span>06</span>S.O.S — Scam Or Safe</a><a href="#sts"><span>07</span>Semantic Text Similarity</a><a href="#odqa"><span>08</span>Open-Domain QA</a><a href="#datacentric"><span>09</span>Data-Centric NLP</a><a href="#generation"><span>10</span>Generation for NLP</a></nav></aside>
+    <aside class="index" aria-label="프로젝트 목차"><p class="index-title">프로젝트 목차</p><nav><a href="#insa"><span>01</span>인사를 부탁해</a><a href="#veteran"><span>02</span>Veteran</a><a href="#sillog"><span>03</span>Sillog</a><a href="#bbongguard"><span>04</span>BbongGuard</a><a href="#finsight"><span>05</span>Finsight</a><a href="#sos"><span>06</span>S.O.S — Scam Or Safe</a><a href="#sts"><span>07</span>Semantic Text Similarity</a><a href="#odqa"><span>08</span>Open-Domain QA</a><a href="#datacentric"><span>09</span>Data-Centric NLP</a><a href="#generation"><span>10</span>Generation for NLP</a></nav></aside>
     <main class="main" id="projects">
       <div class="group-heading"><h2>서비스와 제품</h2><span>01 — 06</span></div>
       <article class="project" id="insa">
@@ -191,7 +191,7 @@
       <div class="body with-visuals"><div class="prose">
         <div class="note"><h3>문제</h3><p>문제 형식과 정답 분포를 맞춘 학습 데이터를 준비하고, 작은 모델이 긴 지문과 선택지를 처리하는 방식을 찾아야 했습니다.</p></div>
         <div class="note"><h3>내가 맡은 일</h3><ul><li>모델 탐색, 데이터 증강, 프롬프트 설계와 파인튜닝을 맡았습니다.</li><li>문제 생성과 힌트 제공 방식을 비교했습니다. 일부 증강·힌트 실험은 성능 향상으로 이어지지 않아 그 결과도 보고서에 기록했습니다.</li></ul></div>
-        <div class="note"><h3>결과</h3><p>실험의 성공과 실패를 함께 정리한 프로젝트입니다. 검증되지 않은 성능 향상 수치는 싣지 않았습니다.</p></div>
+        <div class="note"><h3>결과</h3><p>모델·프롬프트·데이터 구성에 따른 차이를 기록했고, 성능이 개선되지 않은 실험도 후속 분석 대상으로 남겼습니다.</p></div>
       </div><div class="visuals"><figure><a href="assets/generation-data.webp" target="_blank" rel="noopener noreferrer"><img src="assets/generation-data.webp" alt="학습 데이터의 선택지 수와 정답 분포 · Wrap-up report" loading="lazy"></a><figcaption>학습 데이터의 선택지 수와 정답 분포 · Wrap-up report</figcaption></figure></div></div>
       <div class="project-bottom"><div class="tech"><span>LLM</span><span>Fine-tuning</span><span>Prompting</span><span>데이터 증강</span></div><div class="links"><a href="https://github.com/boostcampaitech7/level2-nlp-generationfornlp-nlp-08-lv3" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/18146095/_NLP_.08.pdf" target="_blank" rel="noopener noreferrer">Wrap-up report<span aria-hidden="true"> ↗</span></a></div></div>
     </article>
