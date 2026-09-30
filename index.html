@@ -15,7 +15,8 @@
     .site-header { border-bottom:1px solid var(--line); }
     .bar { max-width:1120px; margin:auto; padding:14px 28px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
     .name { font-size:15px; font-weight:650; text-decoration:none; }
-    .bar a:last-child { font-size:13px; color:var(--accent); text-decoration:underline; text-underline-offset:3px; }
+    .bar nav { display:flex; align-items:center; gap:18px; }
+    .bar nav a { font-size:13px; color:var(--accent); text-decoration:underline; text-underline-offset:3px; white-space:nowrap; }
     .intro { max-width:1120px; margin:auto; padding:32px 28px 38px; }
     .intro .eyebrow,.index-title,.number,.kind { font-size:12px; font-weight:600; color:var(--muted); }
     .intro .eyebrow { margin:0; }
@@ -97,7 +98,7 @@
   </style>
 </head>
 <body>
-  <header class="site-header"><div class="bar"><a class="name" href="#top">이한서</a><a href="https://github.com/beaver-zip" target="_blank" rel="noopener noreferrer">GitHub<span aria-hidden="true"> ↗</span></a></div></header>
+  <header class="site-header"><div class="bar"><a class="name" href="#top">이한서</a><nav aria-label="바로가기"><a href="https://github.com/beaver-zip" target="_blank" rel="noopener noreferrer">GitHub<span aria-hidden="true"> ↗</span></a><a href="mailto:beaver.zip@gmail.com">Contact</a></nav></div></header>
   <div class="intro" id="top"><h1>프로젝트</h1></div>
   <div class="layout">
     <aside class="index" aria-label="프로젝트 목차"><p class="index-title">프로젝트 목차</p><nav><p class="index-group">대회</p><a href="#finsight"><span>01</span>Finsight</a><a href="#veteran"><span>02</span>Veteran</a><a href="#sos"><span>03</span>S.O.S — Scam Or Safe</a><p class="index-group">캡스톤디자인</p><a href="#sillog"><span>04</span>Sillog</a><a href="#bbongguard"><span>05</span>BbongGuard</a><p class="index-group">부스트캠프 AI Tech NLP 트랙</p><a href="#insa"><span>06</span>인사를 부탁해</a><a href="#generation"><span>07</span>Generation for NLP</a><a href="#datacentric"><span>08</span>Data-Centric NLP</a><a href="#odqa"><span>09</span>Open-Domain Question Answering</a><a href="#sts"><span>10</span>Semantic Text Similarity</a></nav></aside>
