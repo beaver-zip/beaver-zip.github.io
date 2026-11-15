@@ -131,7 +131,10 @@ body:not(.project-mode) .project + .project { margin-top: 44px; padding-top: 32p
 .contributions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 26px; row-gap: 12px; margin-top: 13px; }
 .contribution { min-width: 0; }
 .contribution h3 { margin-bottom: 4px; font-size: 13px; font-weight: 700; line-height: 1.5; }
-.contribution p { text-wrap: balance; font-size: 13.5px; line-height: 1.6; }
+.contribution ul { margin: 0; padding-left: 1.1em; list-style: disc; }
+.contribution li { padding-left: .1em; text-wrap: pretty; font-size: 13.5px; line-height: 1.6; }
+.contribution li + li { margin-top: 3px; }
+.contribution li::marker { color: var(--muted); font-size: .75em; }
 .sentence { display: inline; }
 .sentence + .sentence::before { content: " "; }
 .project-status { margin-top: 7px; color: var(--muted); font-size: 12px; line-height: 1.6; }
@@ -221,7 +224,7 @@ body:not(.project-mode) .project + .project { margin-top: 44px; padding-top: 32p
   .mobile-nav select { display: block; min-width: 0; width: 100%; min-height: 44px; padding: 8px 32px 8px 12px; border: 1px solid #cfd5dc; border-radius: 2px; color: var(--ink); background: #fff; font-size: 13px; text-overflow: ellipsis; }
   .project { scroll-margin-top: 130px; }
   .project-overview { margin-top: 16px; }
-  .project-intro, .contribution p { font-size: 14px; line-height: 1.75; }
+  .project-intro, .contribution li { font-size: 14px; line-height: 1.75; }
   .role-line { margin-top: 9px; font-size: 12px; }
   .contributions { margin-top: 20px; row-gap: 22px; }
   .contribution h3 { margin-bottom: 6px; font-size: 13px; }
@@ -299,7 +302,7 @@ body:not(.project-mode) .project + .project { margin-top: 44px; padding-top: 32p
   .project + .project { break-before: page; }
   .project-header, .contribution, .image-button, .project-bottom { break-inside: avoid; }
   .title-row h2 { font-size: 20pt; }
-  .project-intro, .contribution p { font-size: 10.5pt; line-height: 1.65; }
+  .project-intro, .contribution li { font-size: 10.5pt; line-height: 1.65; }
   .project-gallery { margin-top: 18pt; }
   .image-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .image-well { height: 150pt; background: #fff; }
