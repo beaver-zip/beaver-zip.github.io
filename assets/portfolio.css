@@ -28,7 +28,7 @@
   --blue: #006fc9;
   --image-well: #f7f8fa;
   --header-height: 53px;
-  --image-height: clamp(180px, calc(100dvh - 588px), 260px);
+  --image-height: clamp(140px, calc(100dvh - 588px), 260px);
 }
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
@@ -195,7 +195,7 @@ body:not(.project-mode) .project + .project { margin-top: 44px; padding-top: 32p
 .detail-section p + p, .detail-section li + li { margin-top: 10px; }
 
 @media (min-width: 801px) and (max-height: 720px) {
-  :root { --image-height: 170px; }
+  :root { --image-height: max(130px, calc(100dvh - 588px)); }
   .project-mode .main { min-height: 0; }
   .index { position: static; }
 }
