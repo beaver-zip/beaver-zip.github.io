@@ -312,3 +312,20 @@ body:not(.project-mode) .project + .project { margin-top: 44px; padding-top: 32p
 .title-row h2, .contribution h3, .index-name,
 .project-status, .image-caption > span:first-child { text-wrap: balance; }
 .detail-section p, .detail-section li { text-wrap: pretty; }
+
+/* Put responsibility above the award, alongside the project title. */
+.title-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: start; column-gap: 24px; }
+.project-heading { min-width: 0; }
+.project-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 4px; max-width: 480px; padding-top: 4px; text-align: right; }
+.project-meta .role-line { margin: 0; flex-wrap: nowrap; justify-content: flex-end; font-size: 12px; }
+.project-meta .role-line > span:last-child { min-width: 0; text-wrap: balance; }
+.project-meta .award { margin: 0; }
+@media (max-width: 1060px) and (min-width: 621px) {
+ .project-meta { max-width: 280px; }
+}
+@media (max-width: 620px) {
+ .title-row { display: block; }
+ .project-meta { align-items: flex-start; max-width: none; padding-top: 0; margin-top: 10px; text-align: left; }
+ .project-meta .role-line { display: flex; justify-content: flex-start; }
+ .project-meta .role-label { margin-right: 0; }
+}
