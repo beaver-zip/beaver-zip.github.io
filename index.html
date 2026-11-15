@@ -91,6 +91,12 @@
       .gallery-header { padding:11px 14px; }
       .gallery-pages { padding:12px; gap:18px; }
     }
+    #sillog .contribution-list li+li { margin-top:14px; }
+    #sillog .contribution-list strong { font-weight:650; }
+    #sillog .visual-hint { margin:0 0 10px; font-size:12px; color:var(--muted); }
+    #sillog .sillog-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 16px; }
+    #sillog .sillog-gallery figcaption { font-size:12px; }
+    @media (max-width:620px) { #sillog .sillog-gallery { grid-template-columns:1fr; } }
     @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } .group-heading h2 { transition:none; } }
   </style>
 </head>
@@ -134,49 +140,70 @@
     </article></section><section class="group"><div class="group-heading"><h2>캡스톤디자인</h2></div><article class="project" id="sillog">
       <div class="project-top"><span class="number">04</span><span>AI융합캡스톤디자인2</span></div>
       <div class="project-title"><div><p class="kind">macOS 업무 기록 앱</p><h2>실록 (SILLOG)</h2></div></div>
-      <div class="body with-visuals">
+      <div class="body with-visuals wide-visuals">
         <div class="prose">
           <div class="note">
             <h3>프로젝트 주제</h3>
-            <p>여러 앱에 흩어진 작업 기록을 업무별로 모아, 지난 작업에 쓴 자료를 다시 찾고 주간 보고서를 작성할 수 있게 돕는 앱입니다.</p>
+            <p>여러 앱에 흩어진 작업 기록을 업무별로 모아, 지난 작업에 쓴 자료를 다시 찾고 보고서 작성 등 다음 업무에 활용할 수 있게 돕는 앱입니다.</p>
           </div>
           <div class="note">
             <h3>구현 내용</h3>
             <ul>
               <li>앱과 웹페이지 사용 내역, 화면 속 글자, 다운로드한 파일, AI 코딩 도구에 보낸 요청을 자동으로 기록해 Mac의 SQLite에 저장합니다.</li>
               <li>LLM이 기록을 업무별로 묶고 작업 세션과 자료를 그래프로 연결합니다. 당시 사용한 파일과 웹페이지를 다시 열 수 있습니다.</li>
-              <li>채팅에서 업무 기록을 찾아 출처가 달린 답변을 받고, 보고서나 발표 자료를 만들 수 있습니다. 주간 보고서처럼 반복해서 만들 자료는 사용자가 승인한 일정에 맞춰 생성합니다.</li>
+              <li>채팅에서 업무 기록과 외부 서비스의 자료를 함께 활용해 출처가 달린 답변과 결과물을 생성합니다. 반복 업무는 사용자가 승인한 일정에 맞춰 실행합니다.</li>
             </ul>
           </div>
           <div class="note">
             <h3>본인 기여</h3>
-            <ul>
-              <li>업무 기록을 검색하는 채팅을 개발했습니다. 실행한 도구와 답변의 출처를 표시하고, 결과물을 버전별로 미리 보거나 Word·PowerPoint·Excel로 내보낼 수 있게 했습니다.</li>
-              <li>문서 작성과 자료 조사 등 기본 스킬 6개의 지침을 구체화하고, 변경 전후의 응답을 Promptfoo로 비교할 수 있게 했습니다.</li>
-              <li>AI가 대화별로 사용자가 선택한 Google Drive 파일만 검색하고 읽도록 연동했습니다.</li>
-              <li>캡스톤 발표용 버전에 민감한 화면을 판별하는 로컬 모델을 연동했습니다. 민감 화면의 텍스트는 기록 정리 모델에 보내기 전에 가리고, 해당 기록은 채팅 검색에서 제외했습니다.</li>
-              <li>GitHub Actions에서 Developer ID 서명과 Apple 공증을 거쳐 DMG를 배포하고, 새 릴리스에 맞춰 Homebrew 설치 정보가 자동 갱신되도록 했습니다.</li>
+            <ul class="contribution-list">
+              <li><strong>채팅 탭 구현.</strong> 업무별 기록 검색부터 답변과 결과물 생성까지 이어지는 채팅 기능을 개발했습니다. 도구 실행 과정을 화면에 표시하고, 답변에 실제로 인용한 출처와 그 밖에 조회한 자료를 구분했습니다. 대화 관리와 결과물 미리보기·버전 관리도 구현했습니다.</li>
+              <li><strong>외부 서비스 커넥터 구현.</strong> 문서·코드·협업 서비스의 자료를 채팅에서 활용할 수 있도록 인증과 연결 관리, 자료 검색·조회 기능을 개발했습니다. 서비스별 응답을 공통 도구 인터페이스로 연결하고, 사용자가 허용한 서비스와 자료 범위 안에서 동작하도록 구성했습니다.</li>
+              <li><strong>PII 마스킹.</strong> 외부 AI에 전송할 텍스트에서 전화번호·주민등록번호·이메일 등 식별 가능한 개인정보와 API 키를 가리는 기능을 구현했습니다. 형식 검사와 검증 규칙을 함께 적용해 일반 숫자나 업무 내용까지 잘못 가리는 경우를 줄이도록 했습니다.</li>
+              <li><strong>민감정보 분류기 구축.</strong> 캡스톤디자인용 버전에 Laya 기반 로컬 민감정보 분류기를 구축하고 앱에 연동했습니다. 식별자를 가린 뒤에도 남는 민감한 내용을 기기 안에서 판별하고, 민감하다고 판단한 기록은 외부 AI 전송과 채팅 검색에서 제외하도록 처리했습니다.</li>
+              <li><strong>GitHub Actions CI/CD 구성.</strong> PR마다 Swift 빌드·테스트와 앱 번들 실행 검사를 자동화했습니다. 빌드 폴더가 없는 환경에서도 앱이 실행되는지 확인해 리소스 누락을 점검하고, main 반영 시 Developer ID 서명·Apple 공증·DMG 배포·Homebrew 설치 정보 갱신까지 자동으로 수행하도록 구성했습니다.</li>
             </ul>
           </div>
           <div class="note">
             <h3>배포</h3>
-            <p>오픈소스로 공개했습니다. macOS 14 이상에서 GitHub Releases 또는 Homebrew로 설치할 수 있습니다.</p>
+            <p>오픈소스로 공개했으며, macOS 앱의 빌드부터 배포까지 자동화했습니다.</p>
           </div>
         </div>
-        <div class="visuals">
+        <div>
+          <p class="visual-hint">화면을 누르면 원본 크기로 볼 수 있습니다.</p>
+          <div class="visuals sillog-gallery">
           <figure>
-            <a href="assets/sillog-screen.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sillog-screen.webp" alt="실록 초기 버전의 활동 기록 화면" loading="lazy"></a>
-            <figcaption>실록 초기 버전의 활동 기록 화면</figcaption>
+            <a href="assets/sillog-chat-20261115.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sillog-chat-20261115.webp" alt="업무 기록을 검색하고 결과물을 생성하는 채팅" loading="lazy" width="2048" height="1295"></a>
+            <figcaption>업무 기록을 검색하고 결과물을 생성하는 채팅</figcaption>
           </figure>
+          <figure>
+            <a href="assets/sillog-connectors-20261115.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sillog-connectors-20261115.webp" alt="외부 서비스 연결과 커넥터 관리" loading="lazy" width="2048" height="1295"></a>
+            <figcaption>외부 서비스 연결과 커넥터 관리</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/sillog-graph-20261115.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sillog-graph-20261115.webp" alt="업무와 자료의 관계를 보여주는 그래프" loading="lazy" width="2048" height="1295"></a>
+            <figcaption>업무와 자료의 관계를 보여주는 그래프</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/sillog-organize-20261115.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sillog-organize-20261115.webp" alt="작업 맥락에 따른 파일 정리 제안" loading="lazy" width="2048" height="1295"></a>
+            <figcaption>작업 맥락에 따른 파일 정리 제안</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/sillog-privacy-20261115.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sillog-privacy-20261115.webp" alt="기록 범위와 개인정보 마스킹 설정" loading="lazy" width="2048" height="1295"></a>
+            <figcaption>기록 범위와 개인정보 마스킹 설정</figcaption>
+          </figure>
+          <figure>
+            <a href="assets/sillog-activity-20261115.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sillog-activity-20261115.webp" alt="AI에 전송한 기록과 처리 결과 확인" loading="lazy" width="2048" height="1295"></a>
+            <figcaption>AI에 전송한 기록과 처리 결과 확인</figcaption>
+          </figure>
+          </div>
         </div>
       </div>
       <div class="project-bottom">
-        <div class="stack"><p>사용 기술</p><div class="tags"><span>SwiftUI</span><span>ScreenCaptureKit</span><span>Vision OCR</span><span>SQLite</span><span>Google Picker</span><span>GitHub Actions</span></div></div>
+        <div class="stack"><p>사용 기술</p><div class="tags"><span>SwiftUI</span><span>ScreenCaptureKit</span><span>Vision OCR</span><span>SQLite</span><span>OAuth</span><span>Laya</span><span>GitHub Actions</span></div></div>
         <div class="links">
           <a href="https://sillog.app/" target="_blank" rel="noopener noreferrer">공식 사이트<span aria-hidden="true"> ↗</span></a>
           <a href="https://github.com/sillog-admin/SILLOG" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a>
-          <a href="https://github.com/sillog-admin/SILLOG/releases/latest" target="_blank" rel="noopener noreferrer">macOS 다운로드<span aria-hidden="true"> ↗</span></a>
-          <a href="assets/sillog-demo.mp4" target="_blank" rel="noopener noreferrer">초기 시연 영상<span aria-hidden="true"> ↗</span></a>
         </div>
       </div>
     </article>
