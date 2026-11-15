@@ -125,13 +125,13 @@ body:not(.project-mode) .project + .project { margin-top: 44px; padding-top: 32p
 .award { color: var(--blue); font-size: 12px; font-weight: 700; line-height: 1.6; }
 .kind { margin-top: 2px; color: var(--muted); font-size: 11px; line-height: 1.6; }
 .project-overview { margin-top: 8px; }
-.project-intro { max-width: 880px; text-wrap: pretty; font-size: 13.5px; line-height: 1.6; }
+.project-intro { max-width: 880px; text-wrap: balance; font-size: 13.5px; line-height: 1.6; }
 .role-line { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 9px; margin-top: 5px; font-size: 12px; line-height: 1.6; }
 .role-label { flex: 0 0 auto; color: var(--muted); font-weight: 700; }
 .contributions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 26px; row-gap: 12px; margin-top: 13px; }
 .contribution { min-width: 0; }
 .contribution h3 { margin-bottom: 4px; font-size: 13px; font-weight: 700; line-height: 1.5; }
-.contribution p { text-wrap: pretty; font-size: 13.5px; line-height: 1.6; }
+.contribution p { text-wrap: balance; font-size: 13.5px; line-height: 1.6; }
 .sentence { display: inline; }
 .sentence + .sentence::before { content: " "; }
 .project-status { margin-top: 7px; color: var(--muted); font-size: 12px; line-height: 1.6; }
@@ -305,3 +305,10 @@ body:not(.project-mode) .project + .project { margin-top: 44px; padding-top: 32p
   .image-well { height: 150pt; background: #fff; }
   a { color: #111; }
 }
+
+/* Read short paragraphs as complete phrases across desktop and mobile widths. */
+.keep-phrase { white-space: nowrap; }
+.intro-sentence { display: block; text-wrap: pretty; }
+.title-row h2, .contribution h3, .index-name,
+.project-status, .image-caption > span:first-child { text-wrap: balance; }
+.detail-section p, .detail-section li { text-wrap: pretty; }
