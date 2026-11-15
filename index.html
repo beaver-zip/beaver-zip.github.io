@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="대회, 캡스톤디자인, 부스트캠프 AI Tech NLP 트랙에서 진행한 이한서의 프로젝트. 주제와 구현 내용, 맡은 일을 정리했습니다.">
+  <meta name="description" content="이한서의 프로젝트 포트폴리오입니다. AI 서비스 개발과 모델 실험, 연구에서 해결한 문제와 구현 내용, 직접 기여한 내용을 정리했습니다.">
   <title>이한서 | 프로젝트</title>
   <style>
     :root { color-scheme:light; --paper:#fff; --ink:#222; --muted:#666; --line:#e6e6e6; --accent:#006fc9; }
@@ -91,8 +91,7 @@
       .gallery-header { padding:11px 14px; }
       .gallery-pages { padding:12px; gap:18px; }
     }
-    #sillog .contribution-list li+li, #finsight .contribution-list li+li { margin-top:14px; }
-    #sillog .contribution-list strong { font-weight:650; }
+    .contribution-list li+li { margin-top:14px; }
     #sillog .visual-hint { margin:0 0 10px; font-size:12px; color:var(--muted); }
     #sillog .sillog-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px 16px; }
     #sillog .sillog-gallery figcaption { font-size:12px; }
@@ -101,50 +100,64 @@
   </style>
 </head>
 <body>
-  <header class="site-header" id="top"><div class="bar"><a class="name" href="#top">이한서</a><nav aria-label="바로가기"><a href="https://github.com/beaver-zip" target="_blank" rel="noopener noreferrer">GitHub<span aria-hidden="true"> ↗</span></a><a href="mailto:beaver.zip@gmail.com">Contact<span aria-hidden="true"> ↗</span></a></nav></div></header>
+  <header class="site-header" id="top"><div class="bar"><a class="name" href="#top">이한서</a><nav aria-label="바로가기"><a href="https://github.com/beaver-zip" target="_blank" rel="noopener noreferrer">GitHub<span aria-hidden="true"> ↗</span></a><a href="mailto:beaver.zip@gmail.com">이메일<span aria-hidden="true"> ↗</span></a></nav></div></header>
   <div class="layout">
-    <aside class="index" aria-label="프로젝트 목록"><nav><p class="index-group">대회</p><a href="#finsight"><span>01</span>Finsight</a><a href="#veteran"><span>02</span>Veteran</a><a href="#sos"><span>03</span>S.O.S — Scam Or Safe</a><p class="index-group">캡스톤디자인</p><a href="#sillog"><span>04</span>실록 (SILLOG)</a><a href="#bbongguard"><span>05</span>BbongGuard</a><p class="index-group">부스트캠프 AI Tech NLP 트랙</p><a href="#insa"><span>06</span>인사를 부탁해</a><a href="#generation"><span>07</span>Generation for NLP</a><a href="#datacentric"><span>08</span>Data-Centric NLP</a><a href="#odqa"><span>09</span>Open-Domain Question Answering</a><a href="#sts"><span>10</span>Semantic Text Similarity</a><p class="index-group">기타</p><a href="#oxide"><span>11</span>산화물 TFT 레시피 생성을 위한 AI 프레임워크</a><a href="#trade"><span>12</span>우회수출 위험 품목 상시 감시 프레임워크</a></nav></aside>
+    <aside class="index" aria-label="프로젝트 목록"><nav><p class="index-group">대회</p><a href="#finsight"><span>01</span>Finsight</a><a href="#veteran"><span>02</span>Veteran</a><a href="#sos"><span>03</span>Scam or Safe</a><p class="index-group">캡스톤디자인</p><a href="#sillog"><span>04</span>실록 (SILLOG)</a><a href="#bbongguard"><span>05</span>BbongGuard</a><p class="index-group">부스트캠프 AI Tech NLP 트랙</p><a href="#insa"><span>06</span>인사를 부탁해</a><a href="#generation"><span>07</span>수능형 문제 풀이</a><a href="#datacentric"><span>08</span>뉴스 주제 분류</a><a href="#odqa"><span>09</span>오픈도메인 질의응답 (ODQA)</a><a href="#sts"><span>10</span>문장 유사도 예측 (STS)</a><p class="index-group">기타</p><a href="#oxide"><span>11</span>산화물 TFT 제조 레시피 생성 AI 프레임워크</a><a href="#trade"><span>12</span>우회수출 위험 품목 상시 감시 프레임워크</a></nav></aside>
     <main class="main" id="projects">
       <section class="group"><div class="group-heading"><h2>대회</h2></div><article class="project" id="finsight">
       <div class="project-top"><span class="number">01</span><span>KT K intelligence 해커톤 2025 - Track 1: AI Agent 개발</span></div>
       <div class="project-title"><div><p class="kind">금융 분석 에이전트</p><h2>Finsight</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>금융권 애널리스트의 기업 조사와 전자금융 법령 검토를 돕는 AI 리서치 서비스입니다. 대회 이후 개인 프로젝트로 분석·검색·채팅 기능을 재설계했습니다.</p></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>공시·재무제표·뉴스와 금융 법령을 함께 살펴야 하는 애널리스트의 기업 조사를 돕는 AI 서비스입니다. 대회에서 개발한 서비스를 바탕으로, 대회 이후 개인 프로젝트로 분석·검색·채팅 기능을 개선했습니다.</p></div>
         <div class="note"><h3>구현 내용</h3><ul>
-          <li>공시·재무제표·시세·뉴스를 수집해 기업의 실적과 주요 이슈를 분석하고, 수치와 출처를 확인할 수 있는 보고서를 생성합니다.</li>
-          <li>법령과 업로드한 내규를 검색하고, 관련 조문과 참조 관계를 따라 필요한 근거를 모아 답변합니다.</li>
-          <li>한 채팅에서 기업 분석·법령 검토·뉴스 요약을 요청하고, 처리 과정과 근거가 연결된 결과를 확인할 수 있습니다.</li>
+          <li>공시와 재무제표, 시세, 뉴스를 수집해 기업 분석 보고서를 만듭니다. 주요 수치와 차트, 기사 출처를 함께 제공합니다.</li>
+          <li>법령과 내규를 검색해 관련 조문을 근거로 답변합니다. 채팅에서 기업 분석, 법령 검토, 뉴스 요약을 함께 요청할 수 있습니다.</li>
         </ul></div>
-        <div class="note"><h3>본인 기여</h3><p>대회에서는 보고서 생성 기능을 맡아 DART 공시·재무제표 수집과 파싱, 기업별 뉴스 검색·선별을 구현했습니다. 수집한 정보를 분석 보고서로 정리하는 흐름을 자동화했습니다.</p></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>대회에서 기업 분석 보고서 생성 기능을 맡았습니다. 공시·재무제표·뉴스 수집부터 분석과 차트 생성까지 LangGraph로 연결하고, 사용자가 기사 출처를 확인할 수 있도록 구현했습니다.</li>
+        </ul></div>
         <div class="note"><h3>대회 이후<br>개인 개선</h3><ul class="contribution-list">
-          <li><strong>보고서 생성과 검증.</strong> 재무 수치 계산은 코드가, 설명 작성은 LLM이 담당하도록 분리했습니다. 생성 문장의 숫자에는 계산된 값을 연결하고, 수치 출처와 문장 근거를 검증해 문제가 있는 내용을 재작성하도록 했습니다. 검증에 실패하거나 검증 중 오류가 나면 미검증 문장을 숨기고 완성본 캐시에 저장하지 않도록 보완했습니다.</li>
-          <li><strong>법령 검색 고도화.</strong> 하이브리드 검색과 리랭킹에 법령의 인용·위임 관계를 따라가는 그래프 탐색을 결합했습니다. 법률에서 시행령·별표까지 근거를 확장하고, 별표의 표 구조를 복원해 검색과 답변에 활용하도록 했습니다. 위임 관계는 법령 API 정보와 대조해 잘못 연결되는 경우를 줄였습니다.</li>
-          <li><strong>통합 채팅 구현.</strong> 질문을 기업·법령·뉴스 과업으로 나누고 필요한 작업을 병렬 실행한 뒤, 각 결과의 근거를 연결해 답변하는 흐름을 LangGraph로 구성했습니다. 기업명이 모호하면 다시 묻고, 답변 생성 과정은 실시간으로 표시하도록 구현했습니다.</li>
-          <li><strong>평가와 오류 대응.</strong> 법령 검색·보고서·복합 질문 등의 평가셋과 실행 도구를 구성해 검색 설정과 답변 품질을 비교했습니다. 평가에서 발견한 연간 실적 계산 오류를 수정하고, 정정 공시의 캐시 갱신과 문서 교체 실패 시 기존 검색 데이터 보존을 보강했습니다. 회귀 테스트와 프론트 빌드를 GitHub Actions에 연결했습니다.</li>
+          <li>LLM이 재무 수치를 추출하고 계산하던 방식을 DART API와 Python 처리로 바꿨습니다. 계산값을 보고서 문장에 연결하고 근거 검증과 재작성 단계를 추가했습니다. 16개 기업의 주요 재무 수치를 공시와 대조하고, 검증을 통과하지 못한 문장은 결과에서 제외하도록 했습니다.</li>
+          <li>법령을 조문 단위로 저장하고 인용·위임 관계를 그래프로 연결했습니다. 키워드·의미 검색과 재정렬에 그래프 탐색을 결합해 시행령과 별표까지 근거를 찾도록 했습니다. 별표의 표 구조를 복원하고 위임 관계를 법령 API와 대조해 검색에 반영했습니다.</li>
+          <li>질문에 따라 기업·법령·뉴스 작업을 나누고, 필요한 작업을 병렬로 실행한 뒤 근거를 모아 답변하는 채팅 기능을 개발했습니다. 기업명이 모호하면 다시 묻고, 처리 과정과 답변을 실시간으로 표시하도록 구현했습니다.</li>
+          <li>검색과 답변 품질을 비교할 평가 데이터와 실행 도구를 구성했습니다. 평가 과정에서 발견한 연간 실적 계산 오류를 수정하고, 정정 공시 반영과 문서 교체 실패 시 데이터 보존을 보완했습니다. 회귀 테스트와 프론트엔드 빌드도 GitHub Actions로 자동화했습니다.</li>
         </ul></div>
         <div class="note"><h3>성과</h3><p>우수상 (63팀 중 3위)</p></div>
-      </div><div class="visuals"><p class="kind">대회 당시 구현 화면</p><figure><a href="assets/finsight-home.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-home.png" alt="메인 화면" loading="lazy"></a><figcaption>메인 화면</figcaption></figure><button class="gallery-trigger" type="button" data-open-gallery="finsight-gallery-1" aria-haspopup="dialog" aria-controls="finsight-gallery-1"><img src="assets/finsight-rag-answer.png" alt="" loading="lazy"><span><strong>RAG Agent</strong><small>3개 화면 보기</small></span></button><button class="gallery-trigger" type="button" data-open-gallery="finsight-gallery-2" aria-haspopup="dialog" aria-controls="finsight-gallery-2"><img src="assets/finsight-report.png" alt="" loading="lazy"><span><strong>Report Agent</strong><small>6개 화면 보기</small></span></button></div></div>
-      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>FastAPI</span><span>LangGraph</span><span>Weaviate</span><span>Neo4j</span><span>OpenDART API</span><span>Tavily</span></div></div><div class="links"><a href="https://github.com/beaver-zip/Finsight" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="assets/finsight-presentation.pdf" target="_blank" rel="noopener noreferrer">발표 자료<span aria-hidden="true"> ↗</span></a></div></div><dialog class="gallery-dialog" id="finsight-gallery-1" aria-label="RAG Agent 화면"><div class="gallery-header"><div><h3>RAG Agent</h3><span>3개 화면</span></div><button type="button" data-close-gallery>닫기</button></div><div class="gallery-pages"><figure><a href="assets/finsight-rag-start.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-rag-start.png" alt="질문 입력" loading="lazy"></a><figcaption>질문 입력</figcaption></figure><figure><a href="assets/finsight-rag-answer.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-rag-answer.png" alt="법령 질의 답변" loading="lazy"></a><figcaption>법령 질의 답변</figcaption></figure><figure><a href="assets/finsight-citation.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-citation.png" alt="근거 조항과 원문 PDF" loading="lazy"></a><figcaption>근거 조항과 원문 PDF</figcaption></figure></div></dialog><dialog class="gallery-dialog" id="finsight-gallery-2" aria-label="Report Agent 화면"><div class="gallery-header"><div><h3>Report Agent</h3><span>6개 화면</span></div><button type="button" data-close-gallery>닫기</button></div><div class="gallery-pages"><figure><a href="assets/finsight-report-search.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-search.png" alt="기업 검색" loading="lazy"></a><figcaption>기업 검색</figcaption></figure><figure><a href="assets/finsight-report.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report.png" alt="기업 분석 보고서 개요" loading="lazy"></a><figcaption>기업 분석 보고서 개요</figcaption></figure><figure><a href="assets/finsight-report-stock.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-stock.png" alt="주가 추이" loading="lazy"></a><figcaption>주가 추이</figcaption></figure><figure><a href="assets/finsight-report-charts.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-charts.png" alt="재무 지표" loading="lazy"></a><figcaption>재무 지표</figcaption></figure><figure><a href="assets/finsight-report-news.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-news.png" alt="최근 뉴스 분석" loading="lazy"></a><figcaption>최근 뉴스 분석</figcaption></figure><figure><a href="assets/finsight-report-conclusion.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-conclusion.png" alt="종합 결론" loading="lazy"></a><figcaption>종합 결론</figcaption></figure></div></dialog>
+      </div><div class="visuals"><p class="kind">대회 당시 구현 화면</p><figure><a href="assets/finsight-home.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-home.png" alt="메인 화면" loading="lazy"></a><figcaption>메인 화면</figcaption></figure><button class="gallery-trigger" type="button" data-open-gallery="finsight-gallery-1" aria-haspopup="dialog" aria-controls="finsight-gallery-1"><img src="assets/finsight-rag-answer.png" alt="" loading="lazy"><span><strong>법령 질의응답</strong><small>3개 화면 보기</small></span></button><button class="gallery-trigger" type="button" data-open-gallery="finsight-gallery-2" aria-haspopup="dialog" aria-controls="finsight-gallery-2"><img src="assets/finsight-report.png" alt="" loading="lazy"><span><strong>기업 분석 보고서</strong><small>6개 화면 보기</small></span></button></div></div>
+      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>FastAPI</span><span>LangGraph</span><span>Weaviate</span><span>Neo4j</span><span>OpenDART API</span><span>Tavily</span></div></div><div class="links"><a href="https://github.com/beaver-zip/Finsight" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="assets/finsight-presentation.pdf" target="_blank" rel="noopener noreferrer">발표 자료<span aria-hidden="true"> ↗</span></a></div></div><dialog class="gallery-dialog" id="finsight-gallery-1" aria-label="법령 질의응답 화면"><div class="gallery-header"><div><h3>법령 질의응답</h3><span>3개 화면</span></div><button type="button" data-close-gallery>닫기</button></div><div class="gallery-pages"><figure><a href="assets/finsight-rag-start.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-rag-start.png" alt="질문 입력" loading="lazy"></a><figcaption>질문 입력</figcaption></figure><figure><a href="assets/finsight-rag-answer.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-rag-answer.png" alt="법령 질의 답변" loading="lazy"></a><figcaption>법령 질의 답변</figcaption></figure><figure><a href="assets/finsight-citation.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-citation.png" alt="근거 조항과 원문 PDF" loading="lazy"></a><figcaption>근거 조항과 원문 PDF</figcaption></figure></div></dialog><dialog class="gallery-dialog" id="finsight-gallery-2" aria-label="기업 분석 보고서 화면"><div class="gallery-header"><div><h3>기업 분석 보고서</h3><span>6개 화면</span></div><button type="button" data-close-gallery>닫기</button></div><div class="gallery-pages"><figure><a href="assets/finsight-report-search.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-search.png" alt="기업 검색" loading="lazy"></a><figcaption>기업 검색</figcaption></figure><figure><a href="assets/finsight-report.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report.png" alt="기업 분석 보고서 개요" loading="lazy"></a><figcaption>기업 분석 보고서 개요</figcaption></figure><figure><a href="assets/finsight-report-stock.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-stock.png" alt="주가 추이" loading="lazy"></a><figcaption>주가 추이</figcaption></figure><figure><a href="assets/finsight-report-charts.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-charts.png" alt="재무 지표" loading="lazy"></a><figcaption>재무 지표</figcaption></figure><figure><a href="assets/finsight-report-news.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-news.png" alt="최근 뉴스 분석" loading="lazy"></a><figcaption>최근 뉴스 분석</figcaption></figure><figure><a href="assets/finsight-report-conclusion.png" target="_blank" rel="noopener noreferrer"><img src="assets/finsight-report-conclusion.png" alt="종합 결론" loading="lazy"></a><figcaption>종합 결론</figcaption></figure></div></dialog>
     </article>
 <article class="project" id="veteran">
       <div class="project-top"><span class="number">02</span><span>제4회 고용노동 공공데이터 활용 공모전</span></div>
       <div class="project-title"><div><p class="kind">전화 상담 기반 일자리 추천</p><h2>Veteran</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>온라인 구직이 익숙하지 않은 고령자를 위한 전화 상담과 일자리 추천</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>STT와 LangGraph 대화 흐름으로 희망 직종, 경력, 거주지 수집</li><li>공공 일자리 데이터에서 조건에 맞는 공고 검색</li><li>관리자 화면에 상담 기록과 추천 결과 표시</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>구인 공고와 직업정보 수집, 추천 데이터 구성</li><li>거주지와 공고 위치의 거리, 희망 조건으로 후보를 추린 뒤 임베딩 유사도 결합</li><li>일자리 5개 추천 로직과 결과 확인용 프로토타입 웹페이지 제작</li></ul></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>온라인 구직이 익숙하지 않은 고령자를 위해, 전화 상담으로 희망 조건을 듣고 일자리를 추천하는 서비스입니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>전화 대화에서 희망 직종, 경력, 거주지를 파악하고 공공 일자리 데이터에서 조건에 맞는 공고를 찾습니다.</li>
+          <li>관리자 화면에서 상담 기록과 추천 결과를 확인할 수 있습니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>공공 구인 공고와 직업정보를 수집해 추천 데이터를 구성했습니다. 거주지와 공고 위치의 거리, 희망 조건을 기준으로 추천 후보를 선별했습니다.</li>
+          <li>후보 공고에 임베딩 유사도를 적용해 상담 내용과 관련성이 높은 일자리를 추천하도록 구현했습니다. 추천 결과를 확인하는 프로토타입 웹페이지도 개발했습니다.</li>
+        </ul></div>
         <div class="note"><h3>성과</h3><p>장려상 (195팀 중 4위)</p></div>
       </div><div class="visuals"><figure><a href="assets/veteran-jobs.webp" target="_blank" rel="noopener noreferrer"><img src="assets/veteran-jobs.webp" alt="상담자별 추천 일자리 목록" loading="lazy"></a><figcaption>상담자별 추천 일자리 목록</figcaption></figure><figure><a href="assets/veteran-dashboard.webp" target="_blank" rel="noopener noreferrer"><img src="assets/veteran-dashboard.webp" alt="상담 결과를 확인하는 관리자 화면" loading="lazy"></a><figcaption>상담 결과를 확인하는 관리자 화면</figcaption></figure></div></div>
       <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>FastAPI</span><span>LangGraph</span><span>Twilio API</span><span>Streamlit</span><span>문장 임베딩</span></div></div><div class="links"><a href="https://github.com/beaver-zip/Veteran" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/22253966/_._Veteran.pdf" target="_blank" rel="noopener noreferrer">발표 자료<span aria-hidden="true"> ↗</span></a><a href="https://www.youtube.com/watch?v=q2yR2ewQYic" target="_blank" rel="noopener noreferrer">시연 영상<span aria-hidden="true"> ↗</span></a></div></div>
     </article>
 <article class="project" id="sos">
-      <div class="project-top"><span class="number">03</span><span>피싱·스캠 예방을 위한 서비스 개발 경진대회</span></div>
-      <div class="project-title"><div><p class="kind">피싱 대응 체험 웹 서비스</p><h2>S.O.S — Scam Or Safe</h2></div></div>
+      <div class="project-top"><span class="number">03</span><span>피싱 및 스캠 예방을 위한 서비스 개발 경진대회</span></div>
+      <div class="project-title"><div><p class="kind">피싱 대응 체험 웹 서비스</p><h2>Scam or Safe</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>실제 피싱 사례를 선택형 이야기로 체험하고 위험 신호를 복기하는 웹 서비스</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>기사에서 사기 수법과 피해 상황을 추출해 시나리오 생성</li><li>선택에 따라 이야기와 자원 상태가 바뀌는 분기형 플레이</li><li>종료 후 선택 경로, 놓친 단서, 더 안전한 대응 제시</li><li>Imagen으로 주요 장면 삽화 생성</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>4인 팀에서 서비스 기획과 구현에 참여</li><li>기사 선택부터 분기형 플레이, 결과 피드백까지 연결</li></ul></div>
-        <div class="note"><h3>성과</h3><p>최우수상(104팀 중 2위)</p></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>실제 피싱 사례를 선택형 시나리오로 체험하며 대응 방법을 익히는 웹 서비스입니다. 사용자가 내린 선택과 그 결과를 돌아보며 놓친 위험 신호를 확인할 수 있습니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>기사에서 사기 수법과 피해 상황을 추출해 선택에 따라 전개가 달라지는 시나리오를 만들고, 주요 장면에 삽화를 제공합니다.</li>
+          <li>체험이 끝나면 선택 경로와 놓친 단서, 더 안전한 대응 방법을 보여줍니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>한 번의 LLM 호출로 긴 분기 시나리오를 만들기 어려워, Gemini를 장면별로 호출하며 너비 우선 탐색(BFS) 순서로 이야기와 선택지를 확장하도록 설계했습니다. 분기 깊이와 종료 조건은 코드로 관리했습니다.</li>
+          <li>시나리오가 길어지면 과거 장면은 요약하고 최근 장면과 선택지는 그대로 전달하도록 구성했습니다. 입력 분량을 줄이면서 이전 선택이 후속 장면에 반영되도록 했습니다.</li>
+          <li>Imagen에 공통 인물 정보를 전달해 장면마다 외형을 일관되게 묘사하도록 했습니다. API 호출 제한에 맞춘 배치 처리와 실패한 이미지의 재시도를 구현해 일부 요청이 실패해도 생성을 이어가도록 했습니다.</li>
+        </ul></div>
+        <div class="note"><h3>성과</h3><p>최우수상 (104팀 중 2위)</p></div>
       </div><div class="visuals"><figure><a href="assets/sos-scenario.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sos-scenario.webp" alt="피싱 상황에서 선택하며 진행하는 화면" loading="lazy"></a><figcaption>피싱 상황에서 선택하며 진행하는 화면</figcaption></figure><figure><a href="assets/sos-feedback.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sos-feedback.webp" alt="선택 경로와 놓친 단서를 보여주는 화면" loading="lazy"></a><figcaption>선택 경로와 놓친 단서를 보여주는 화면</figcaption></figure></div></div>
       <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>Next.js</span><span>FastAPI</span><span>Gemini API</span><span>Imagen API</span></div></div><div class="links"><a href="https://github.com/beaver-zip/scam-or-safe" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/beaver-zip/scam-or-safe/blob/main/assets/SOS.pdf" target="_blank" rel="noopener noreferrer">발표 자료<span aria-hidden="true"> ↗</span></a><a href="https://www.youtube.com/watch?v=aFW1pDu8vOQ" target="_blank" rel="noopener noreferrer">시연 영상<span aria-hidden="true"> ↗</span></a></div></div>
     </article></section><section class="group"><div class="group-heading"><h2>캡스톤디자인</h2></div><article class="project" id="sillog">
@@ -152,33 +165,21 @@
       <div class="project-title"><div><p class="kind">macOS 업무 기록 앱</p><h2>실록 (SILLOG)</h2></div></div>
       <div class="body with-visuals wide-visuals">
         <div class="prose">
-          <div class="note">
-            <h3>프로젝트 주제</h3>
-            <p>여러 앱에 흩어진 작업 기록을 업무별로 모아, 지난 작업에 쓴 자료를 다시 찾고 보고서 작성 등 다음 업무에 활용할 수 있게 돕는 앱입니다.</p>
-          </div>
-          <div class="note">
-            <h3>구현 내용</h3>
-            <ul>
-              <li>앱과 웹페이지 사용 내역, 화면 속 글자, 다운로드한 파일, AI 코딩 도구에 보낸 요청을 자동으로 기록해 Mac의 SQLite에 저장합니다.</li>
-              <li>LLM이 기록을 업무별로 묶고 작업 세션과 자료를 그래프로 연결합니다. 당시 사용한 파일과 웹페이지를 다시 열 수 있습니다.</li>
-              <li>채팅에서 업무 기록과 외부 서비스의 자료를 함께 활용해 출처가 달린 답변과 결과물을 생성합니다. 반복 업무는 사용자가 승인한 일정에 맞춰 실행합니다.</li>
-            </ul>
-          </div>
-          <div class="note">
-            <h3>본인 기여</h3>
-            <ul class="contribution-list">
-              <li><strong>채팅 탭 구현.</strong> 업무별 기록 검색부터 답변과 결과물 생성까지 이어지는 채팅 기능을 개발했습니다. 도구 실행 과정을 화면에 표시하고, 답변에 실제로 인용한 출처와 그 밖에 조회한 자료를 구분했습니다. 대화 관리와 결과물 미리보기·버전 관리도 구현했습니다.</li>
-              <li><strong>외부 서비스 커넥터 구현.</strong> 문서·코드·협업 서비스의 자료를 채팅에서 활용할 수 있도록 인증과 연결 관리, 자료 검색·조회 기능을 개발했습니다. 서비스별 응답을 공통 도구 인터페이스로 연결하고, 사용자가 허용한 서비스와 자료 범위 안에서 동작하도록 구성했습니다.</li>
-              <li><strong>PII 마스킹.</strong> 외부 AI에 전송할 텍스트에서 전화번호·주민등록번호·이메일 등 식별 가능한 개인정보와 API 키를 가리는 기능을 구현했습니다. 형식 검사와 검증 규칙을 함께 적용해 일반 숫자나 업무 내용까지 잘못 가리는 경우를 줄이도록 했습니다.</li>
-              <li><strong>민감정보 분류기 구축.</strong> 캡스톤디자인용 버전에 Laya 기반 로컬 민감정보 분류기를 구축하고 앱에 연동했습니다. 식별자를 가린 뒤에도 남는 민감한 내용을 기기 안에서 판별하고, 민감하다고 판단한 기록은 외부 AI 전송과 채팅 검색에서 제외하도록 처리했습니다.</li>
-              <li><strong>GitHub Actions CI/CD 구성.</strong> PR마다 Swift 빌드·테스트와 앱 번들 실행 검사를 자동화했습니다. 빌드 폴더가 없는 환경에서도 앱이 실행되는지 확인해 리소스 누락을 점검하고, main 반영 시 Developer ID 서명·Apple 공증·DMG 배포·Homebrew 설치 정보 갱신까지 자동으로 수행하도록 구성했습니다.</li>
-            </ul>
-          </div>
-          <div class="note">
-            <h3>배포</h3>
-            <p>오픈소스로 공개했으며, macOS 앱의 빌드부터 배포까지 자동화했습니다.</p>
-          </div>
-        </div>
+        <div class="note"><h3>프로젝트 소개</h3><p>여러 앱과 웹에 흩어진 사용 기록을 업무별로 정리하고, 이를 바탕으로 답변과 문서를 만드는 macOS 앱을 개발하고 있습니다. 지난 작업에 쓴 자료를 다시 찾고 다음 업무에 활용할 수 있도록 돕습니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>앱과 웹페이지 사용 내역, 화면 속 텍스트, 다운로드한 파일 등을 자동으로 기록해 기기에 저장합니다.</li>
+          <li>기록을 업무별로 묶고 관련 자료를 그래프로 연결합니다. 기록에서 당시 사용한 파일과 웹페이지를 다시 열 수 있습니다.</li>
+          <li>채팅에서 업무 기록과 연결한 서비스의 자료를 함께 활용해 출처가 달린 답변과 문서를 만듭니다. 반복 업무는 사용자가 승인한 일정에 맞춰 실행합니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>채팅 탭과 외부 서비스 커넥터를 개발했습니다. 선택한 업무의 기록과 문서·코드·협업 서비스의 자료를 검색해 답변에 활용하고, 인용된 출처를 열어 확인할 수 있도록 했습니다. 서비스 인증과 연결 관리, 도구 실행 과정 표시, 대화와 결과물의 버전 관리도 구현했습니다.</li>
+          <li>외부 LLM에 전달되는 텍스트에서 전화번호·주민등록번호·이메일 등 식별 가능한 개인정보(PII)와 API 키를 가렸습니다. 일반 숫자나 업무 내용까지 잘못 가리지 않도록 정규식과 번호 검증 규칙을 함께 적용했습니다.</li>
+          <li>캡스톤디자인용 버전에 Laya 기반 로컬 민감정보 분류기를 구축하고 앱에 연동했습니다. 식별자를 가린 뒤에도 남는 민감한 내용을 기기 안에서 판별하고, 해당 기록은 외부 AI 전송과 채팅 검색에서 제외하도록 했습니다.</li>
+          <li>문서 작성과 조사 등 작업별 스킬에 수행 절차와 결과물 형식을 정의했습니다. Promptfoo로 지시 준수 여부를 평가하고, 프롬프트 수정 전후의 응답을 비교했습니다.</li>
+          <li>GitHub Actions로 PR마다 Swift 빌드·테스트와 앱 번들 실행 검사를 자동화했습니다. 빌드 폴더가 없는 환경에서도 실행되는지 확인해 리소스 누락을 점검하고, main 반영 후 앱 서명·Apple 공증·DMG 배포·Homebrew 설치 정보 갱신을 자동화했습니다. 모델 연결 점검 CLI와 개발 문서도 작성해 팀원이 같은 절차로 빌드·테스트와 문제 점검을 진행하도록 했습니다.</li>
+        </ul></div>
+        <div class="note"><h3>개발 현황</h3><p>오픈소스로 공개해 개발을 이어가고 있습니다.</p></div>
+      </div>
         <div>
           <p class="visual-hint">화면을 누르면 원본 크기로 볼 수 있습니다.</p>
           <div class="visuals sillog-gallery">
@@ -210,7 +211,7 @@
         </div>
       </div>
       <div class="project-bottom">
-        <div class="stack"><p>사용 기술</p><div class="tags"><span>SwiftUI</span><span>ScreenCaptureKit</span><span>Vision OCR</span><span>SQLite</span><span>OAuth</span><span>Laya</span><span>GitHub Actions</span></div></div>
+        <div class="stack"><p>사용 기술</p><div class="tags"><span>SwiftUI</span><span>ScreenCaptureKit</span><span>Vision OCR</span><span>SQLite</span><span>OAuth</span><span>Laya</span><span>Promptfoo</span><span>GitHub Actions</span></div></div>
         <div class="links">
           <a href="https://sillog.app/" target="_blank" rel="noopener noreferrer">공식 사이트<span aria-hidden="true"> ↗</span></a>
           <a href="https://github.com/sillog-admin/SILLOG" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a>
@@ -221,69 +222,112 @@
       <div class="project-top"><span class="number">05</span><span>AI융합캡스톤디자인1</span></div>
       <div class="project-title"><div><p class="kind">유튜브 팩트체크 확장 프로그램</p><h2>BbongGuard</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>영상의 주장과 근거를 시청 화면에서 확인하는 Chrome 확장 프로그램</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>제목, 설명, 자막에서 검증할 주장 추출</li><li>웹 검색 결과를 재정렬해 근거 기반 판정</li><li>썸네일 OCR과 오디오 STT 결과를 보조 신호로 반영</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>서비스를 기획하고 Chrome 확장 프로그램과 FastAPI 서버를 대부분 직접 개발</li><li>주장 추출, 근거 검색, 재정렬, 최종 판정 흐름 개발</li><li>이미지와 오디오 분석 결과를 요약 화면과 상세 근거 화면에 연결</li></ul></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>유튜브 영상의 주장을 확인하려고 별도로 자료를 찾는 번거로움을 줄이는 Chrome 확장 프로그램입니다. 시청 화면에서 주장별 판정과 검증 근거를 확인할 수 있습니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>제목·설명·자막에서 검증할 주장을 추출하고, 웹에서 찾은 자료를 관련성에 따라 정렬해 LLM이 근거를 바탕으로 판정합니다.</li>
+          <li>썸네일의 텍스트와 음성 분석 결과도 함께 반영해 주장별 판정과 참고 출처를 보여줍니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>서비스를 기획하고 Chrome 확장 프로그램과 FastAPI 서버를 개발했습니다. 주장 추출, 근거 검색과 재정렬, LLM 판정으로 이어지는 처리 과정과 결과 화면을 구현했습니다.</li>
+          <li>썸네일 OCR과 음성 분석 결과를 텍스트 검증에 함께 반영했습니다. 사용자가 요약 결과와 상세 근거를 살펴볼 수 있도록 주장별 판정과 참고 출처를 화면에 연결했습니다.</li>
+        </ul></div>
+        <div class="note"><h3>성과</h3><p>A+ (8팀 중 1위)</p></div>
       </div><div class="visuals"><figure><a href="assets/bbongguard-video.webp" target="_blank" rel="noopener noreferrer"><img src="assets/bbongguard-video.webp" alt="유튜브 영상에서 확인하는 판정 결과" loading="lazy"></a><figcaption>유튜브 영상에서 확인하는 판정 결과</figcaption></figure><figure><a href="assets/bbongguard-evidence.webp" target="_blank" rel="noopener noreferrer"><img src="assets/bbongguard-evidence.webp" alt="주장별 근거와 참고 출처" loading="lazy"></a><figcaption>주장별 근거와 참고 출처</figcaption></figure></div></div>
       <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>Chrome Extensions API</span><span>FastAPI</span><span>Tavily Search API</span><span>Google Cloud Vision API</span><span>Naver CLOVA Speech</span></div></div><div class="links"><a href="https://github.com/beaver-zip/BbongGuard" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/beaver-zip/BbongGuard/blob/main/assets/BbongGuard_%EB%B0%9C%ED%91%9C%20%EC%9E%90%EB%A3%8C.pdf" target="_blank" rel="noopener noreferrer">발표 자료<span aria-hidden="true"> ↗</span></a></div></div>
     </article></section><section class="group"><div class="group-heading"><h2>부스트캠프 AI Tech NLP 트랙</h2></div><article class="project" id="insa">
       <div class="project-top"><span class="number">06</span><span>네이버 부스트캠프 AI Tech 7기 최종 프로젝트</span></div>
       <div class="project-title"><div><p class="kind">360도 평가 자동화 서비스</p><h2>인사를 부탁해</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>동료 평가 요청부터 인사고과 보고서 전달까지 자동화하는 서비스</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>관리자가 평가 기간과 문항 설정, 구성원이 동료 평가 작성</li><li>평가 보고서 PDF와 도서 추천을 만들고 리마인드 및 완료 메일 발송</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>PM으로 일정 관리와 PR 리뷰</li><li>백엔드와 프론트엔드 개발 가이드, 실험용 페르소나 데이터 작성</li><li>평가 리마인드와 보고서 완료 메일 구현</li><li>도서 정보 처리와 보고서 생성에 쓰는 API 호출 병렬화, SQL 조회 수정</li><li>두 작업의 실행 시간 각각 76.2%, 69.2% 단축</li></ul></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>동료 평가를 수작업으로 취합하고 전달하는 부담을 줄이기 위한 서비스입니다. 평가 요청부터 피드백 익명화, 취합, 인사고과 보고서 전달까지 자동화합니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>관리자가 평가 기간과 문항을 설정하면 구성원이 동료 평가를 작성합니다. 피드백의 말투를 통일해 작성자를 추측하기 어렵게 합니다.</li>
+          <li>평가를 취합해 PDF 보고서와 도서 추천을 만들고, 미제출 알림과 보고서 완료 메일을 보냅니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>PM을 맡아 일정과 개발 우선순위를 조율하고, 백엔드 개발 가이드와 PR 리뷰를 담당했습니다. 팀별 평가 제출 여부를 조회해 미제출자에게 정해진 시점에 알림을 보내고, 생성된 PDF 보고서를 각 사용자에게 자동 발송하도록 구현했습니다.</li>
+          <li>도서 임베딩 생성과 사용자별 보고서 처리를 병렬화하고, 반복해서 읽던 도서 데이터를 캐시에 저장했습니다. 사용자별 SQL 조회를 일괄 조회로 바꿔 도서 정보 처리와 보고서 생성 시간을 각각 76.2%, 69.2% 단축했습니다.</li>
+        </ul></div>
       </div><div class="visuals"><figure><a href="assets/insa-report.webp" target="_blank" rel="noopener noreferrer"><img src="assets/insa-report.webp" alt="사용자가 확인하는 평가 결과 화면" loading="lazy"></a><figcaption>사용자가 확인하는 평가 결과 화면</figcaption></figure></div></div>
-      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>Streamlit</span><span>Flask</span><span>SQLite</span><span>Upstage API</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level4-nlp-finalproject-hackathon-nlp-08-lv3" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/18794947/_NLP_.08.pdf" target="_blank" rel="noopener noreferrer">Wrap-up report<span aria-hidden="true"> ↗</span></a></div></div>
+      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>Streamlit</span><span>Flask</span><span>SQLite</span><span>Upstage API</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level4-nlp-finalproject-hackathon-nlp-08-lv3" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/18794947/_NLP_.08.pdf" target="_blank" rel="noopener noreferrer">프로젝트 회고<span aria-hidden="true"> ↗</span></a></div></div>
     </article>
 <article class="project" id="generation">
       <div class="project-top"><span class="number">07</span><span>네이버 부스트캠프 AI Tech 7기</span></div>
-      <div class="project-title"><div><p class="kind">수능형 객관식 문제 풀이</p><h2>Generation for NLP</h2></div></div>
+      <div class="project-title"><div><p class="kind">Generation for NLP</p><h2>수능형 문제 풀이</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>소형 언어 모델로 한국어 수능형 객관식 문제 풀이</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>선택지 수와 정답 분포가 다른 데이터를 수능 형식으로 정리</li><li>사전학습 모델 파인튜닝과 문제 유형별 프롬프트 비교</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>모델 탐색, 파인튜닝, 데이터 증강</li><li>KorQuAD 문답을 수능형 학습 데이터로 변환</li><li>LLM으로 지문 요약, 질문 분석, 어휘 해설 힌트 생성</li><li>형식 지정과 zero-shot CoT 프롬프트 비교, 같은 모델에서 0.1 이상 성능 차이 확인</li></ul></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>한국어 수능형 객관식 문제를 풀도록 소형 언어 모델을 파인튜닝한 프로젝트입니다. 학습 데이터 구성과 프롬프트에 따른 정답률 변화를 비교했습니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>선택지 수와 정답 분포가 다른 데이터를 수능형 문제 형식으로 정리해 모델을 학습합니다.</li>
+          <li>문제 유형에 따라 프롬프트를 달리 적용하고, 모델과 학습 설정별 결과를 비교합니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>KorQuAD 문답을 객관식 데이터로 변환하고, Gemini로 문제의 주제와 사전지식 필요 여부를 분류했습니다. 지문만으로 풀 수 있는 문제를 선별해 새 질문과 선택지를 생성하고 학습 데이터 형식으로 정리했습니다.</li>
+          <li>모델 탐색과 파인튜닝을 맡았습니다. 지문·질문·선택지를 대화 형식으로 구성하고 정답 부분만 학습하도록 설정했습니다. 출력 형식을 지정하는 프롬프트와 zero-shot CoT를 비교해 같은 모델에서 정답률이 어떻게 달라지는지 확인했습니다.</li>
+        </ul></div>
       </div><div class="visuals"><figure><a href="assets/generation-data.webp" target="_blank" rel="noopener noreferrer"><img src="assets/generation-data.webp" alt="학습 데이터의 선택지 수와 정답 분포" loading="lazy"></a><figcaption>학습 데이터의 선택지 수와 정답 분포</figcaption></figure></div></div>
-      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>파인튜닝</span><span>프롬프트 엔지니어링</span><span>데이터 증강</span><span>Gemini API</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level2-nlp-generationfornlp-nlp-08-lv3" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/18146095/_NLP_.08.pdf" target="_blank" rel="noopener noreferrer">Wrap-up report<span aria-hidden="true"> ↗</span></a></div></div>
+      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>파인튜닝</span><span>프롬프트 엔지니어링</span><span>데이터 증강</span><span>Gemini API</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level2-nlp-generationfornlp-nlp-08-lv3" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/18146095/_NLP_.08.pdf" target="_blank" rel="noopener noreferrer">프로젝트 회고<span aria-hidden="true"> ↗</span></a></div></div>
     </article>
 <article class="project" id="datacentric">
       <div class="project-top"><span class="number">08</span><span>네이버 부스트캠프 AI Tech 7기</span></div>
-      <div class="project-title"><div><p class="kind">뉴스 주제 분류</p><h2>Data-Centric NLP</h2></div></div>
+      <div class="project-title"><div><p class="kind">Data-Centric NLP</p><h2>뉴스 주제 분류</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>모델 구조를 바꾸지 않고 데이터 오류를 정리해 뉴스 주제 분류</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>Gemini와 규칙으로 텍스트 및 라벨 노이즈 구분</li><li>문장 정제, Cleanlab 라벨 교정, 역번역과 중복 제거</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>텍스트와 라벨 노이즈 구분, 문장 정제</li><li>DeepL API로 한국어→일본어→한국어 역번역과 중간 저장, 후처리 구현</li><li>프롬프트 기반 데이터 생성 실험</li></ul></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>모델 구조를 유지한 채 데이터를 정제하고 증강해 뉴스 주제 분류 성능을 개선한 프로젝트입니다. 텍스트 손상과 잘못된 라벨을 구분해 처리했습니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>손상된 문장을 복원하고 Cleanlab으로 라벨 오류를 교정해 학습 데이터를 정제합니다.</li>
+          <li>역번역과 LLM 생성으로 표현이 다양한 데이터를 보완하고, 유사한 문장을 걸러 중복을 줄입니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>텍스트 손상과 라벨 오류를 구분한 뒤, Gemini로 원래 의미를 유지하면서 뉴스 제목을 복원했습니다. 응답에 섞인 설명과 불필요한 기호를 제거하고, 중간 저장과 실패 요청 재시도를 구현해 정제 작업을 이어갈 수 있도록 했습니다.</li>
+          <li>DeepL API로 한국어를 일본어로 번역한 뒤 다시 한국어로 옮겨 표현이 다른 학습 데이터를 만들었습니다. LLM에 주제별 예시를 제공해 뉴스 제목과 라벨을 추가 생성하고, 단어 중복도를 비교해 유사한 제목을 걸러냈습니다.</li>
+        </ul></div>
       </div><div class="visuals"><figure><a href="assets/datacentric-translation.webp" target="_blank" rel="noopener noreferrer"><img src="assets/datacentric-translation.webp" alt="번역기별 역번역 문장 비교" loading="lazy"></a><figcaption>번역기별 역번역 문장 비교</figcaption></figure></div></div>
-      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>Gemini API</span><span>Cleanlab</span><span>DeepL API</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level2-nlp-datacentric-nlp-13" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/17674538/DataCentric_13.Wrap-Up.pdf" target="_blank" rel="noopener noreferrer">Wrap-up report<span aria-hidden="true"> ↗</span></a></div></div>
+      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>Gemini API</span><span>Cleanlab</span><span>DeepL API</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level2-nlp-datacentric-nlp-13" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/17674538/DataCentric_13.Wrap-Up.pdf" target="_blank" rel="noopener noreferrer">프로젝트 회고<span aria-hidden="true"> ↗</span></a></div></div>
     </article>
 <article class="project" id="odqa">
       <div class="project-top"><span class="number">09</span><span>네이버 부스트캠프 AI Tech 7기</span></div>
-      <div class="project-title"><div><p class="kind">문서 검색과 답변 추출</p><h2>Open-Domain Question Answering</h2></div></div>
+      <div class="project-title"><div><p class="kind">Open-Domain Question Answering</p><h2>오픈도메인 질의응답 (ODQA)</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>질문과 관련된 문서를 찾아 답변을 추출하는 한국어 질의응답 모델</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>BM25와 Dense Retriever의 검색 점수를 결합</li><li>Reader가 검색 문서에서 답변 추출</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>Hybrid Retriever의 점수 정규화 누락 수정, 답변 일관성과 EM 점수 향상</li><li>Reader의 답변 길이, 입력 길이, doc_stride 조정</li><li>MeCab 질문 증강과 Curriculum Learning 데이터 구성</li></ul></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>질문과 관련된 문서를 검색하고, 해당 문서에서 정답을 추출하는 한국어 질의응답 모델입니다. 문서 검색과 답변 추출을 나눠 성능을 검토했습니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>단어 일치를 활용하는 BM25와 의미 유사도를 활용하는 Dense Retriever의 점수를 결합해 문서를 찾습니다.</li>
+          <li>Reader가 검색된 문서를 읽고 정답에 해당하는 구간을 추출합니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>BM25와 Dense Retriever의 점수를 결합하는 과정에서 정규화가 빠진 부분을 수정했습니다. 서로 다른 범위의 점수를 같은 범위로 맞춰 문서 순위를 계산하도록 바꾸고, 최종 답변의 정확 일치율(EM)을 비교했습니다.</li>
+          <li>Reader의 최대 입력 길이와 답변 길이, 긴 문서를 나눠 읽을 때 겹치는 범위를 조정하며 성능을 비교했습니다. MeCab으로 질문 데이터를 증강하고, Curriculum Learning 실험에 사용할 학습 데이터를 구성했습니다.</li>
+        </ul></div>
       </div><div class="visuals"><figure><a href="assets/odqa-sweep.webp" target="_blank" rel="noopener noreferrer"><img src="assets/odqa-sweep.webp" alt="Reader 학습 설정과 EM 점수 비교" loading="lazy"></a><figcaption>Reader 학습 설정과 EM 점수 비교</figcaption></figure></div></div>
-      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>Transformers</span><span>BM25</span><span>DPR</span><span>MeCab</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level2-mrc-nlp-13" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/17536172/NLP_13.Wrap-Up.pdf" target="_blank" rel="noopener noreferrer">Wrap-up report<span aria-hidden="true"> ↗</span></a></div></div>
+      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>Transformers</span><span>BM25</span><span>DPR</span><span>MeCab</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level2-mrc-nlp-13" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/17536172/NLP_13.Wrap-Up.pdf" target="_blank" rel="noopener noreferrer">프로젝트 회고<span aria-hidden="true"> ↗</span></a></div></div>
     </article>
 <article class="project" id="sts">
       <div class="project-top"><span class="number">10</span><span>네이버 부스트캠프 AI Tech 7기</span></div>
-      <div class="project-title"><div><p class="kind">한국어 문장 유사도 예측</p><h2>Semantic Text Similarity</h2></div></div>
+      <div class="project-title"><div><p class="kind">Semantic Text Similarity</p><h2>문장 유사도 예측 (STS)</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>한국어 문장 두 개의 의미 유사도를 0~5점으로 예측</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>라벨 불균형 분석 후 문장 교환과 조사 교체로 데이터 증강</li><li>한국어 사전학습 모델 파인튜닝과 모델별 예측 결합</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>0점대 문장 편중 분석과 구간별 언더샘플링</li><li>문장 복제, 순서 교환, 조사 교체를 이용한 증강 데이터 구성</li><li>Optuna 튜닝 템플릿 제작, DeBERTa-v3에서 약 80회 실험</li></ul></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>한국어 문장 두 개의 의미 유사도를 0점에서 5점 사이의 값으로 예측하는 모델입니다. 데이터 분포와 학습 설정이 예측 성능에 미치는 영향을 비교했습니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>유사도 구간별 데이터 수를 조정하고, 문장 순서와 조사를 바꿔 학습 데이터를 증강합니다.</li>
+          <li>사전학습 모델을 파인튜닝하고 여러 모델의 예측을 결합해 성능을 비교합니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>유사도 0점대에 데이터가 편중된 분포를 확인하고 구간별 샘플 수를 조정했습니다. 동일 문장을 짝지어 높은 유사도 데이터를 보완하고, 문장 순서와 조사를 바꿔 증강 전후의 학습 결과를 비교했습니다.</li>
+          <li>데이터 로더, 모델, 평가 지표를 분리한 PyTorch 학습 템플릿을 정리했습니다. Optuna로 하이퍼파라미터를 탐색하는 코드를 작성하고, DeBERTa-v3에서 약 80회 실험하며 설정에 따른 검증 성능을 비교했습니다.</li>
+        </ul></div>
       </div><div class="visuals"><figure><a href="assets/sts-labels.webp" target="_blank" rel="noopener noreferrer"><img src="assets/sts-labels.webp" alt="학습 및 검증 데이터의 라벨 분포" loading="lazy"></a><figcaption>학습 및 검증 데이터의 라벨 분포</figcaption></figure></div></div>
-      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>PyTorch</span><span>Transformers</span><span>Optuna</span><span>데이터 증강</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level1-semantictextsimilarity-nlp-13" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/17182231/NLP_13.Wrap-Up.pdf" target="_blank" rel="noopener noreferrer">Wrap-up report<span aria-hidden="true"> ↗</span></a></div></div>
+      <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>PyTorch</span><span>Transformers</span><span>Optuna</span><span>데이터 증강</span></div></div><div class="links"><a href="https://github.com/boostcampaitech7/level1-semantictextsimilarity-nlp-13" target="_blank" rel="noopener noreferrer">GitHub 저장소<span aria-hidden="true"> ↗</span></a><a href="https://github.com/user-attachments/files/17182231/NLP_13.Wrap-Up.pdf" target="_blank" rel="noopener noreferrer">프로젝트 회고<span aria-hidden="true"> ↗</span></a></div></div>
     </article></section><section class="group"><div class="group-heading"><h2>기타</h2></div><article class="project" id="oxide">
       <div class="project-top"><span class="number">11</span><span>2026 AI Co-Scientist Challenge Korea - Track 1</span></div>
-      <div class="project-title"><div><p class="kind">산화물 반도체 공정 연구</p><h2>산화물 TFT 레시피 생성을 위한 AI 프레임워크</h2></div></div>
+      <div class="project-title"><div><p class="kind">산화물 반도체 공정 연구</p><h2>산화물 TFT 제조 레시피 생성 AI 프레임워크</h2></div></div>
       <div class="body with-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>이동도와 안정성을 함께 고려해 산화물 TFT의 제조 레시피를 제안하는 AI 프레임워크</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>2,005편의 실험 논문에서 이동도와 안정성 데이터 1,030쌍을 추출</li><li>이동도와 안정성의 Pareto frontier를 분석해 고성능 소자의 공정 전략을 정리</li><li>관련 실험 사례를 검색하는 RAG 레시피 생성기를 구축하고 1,198개 사례로 평가</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>아주대학교 조현석 교수 연구실에서 학부연구생으로 참여</li><li>LLM이 만든 레시피의 실패 사례를 분석해 증착 수치 오류와 희귀 조성 대응 문제를 정리</li></ul></div>
-        <div class="note"><h3>성과</h3><p>최우수상(137팀 중 2위)</p></div>
-        <div class="note"><h3>논문</h3><p>한국실용인공지능학술지 2권 특별호 게재</p></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>산화물 TFT의 이동도와 안정성 사이의 상충 관계를 고려해, 목표 성능에 맞는 제조 레시피를 제안하는 연구입니다. 아주대학교 인공지능학과 학부연구생으로 신소재공학과 연구실과의 공동 연구에 참여했습니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>실험 논문에서 성능과 공정 데이터를 추출하고, 이동도와 안정성을 함께 살펴 고성능 소자의 공정 전략을 정리합니다.</li>
+          <li>관련 실험 사례를 검색하는 RAG로 레시피를 생성하고, 기존 사례와 비교해 제안한 공정 조건을 평가합니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>연구팀이 구축한 파이프라인을 적용한 EXAONE-4.0-32B와 기준 모델인 GPT-4.1-nano의 실패 사례를 비교했습니다.</li>
+          <li>증착 파라미터의 정확도 문제와 희귀 재료에서의 성능 저하를 분석했습니다. 가능한 제조 조건이 여럿인 상황에서 단일 정답과 비교하는 평가 방식의 한계도 정리했습니다.</li>
+        </ul></div>
+        <div class="note"><h3>성과</h3><p>최우수상 (137팀 중 2위)</p></div>
+        <div class="note"><h3>논문</h3><p>연구 결과를 한국실용인공지능학술지 제2권 특별호에 게재했습니다.</p></div>
       </div><div class="visuals"><figure><a href="assets/oxide-workflow.webp" target="_blank" rel="noopener noreferrer"><img src="assets/oxide-workflow.webp" alt="문헌 정보 추출과 RAG 레시피 생성 흐름" loading="lazy"></a><figcaption>문헌 정보 추출과 RAG 레시피 생성 흐름</figcaption></figure><figure><a href="assets/oxide-frontier.webp" target="_blank" rel="noopener noreferrer"><img src="assets/oxide-frontier.webp" alt="이동도와 안정성의 상충관계 분석" loading="lazy"></a><figcaption>이동도와 안정성의 상충관계 분석</figcaption></figure></div></div>
       <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>문헌 정보 추출</span><span>Pareto frontier</span><span>RAG</span><span>vLLM</span><span>LLM-as-a-Judge</span></div></div><div class="links"><a href="https://aifactory.space/ko/page/ask2026" target="_blank" rel="noopener noreferrer">대회 페이지<span aria-hidden="true"> ↗</span></a><a href="assets/oxide-paper.pdf" target="_blank" rel="noopener noreferrer">논문<span aria-hidden="true"> ↗</span></a></div></div>
     </article>
@@ -291,10 +335,16 @@
       <div class="project-top"><span class="number">12</span><span>제1회 무역통계 활용·분석 경진대회</span></div>
       <div class="project-title"><div><p class="kind">무역통계 이상탐지</p><h2>우회수출 위험 품목 상시 감시 프레임워크</h2></div></div>
       <div class="body with-visuals wide-visuals"><div class="prose">
-        <div class="note"><h3>프로젝트 주제</h3><p>공개 무역통계로 우회수출 위험이 있는 품목을 상시 선별하는 프레임워크</p></div>
-        <div class="note"><h3>구현 내용</h3><ul><li>관세청 수출입실적, 미국 Census 수입통계, UN Comtrade 자료를 결합해 순 우회실익과 미러 갭 계산</li><li>ECOD, Isolation Forest, HBOS의 이상도 순위를 합쳐 의심 품목 선별</li><li>월별 분석을 자동화하고 4,063개 품목에서 107개 의심 품목과 34개 알림 품목 도출</li></ul></div>
-        <div class="note"><h3>본인 기여</h3><ul><li>공개 무역통계의 품목별 흐름과 관세 차이를 위험 지표로 정리</li><li>비지도 이상탐지 결과를 의심 품목 순위와 대시보드로 연결</li></ul></div>
-        <div class="note"><h3>성과</h3><p>장려상(172팀 중 4위)</p></div>
+        <div class="note"><h3>프로젝트 소개</h3><p>공개 무역통계를 바탕으로 우회수출 위험이 있는 품목을 선별하는 분석 프레임워크입니다. 품목별 거래 흐름과 관세 차이를 분석해 추가 확인이 필요한 대상을 좁힙니다.</p></div>
+        <div class="note"><h3>구현 내용</h3><ul>
+          <li>관세청, 미국 Census, UN Comtrade의 무역통계를 결합해 우회수출에 따른 이익과 국가 간 신고 통계의 차이를 계산합니다.</li>
+          <li>ECOD, Isolation Forest, HBOS의 이상도 순위를 합쳐 의심 품목을 선별하고 월별 분석을 자동화합니다.</li>
+        </ul></div>
+        <div class="note"><h3>본인 기여</h3><ul class="contribution-list">
+          <li>공개 무역통계에서 품목별 거래 흐름과 관세 차이를 분석하고, 우회수출 위험을 살펴볼 지표로 정리했습니다.</li>
+          <li>비지도 이상탐지 결과를 의심 품목 순위와 대시보드로 연결해, 확인이 필요한 품목을 살펴볼 수 있도록 구성했습니다.</li>
+        </ul></div>
+        <div class="note"><h3>성과</h3><p>장려상 (172팀 중 4위). 4,063개 품목을 분석해 107개 의심 품목과 34개 알림 품목을 선별했습니다.</p></div>
       </div><div class="visuals"><figure><a href="assets/trade-dashboard.png" target="_blank" rel="noopener noreferrer"><img src="assets/trade-dashboard.png" alt="우회수출 위험 품목 감시 대시보드" loading="lazy"></a><figcaption>우회수출 위험 품목 감시 대시보드</figcaption></figure></div></div>
       <div class="project-bottom"><div class="stack"><p>사용 기술</p><div class="tags"><span>ECOD</span><span>Isolation Forest</span><span>HBOS</span><span>Conformal p-value</span><span>BH FDR</span></div></div><div class="links"><a href="https://www.customs.go.kr/kcs/na/ntt/selectNttInfo.do?bbsId=1362&amp;mi=2891&amp;nttSn=10175787&amp;nttSnUrl=7bd3ca14c15d340efb2d5104fd209075" target="_blank" rel="noopener noreferrer">대회 결과<span aria-hidden="true"> ↗</span></a><a href="assets/trade-presentation.pdf" target="_blank" rel="noopener noreferrer">발표 자료<span aria-hidden="true"> ↗</span></a></div></div>
     </article></section>
