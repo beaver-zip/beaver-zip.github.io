@@ -20,7 +20,6 @@
     select.value = current.id;
     // 목차의 현재 위치 표시를 이 프로젝트의 바탕색으로
     document.documentElement.style.setProperty('--marker', getComputedStyle(current).getPropertyValue('--stage'));
-    document.title = `${data[current.id].title} | 이한서 포트폴리오`;
     if (push && location.hash !== `#${current.id}`) history.pushState(null, '', `#${current.id}`);
     fitText();
     window.scrollTo({top: 0, behavior: 'instant'});
