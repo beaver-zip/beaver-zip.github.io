@@ -11,12 +11,11 @@
     <meta content="#ffffff" name="theme-color" />
     <title>이한서 | 포트폴리오</title>
     <link as="font" crossorigin href="assets/fonts/nanum-regular.woff2" rel="preload" type="font/woff2" />
-    <link href="assets/portfolio.css?v=20261116-13" rel="stylesheet" />
-    <script defer src="assets/portfolio.js?v=20261116-13"></script>
+    <link href="assets/portfolio.css?v=20261116-15" rel="stylesheet" />
+    <script defer src="assets/portfolio.js?v=20261116-15"></script>
   </head>
   <body>
     <a class="skip-link" href="#projects">본문으로 이동</a>
-
     <div class="page" id="top">
       <div class="side">
         <div class="me">
@@ -29,12 +28,12 @@
           ><a data-project="bbongguard" href="#bbongguard">BbongGuard</a
           ><a data-project="veteran" href="#veteran">Veteran</a
           ><a data-project="oxide" href="#oxide">산화물 TFT 제조 레시피 생성</a
-          ><a data-project="insa" href="#insa">인사를 부탁해</a
-          ><a data-project="generation" href="#generation">수능형 문제 풀이</a
-          ><a data-project="datacentric" href="#datacentric">뉴스 주제 분류</a
-          ><a data-project="odqa" href="#odqa">오픈도메인 질의응답 (ODQA)</a
-          ><a data-project="sts" href="#sts">문장 유사도 예측 (STS)</a
-          ><a data-project="trade" href="#trade">우회수출 위험 품목 상시 감시</a>
+          ><a data-project="trade" href="#trade">우회수출 위험 품목 상시 감시</a
+          ><a data-project="insa" href="#insa">인사를 부탁해 (Boostcamp)</a
+          ><a data-project="generation" href="#generation">수능형 문제 풀이 (Boostcamp)</a
+          ><a data-project="datacentric" href="#datacentric">뉴스 주제 분류 (Boostcamp)</a
+          ><a data-project="odqa" href="#odqa">오픈도메인 질의 응답 (Boostcamp)</a
+          ><a data-project="sts" href="#sts">문장 유사도 구축 (Boostcamp)</a>
         </nav>
         <div class="mobile-nav">
           <label for="project-select">목차</label
@@ -45,12 +44,12 @@
             <option value="bbongguard">BbongGuard</option>
             <option value="veteran">Veteran</option>
             <option value="oxide">산화물 TFT 제조 레시피 생성</option>
-            <option value="insa">인사를 부탁해</option>
-            <option value="generation">수능형 문제 풀이</option>
-            <option value="datacentric">뉴스 주제 분류</option>
-            <option value="odqa">오픈도메인 질의응답 (ODQA)</option>
-            <option value="sts">문장 유사도 예측 (STS)</option>
             <option value="trade">우회수출 위험 품목 상시 감시</option>
+            <option value="insa">인사를 부탁해 (Boostcamp)</option>
+            <option value="generation">수능형 문제 풀이 (Boostcamp)</option>
+            <option value="datacentric">뉴스 주제 분류 (Boostcamp)</option>
+            <option value="odqa">오픈도메인 질의 응답 (Boostcamp)</option>
+            <option value="sts">문장 유사도 구축 (Boostcamp)</option>
           </select>
         </div>
         <div class="side-foot">
@@ -615,11 +614,100 @@
             <p class="project-status">연구 결과를 한국실용인공지능학술지 제2권 특별호에 게재했습니다.</p>
           </section>
         </article>
+        <article aria-labelledby="trade-title" class="project" data-color="coral" id="trade">
+          <section class="panel panel-top">
+            <header class="project-header">
+              <p class="context">제1회 무역통계 활용·분석 경진대회</p>
+              <h2 id="trade-title" tabindex="-1">우회수출 위험 품목 상시 감시</h2>
+              <p class="kind">무역통계 이상탐지</p>
+            </header>
+            <button
+              aria-controls="image-dialog"
+              aria-haspopup="dialog"
+              aria-label="우회수출 위험 품목 감시 대시보드 크게 보기"
+              class="stage"
+              data-gallery="trade"
+              data-image="0"
+              type="button"
+            >
+              <img
+                alt="우회수출 위험 품목 감시 대시보드"
+                decoding="async"
+                loading="lazy"
+                src="assets/trade-dashboard.png"
+              /><span aria-hidden="true" class="stage-caption"
+                ><span>우회수출 위험 품목 감시 대시보드</span><span class="stage-more">크게 보기</span></span
+              >
+            </button>
+          </section>
+          <section class="panel panel-bottom">
+            <div class="about">
+              <p class="project-intro">
+                <span class="intro-sentence"
+                  >공개 무역통계에서 우회수출 위험이 있는 품목을 선별하는 분석 프레임워크입니다.</span
+                >
+                <span class="intro-sentence"
+                  >품목별 거래 흐름과 관세 차이를 분석해 추가 확인이 필요한 대상을 좁힙니다.</span
+                >
+              </p>
+              <dl class="facts">
+                <dt>담당</dt>
+                <dd>무역통계 분석 및 결과 시각화</dd>
+                <dt>수상</dt>
+                <dd>장려상 (172팀 중 4위)</dd>
+                <dt>기술</dt>
+                <dd>ECOD, Isolation Forest, HBOS, Conformal p-value, BH FDR</dd>
+                <dt>링크</dt>
+                <dd>
+                  <div class="links">
+                    <a
+                      href="https://www.customs.go.kr/kcs/na/ntt/selectNttInfo.do?bbsId=1362&amp;mi=2891&amp;nttSn=10175787&amp;nttSnUrl=7bd3ca14c15d340efb2d5104fd209075"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                      >대회 결과</a
+                    ><a href="assets/trade-presentation.pdf" rel="noopener noreferrer" target="_blank">발표 자료</a
+                    ><button
+                      aria-controls="detail-dialog"
+                      aria-haspopup="dialog"
+                      class="detail-trigger"
+                      data-details="trade"
+                      type="button"
+                    >
+                      구현 과정
+                    </button>
+                  </div>
+                </dd>
+              </dl>
+            </div>
+            <ul class="contributions">
+              <li class="contribution">
+                <h3>위험 지표 구성</h3>
+                <div>
+                  <p>공개 무역통계의 품목별 거래 흐름과 관세 차이를 분석했습니다.</p>
+                  <p>
+                    우회수출 위험을 <span class="keep-phrase">살펴볼 수 있도록</span> 분석 결과를 지표로 정리했습니다.
+                  </p>
+                </div>
+              </li>
+              <li class="contribution">
+                <h3>품목 선별과 시각화</h3>
+                <div>
+                  <p>비지도 이상탐지 결과를 의심 품목 순위와 대시보드로 연결했습니다.</p>
+                  <p>
+                    <span class="keep-phrase">4,063개 품목</span> 중 의심 품목
+                    <span class="keep-phrase">107개와</span> 알림 품목
+                    <span class="keep-phrase">34개를</span> 선별했습니다.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
         <article aria-labelledby="insa-title" class="project" data-color="pink" id="insa">
           <section class="panel panel-top">
             <header class="project-header">
               <p class="context">네이버 부스트캠프 AI Tech 7기 최종 프로젝트</p>
-              <h2 id="insa-title" tabindex="-1">인사를 부탁해</h2>
+              <h2 id="insa-title" tabindex="-1">인사를 부탁해 (Boostcamp)</h2>
               <p class="kind">360도 평가 자동화 서비스</p>
             </header>
             <button
@@ -711,7 +799,7 @@
           <section class="panel panel-top">
             <header class="project-header">
               <p class="context">네이버 부스트캠프 AI Tech 7기</p>
-              <h2 id="generation-title" tabindex="-1">수능형 문제 풀이</h2>
+              <h2 id="generation-title" tabindex="-1">수능형 문제 풀이 (Boostcamp)</h2>
               <p class="kind">Generation for NLP</p>
             </header>
             <button
@@ -799,7 +887,7 @@
           <section class="panel panel-top">
             <header class="project-header">
               <p class="context">네이버 부스트캠프 AI Tech 7기</p>
-              <h2 id="datacentric-title" tabindex="-1">뉴스 주제 분류</h2>
+              <h2 id="datacentric-title" tabindex="-1">뉴스 주제 분류 (Boostcamp)</h2>
               <p class="kind">Data-Centric NLP</p>
             </header>
             <button
@@ -883,7 +971,7 @@
           <section class="panel panel-top">
             <header class="project-header">
               <p class="context">네이버 부스트캠프 AI Tech 7기</p>
-              <h2 id="odqa-title" tabindex="-1">오픈도메인 질의응답 (ODQA)</h2>
+              <h2 id="odqa-title" tabindex="-1">오픈도메인 질의 응답 (Boostcamp)</h2>
               <p class="kind">Open-Domain Question Answering</p>
             </header>
             <button
@@ -977,7 +1065,7 @@
           <section class="panel panel-top">
             <header class="project-header">
               <p class="context">네이버 부스트캠프 AI Tech 7기</p>
-              <h2 id="sts-title" tabindex="-1">문장 유사도 예측 (STS)</h2>
+              <h2 id="sts-title" tabindex="-1">문장 유사도 구축 (Boostcamp)</h2>
               <p class="kind">Semantic Text Similarity</p>
             </header>
             <button
@@ -1059,95 +1147,6 @@
             </ul>
           </section>
         </article>
-        <article aria-labelledby="trade-title" class="project" data-color="coral" id="trade">
-          <section class="panel panel-top">
-            <header class="project-header">
-              <p class="context">제1회 무역통계 활용·분석 경진대회</p>
-              <h2 id="trade-title" tabindex="-1">우회수출 위험 품목 상시 감시</h2>
-              <p class="kind">무역통계 이상탐지</p>
-            </header>
-            <button
-              aria-controls="image-dialog"
-              aria-haspopup="dialog"
-              aria-label="우회수출 위험 품목 감시 대시보드 크게 보기"
-              class="stage"
-              data-gallery="trade"
-              data-image="0"
-              type="button"
-            >
-              <img
-                alt="우회수출 위험 품목 감시 대시보드"
-                decoding="async"
-                loading="lazy"
-                src="assets/trade-dashboard.png"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>우회수출 위험 품목 감시 대시보드</span><span class="stage-more">크게 보기</span></span
-              >
-            </button>
-          </section>
-          <section class="panel panel-bottom">
-            <div class="about">
-              <p class="project-intro">
-                <span class="intro-sentence"
-                  >공개 무역통계에서 우회수출 위험이 있는 품목을 선별하는 분석 프레임워크입니다.</span
-                >
-                <span class="intro-sentence"
-                  >품목별 거래 흐름과 관세 차이를 분석해 추가 확인이 필요한 대상을 좁힙니다.</span
-                >
-              </p>
-              <dl class="facts">
-                <dt>담당</dt>
-                <dd>무역통계 분석 및 결과 시각화</dd>
-                <dt>수상</dt>
-                <dd>장려상 (172팀 중 4위)</dd>
-                <dt>기술</dt>
-                <dd>ECOD, Isolation Forest, HBOS, Conformal p-value, BH FDR</dd>
-                <dt>링크</dt>
-                <dd>
-                  <div class="links">
-                    <a
-                      href="https://www.customs.go.kr/kcs/na/ntt/selectNttInfo.do?bbsId=1362&amp;mi=2891&amp;nttSn=10175787&amp;nttSnUrl=7bd3ca14c15d340efb2d5104fd209075"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      >대회 결과</a
-                    ><a href="assets/trade-presentation.pdf" rel="noopener noreferrer" target="_blank">발표 자료</a
-                    ><button
-                      aria-controls="detail-dialog"
-                      aria-haspopup="dialog"
-                      class="detail-trigger"
-                      data-details="trade"
-                      type="button"
-                    >
-                      구현 과정
-                    </button>
-                  </div>
-                </dd>
-              </dl>
-            </div>
-            <ul class="contributions">
-              <li class="contribution">
-                <h3>위험 지표 구성</h3>
-                <div>
-                  <p>공개 무역통계의 품목별 거래 흐름과 관세 차이를 분석했습니다.</p>
-                  <p>
-                    우회수출 위험을 <span class="keep-phrase">살펴볼 수 있도록</span> 분석 결과를 지표로 정리했습니다.
-                  </p>
-                </div>
-              </li>
-              <li class="contribution">
-                <h3>품목 선별과 시각화</h3>
-                <div>
-                  <p>비지도 이상탐지 결과를 의심 품목 순위와 대시보드로 연결했습니다.</p>
-                  <p>
-                    <span class="keep-phrase">4,063개 품목</span> 중 의심 품목
-                    <span class="keep-phrase">107개와</span> 알림 품목
-                    <span class="keep-phrase">34개를</span> 선별했습니다.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </section>
-        </article>
       </main>
     </div>
     <dialog aria-labelledby="dialog-title" class="image-dialog" id="image-dialog">
@@ -1218,23 +1217,23 @@
           ]
         },
         "insa": {
-          "title": "인사를 부탁해",
+          "title": "인사를 부탁해 (Boostcamp)",
           "items": [{"src": "assets/insa-report.webp", "caption": "사용자가 확인하는 평가 결과 화면"}]
         },
         "generation": {
-          "title": "수능형 문제 풀이",
+          "title": "수능형 문제 풀이 (Boostcamp)",
           "items": [{"src": "assets/generation-data.webp", "caption": "학습 데이터의 선택지 수와 정답 분포"}]
         },
         "datacentric": {
-          "title": "뉴스 주제 분류",
+          "title": "뉴스 주제 분류 (Boostcamp)",
           "items": [{"src": "assets/datacentric-translation.webp", "caption": "번역기별 역번역 문장 비교"}]
         },
         "odqa": {
-          "title": "오픈도메인 질의응답 (ODQA)",
+          "title": "오픈도메인 질의 응답 (Boostcamp)",
           "items": [{"src": "assets/odqa-sweep.webp", "caption": "Reader 학습 설정과 EM 점수 비교"}]
         },
         "sts": {
-          "title": "문장 유사도 예측 (STS)",
+          "title": "문장 유사도 구축 (Boostcamp)",
           "items": [{"src": "assets/sts-labels.webp", "caption": "학습 및 검증 데이터의 라벨 분포"}]
         },
         "oxide": {
