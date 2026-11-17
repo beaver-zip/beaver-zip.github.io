@@ -31,14 +31,10 @@
   --rule: #dfe2e5;
   --marker: #e6e8ea;
   --side: 320px;
-  --gutter: 56px;
+  --gutter: 32px;
 }
 
-/* 바탕색 팔레트 20개. 흰 바탕·검은 글자 위에 얹는 밝고 부드러운 색이고, 그 위 글자는 항상 검정.
-   프로젝트에 색을 주려면 index.html의 <article class="project" data-color="이름">에 이름을 적는다.
-   팔레트 뒤쪽부터 차례로 배정한다.
-   사용 중: clay gold aqua sky lavender orchid pink tomato amber blue magenta coral
-   여분: cyan lime yellow periwinkle green orange violet mint */
+/* 넓은 배경에서도 편안하도록 색의 강도와 밝기를 비슷하게 맞춘다. */
 .project {
   --stage: #e6e8ea;
 }
@@ -76,51 +72,51 @@
 }
 
 .project[data-color='coral'] {
-  --stage: #de868f;
+  --stage: #dbad9c;
 }
 
 .project[data-color='magenta'] {
-  --stage: #e289d4;
+  --stage: #cdb3d2;
 }
 
 .project[data-color='blue'] {
-  --stage: #7aa3da;
+  --stage: #a4cbc6;
 }
 
 .project[data-color='amber'] {
-  --stage: #e8bb81;
+  --stage: #ddd4a5;
 }
 
 .project[data-color='tomato'] {
-  --stage: #dc7e6c;
+  --stage: #b3bfdf;
 }
 
 .project[data-color='pink'] {
-  --stage: #e8acc7;
+  --stage: #e3c1a4;
 }
 
 .project[data-color='orchid'] {
-  --stage: #cc9ee1;
+  --stage: #c1cea0;
 }
 
 .project[data-color='lavender'] {
-  --stage: #c2bae7;
+  --stage: #d9b2c0;
 }
 
 .project[data-color='sky'] {
-  --stage: #b0d3ec;
+  --stage: #bdb5d8;
 }
 
 .project[data-color='aqua'] {
-  --stage: #a3e3df;
+  --stage: #accbdd;
 }
 
 .project[data-color='gold'] {
-  --stage: #efd78b;
+  --stage: #e2c789;
 }
 
 .project[data-color='clay'] {
-  --stage: #bb9d8e;
+  --stage: #a9cbb6;
 }
 
 * {
@@ -313,6 +309,7 @@ h2:focus {
 
 .main {
   min-width: 0;
+  container-type: inline-size;
 }
 
 /* 프로젝트 하나 = 위아래 두 화면. 위: 제목과 대표 화면, 아래: 설명 */
@@ -347,8 +344,8 @@ h2:focus {
 
 .project-header h2 {
   white-space: nowrap;
-  margin: 6px 0 10px -0.04em;
-  font-size: clamp(44px, 6.4vw, 88px);
+  margin: 8px 0 10px;
+  font-size: clamp(14px, 5.5cqi, 42px);
   font-weight: 800;
   line-height: 1.1;
   letter-spacing: -0.035em;
@@ -367,7 +364,7 @@ h2:focus {
   flex-direction: column;
   width: 100%;
   margin-top: 28px;
-  padding: 28px var(--gutter) 20px 28px;
+  padding: 28px var(--gutter) 20px;
   background: var(--stage);
   text-align: left;
 }
@@ -385,7 +382,7 @@ h2:focus {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 6px 24px;
-  padding: 14px 0 0 28px;
+  padding: 14px 0 0;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -402,9 +399,9 @@ h2:focus {
 
 .about {
   display: grid;
-  grid-template-columns: minmax(0, 31em) minmax(240px, 340px);
+  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 1fr);
   justify-content: space-between;
-  gap: 2.4em 64px;
+  gap: 2.4em 36px;
   margin-bottom: min(4.2em, 5vh);
 }
 
@@ -449,12 +446,12 @@ h2:focus {
 
 /* 한 일: 왼쪽에 주제, 오른쪽에 문장. 줄 하나가 주제 하나를 묶음 */
 .contributions {
-  max-width: 62em;
+  width: 100%;
 }
 
 .contribution {
   display: grid;
-  grid-template-columns: 11em minmax(0, 36em);
+  grid-template-columns: 11em minmax(0, 1fr);
   gap: 4px 32px;
   padding: 1.3em 0 1.4em;
   border-top: 1px solid var(--rule);
@@ -585,7 +582,7 @@ h2:focus {
 
 /* 구현 과정 */
 .detail-dialog {
-  width: min(800px, calc(100vw - 40px));
+  width: min(960px, calc(100vw - 40px));
   max-height: calc(100dvh - 40px);
   color: var(--ink);
   background: #fff;
@@ -607,6 +604,11 @@ h2:focus {
   line-height: 1.5;
 }
 
+.detail-modal-close {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
 .detail-modal-content {
   min-height: 0;
   overflow-y: auto;
@@ -620,7 +622,7 @@ h2:focus {
 }
 
 .detail-section h3 {
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   font-size: 17px;
   font-weight: 800;
   line-height: 1.6;
@@ -637,6 +639,23 @@ h2:focus {
   text-wrap: pretty;
 }
 
+.detail-section p {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+.detail-sentence {
+  display: block;
+  text-wrap: balance;
+}
+
+.detail-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
 .detail-section ul {
   padding-left: 20px;
   list-style: disc;
@@ -644,7 +663,38 @@ h2:focus {
 
 .detail-section p + p,
 .detail-section li + li {
-  margin-top: 10px;
+  margin-top: 18px;
+}
+
+.architecture {
+  margin: 20px 0;
+}
+
+.architecture a {
+  display: block;
+}
+
+.architecture img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: min(56dvh, 480px);
+  margin-inline: auto;
+}
+
+.architecture figcaption {
+  margin-top: 8px;
+  color: var(--sub);
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (min-width: 861px) and (max-width: 1100px) {
+  .about {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -730,10 +780,6 @@ h2:focus {
     grid-template-columns: 1fr;
   }
 
-  .project-header h2 {
-    white-space: normal;
-  }
-
   .kind {
     font-size: 19px;
   }
@@ -743,16 +789,12 @@ h2:focus {
   }
 
   .stage {
-    padding: 20px 12px 16px;
+    padding: 20px var(--gutter) 16px;
   }
 
   .stage img {
     flex: none;
     height: auto;
-  }
-
-  .stage-caption {
-    padding-left: 8px;
   }
 
   .contribution {

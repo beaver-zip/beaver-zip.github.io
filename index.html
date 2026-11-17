@@ -11,8 +11,8 @@
     <meta content="#ffffff" name="theme-color" />
     <title>이한서 포트폴리오</title>
     <link as="font" crossorigin href="assets/fonts/nanum-regular.woff2" rel="preload" type="font/woff2" />
-    <link href="assets/portfolio.css?v=20261116-16" rel="stylesheet" />
-    <script defer src="assets/portfolio.js?v=20261116-16"></script>
+    <link href="assets/portfolio.css?v=20261117-6" rel="stylesheet" />
+    <script defer src="assets/portfolio.js?v=20261117-4"></script>
   </head>
   <body>
     <a class="skip-link" href="#projects">본문으로 이동</a>
@@ -73,40 +73,27 @@
             <button
               aria-controls="image-dialog"
               aria-haspopup="dialog"
-              aria-label="업무 기록을 검색하고 결과물을 생성하는 채팅 크게 보기"
+              aria-label="업무 기록을 검색하고 답변·문서를 만드는 채팅 크게 보기"
               class="stage"
               data-gallery="sillog"
               data-image="0"
               type="button"
             >
-              <img
-                alt="업무 기록을 검색하고 결과물을 생성하는 채팅"
-                decoding="async"
-                loading="lazy"
-                src="assets/sillog-chat-20261115.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>업무 기록을 검색하고 결과물을 생성하는 채팅</span
-                ><span class="stage-more">화면 6개 모두 보기</span></span
-              >
+              <img alt="업무 기록을 검색하고 답변·문서를 만드는 채팅" decoding="async" loading="lazy" src="assets/sillog-chat-20261117.webp" />
+              <span aria-hidden="true" class="stage-caption"><span>업무 기록을 검색하고 답변·문서를 만드는 채팅</span><span class="stage-more">화면 8개 모두 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >여러 앱과 웹에 흩어진 사용 기록을 업무별로 정리하고, 답변과 문서 작성에 활용하는 macOS
-                  앱입니다.</span
-                >
-                <span class="intro-sentence"
-                  >지난 작업에 쓴 자료를 다시 찾아 다음 업무에
-                  <span class="keep-phrase">활용할 수 있도록</span> 개발하고 있습니다.</span
-                >
+                <span class="intro-sentence">여러 앱과 웹에 흩어진 사용 기록을 업무별로 정리하는 macOS 앱입니다.</span>
+                <span class="intro-sentence">정리한 기록과 연결한 서비스의 자료를 찾아, 출처가 있는 답변과 문서를 만듭니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
-                <dd>앱 기능 개발, 개인정보 보호 및 개발·배포 자동화</dd>
+                <dd>채팅·커넥터 개발, 민감정보 분류 및 검증·배포 자동화</dd>
                 <dt>기술</dt>
-                <dd>SwiftUI, ScreenCaptureKit, Vision OCR, SQLite, OAuth, Laya, Promptfoo, GitHub Actions</dd>
+                <dd>SwiftUI, ScreenCaptureKit, Vision OCR, SQLite, LangGraph-Swift, Laya Multilingual, Promptfoo, GitHub Actions</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -128,38 +115,31 @@
             </div>
             <ul class="contributions">
               <li class="contribution">
-                <h3>채팅과 커넥터</h3>
+                <h3>채팅과 자료 연결</h3>
                 <div>
-                  <p>업무 기록과 외부 자료를 검색해 출처와 함께 답변하는 채팅을 개발했습니다.</p>
-                  <p>
-                    서비스 연결 관리와 도구 실행 표시, <span class="keep-phrase">결과물 버전 관리</span>도 구현했습니다.
-                  </p>
+                  <p>업무 기록과 외부 자료를 검색하고 출처를 표시하는 채팅을 개발했습니다.</p>
+                  <p>서비스 인증과 연결 관리, 도구 실행 표시, 대화·결과물의 버전 관리를 구현했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
-                <h3>개인정보 보호</h3>
+                <h3>민감정보 분류</h3>
                 <div>
-                  <p><span class="keep-phrase">PII·API 키 마스킹을</span> 구현했습니다.</p>
-                  <p>
-                    캡스톤디자인용 버전에는 <span class="keep-phrase">Laya 로컬</span> 분류기를 연결해 민감한 기록을
-                    외부 전송과 검색에서 제외했습니다.
-                  </p>
+                  <p>개인정보와 API 키를 외부 전송 전에 가리는 마스킹을 구현했습니다.</p>
+                  <p>캡스톤 버전에는 Laya 분류기를 학습·연결해 민감한 화면 기록을 AI 전송과 채팅 검색에서 제외했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
-                <h3>스킬 평가</h3>
+                <h3>스킬 설계와 평가</h3>
                 <div>
-                  <p>작업별 스킬의 수행 절차와 결과물 형식을 정의했습니다.</p>
-                  <p>Promptfoo로 지시 준수 여부와 수정 전후 응답을 비교했습니다.</p>
+                  <p>문서 작성·리서치 등 6개 스킬의 수행 절차와 결과물 형식을 정리했습니다.</p>
+                  <p>Promptfoo로 변경 전후 응답의 지시 준수 여부를 같은 기준으로 비교했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
                 <h3>검증과 배포 자동화</h3>
                 <div>
-                  <p><span class="keep-phrase">GitHub Actions로</span> PR 빌드·테스트와 앱 번들 실행을 검사했습니다.</p>
-                  <p>
-                    <span class="keep-phrase">서명·공증·배포를</span> 자동화하고 점검 CLI와 개발 문서를 작성했습니다.
-                  </p>
+                  <p>GitHub Actions로 빌드·테스트와 앱 번들 실행 검사를 자동화했습니다.</p>
+                  <p>앱 서명·공증·DMG 배포와 Homebrew 설치 정보 갱신까지 연결했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -192,19 +172,16 @@
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >공시·재무제표·뉴스와 금융 법령을 함께 살펴야 하는 애널리스트의 기업 조사를 돕는 AI
-                  서비스입니다.</span
-                >
-                <span class="intro-sentence">대회 이후에도 개인 프로젝트로 분석·검색·채팅 기능을 개선했습니다.</span>
+                <span class="intro-sentence">공시·재무제표·뉴스를 분석하고 금융 법령을 검색해 기업 조사를 돕는 AI 서비스입니다.</span>
+                <span class="intro-sentence">기업 분석 보고서와 법령 질의응답을 한곳에서 제공하며, 수치와 답변의 근거를 함께 보여줍니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
-                <dd>금융 분석 기능 개발 및 서비스 개선</dd>
-                <dt>수상</dt>
+                <dd>기업 분석 보고서 개발, 대회 이후 검색·채팅 고도화</dd>
+                <dt>성과</dt>
                 <dd>우수상 (63팀 중 3위)</dd>
                 <dt>기술</dt>
-                <dd>FastAPI, LangGraph, Weaviate, Neo4j, OpenDART API, Tavily</dd>
+                <dd>React, TypeScript, FastAPI, LangGraph, Claude, Weaviate, Neo4j, SQLite</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -227,32 +204,29 @@
               <li class="contribution">
                 <h3>보고서 생성</h3>
                 <div>
-                  <p>대회에서 공시·재무제표·뉴스를 분석 보고서와 차트로 연결했습니다.</p>
-                  <p>이후 수치 추출·계산을 <span class="keep-phrase">DART API와</span> Python으로 바꿨습니다.</p>
+                  <p>공시·재무제표·뉴스 수집부터 분석과 차트 생성까지 LangGraph로 연결했습니다.</p>
+                  <p>대회 이후 재무 수치의 추출·계산을 DART API와 Python으로 분리했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
-                <h3>수치·품질 검증</h3>
+                <h3>수치·근거 검증</h3>
                 <div>
-                  <p>16개 기업의 재무 수치를 공시와 대조하고, 검증에 실패한 문장은 제외했습니다.</p>
-                  <p>연간 실적 계산과 정정 공시 반영을 보완하고 회귀 테스트·빌드를 자동화했습니다.</p>
+                  <p>16개 기업의 연간 매출·영업이익·순이익을 공시와 대조했습니다.</p>
+                  <p>문장별 근거를 검증하고 재작성하며, 통과하지 못한 문장은 결과에서 제외했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
                 <h3>법령 검색</h3>
                 <div>
-                  <p>조문 간 인용·위임 관계를 그래프로 연결하고 검색과 재정렬에 반영했습니다.</p>
+                  <p>키워드·의미 검색과 재정렬에 조문 간 인용·위임 관계 탐색을 결합했습니다.</p>
                   <p>별표의 표 구조를 복원하고 위임 관계를 법령 API와 대조했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
                 <h3>통합 채팅</h3>
                 <div>
-                  <p>기업·법령·뉴스 작업을 병렬로 실행해 근거를 모아 답변하도록 했습니다.</p>
-                  <p>
-                    모호한 기업명을 다시 확인하고 <span class="keep-phrase">처리 과정</span>과 답변을 실시간으로
-                    표시했습니다.
-                  </p>
+                  <p>질문에 필요한 기업·법령·뉴스 작업을 병렬로 실행하고 근거를 모아 답하도록 했습니다.</p>
+                  <p>모호한 기업명을 다시 확인하고 처리 과정과 답변을 실시간으로 표시했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -268,41 +242,29 @@
             <button
               aria-controls="image-dialog"
               aria-haspopup="dialog"
-              aria-label="피싱 상황에서 선택하며 진행하는 화면 크게 보기"
+              aria-label="사례 기반 피싱 예방 체험의 시작 화면 크게 보기"
               class="stage"
               data-gallery="sos"
               data-image="0"
               type="button"
             >
-              <img
-                alt="피싱 상황에서 선택하며 진행하는 화면"
-                decoding="async"
-                loading="lazy"
-                src="assets/sos-scenario.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>피싱 상황에서 선택하며 진행하는 화면</span
-                ><span class="stage-more">화면 2개 모두 보기</span></span
-              >
+              <img alt="사례 기반 피싱 예방 체험의 시작 화면" decoding="async" loading="lazy" src="assets/sos-home-source.jpg" />
+              <span aria-hidden="true" class="stage-caption"><span>사례 기반 피싱 예방 체험의 시작 화면</span><span class="stage-more">화면 3개 모두 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >실제 피싱 사례를 선택형 시나리오로 체험하며 대응 방법을 익히는 웹 서비스입니다.</span
-                >
-                <span class="intro-sentence"
-                  >체험 후에는 선택 경로와 놓친 위험 신호, 더 안전한 대응 방법을
-                  <span class="keep-phrase">확인할 수 있습니다</span>.</span
-                >
+                <span class="intro-sentence">실제 피싱·스캠 사례를 선택형 시나리오로 체험하며 대응 방법을 익히는 웹 서비스입니다.</span>
+                <span class="intro-sentence">선택에 따라 달라지는 상황을 겪고, 체험 후에는 놓친 위험 신호와 더 안전한 대응 방법을 돌아봅니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
-                <dd>시나리오·삽화 생성 기능 개발</dd>
-                <dt>수상</dt>
+                <dd>분기 시나리오·삽화 생성 기능 개발</dd>
+                <dt>성과</dt>
                 <dd>최우수상 (104팀 중 2위)</dd>
                 <dt>기술</dt>
-                <dd>Next.js, FastAPI, Gemini API, Imagen API</dd>
+                <dd>Next.js, TypeScript, Zustand, FastAPI, LiteLLM, Gemini, Imagen, Docker</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -332,12 +294,12 @@
               <li class="contribution">
                 <h3>분기 시나리오</h3>
                 <div>
-                  <p>Gemini를 장면별로 호출해 너비 우선 탐색(BFS) 순서로 이야기와 선택지를 확장했습니다.</p>
-                  <p>분기 깊이와 종료 조건은 코드로 관리했습니다.</p>
+                  <p>Gemini를 장면별로 호출하고 너비 우선 탐색(BFS) 순서로 이야기와 선택지를 확장했습니다.</p>
+                  <p>분기 깊이와 종료 조건을 코드로 관리하고, 생성된 트리의 연결 구조를 검증했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
-                <h3>대화 맥락 유지</h3>
+                <h3>이전 선택 반영</h3>
                 <div>
                   <p>과거 장면은 요약하고 최근 장면과 선택지는 그대로 전달했습니다.</p>
                   <p>입력 분량을 줄이면서 이전 선택이 후속 장면에 반영되도록 했습니다.</p>
@@ -346,8 +308,8 @@
               <li class="contribution">
                 <h3>삽화 생성</h3>
                 <div>
-                  <p>Imagen에 공통 인물 정보를 전달해 장면마다 외형을 유지했습니다.</p>
-                  <p>호출 제한에 맞춘 배치 처리와 실패 요청 재시도로 생성을 이어가도록 했습니다.</p>
+                  <p>공통 인물 정보를 이미지 프롬프트에 넣어 장면마다 외형을 맞추도록 했습니다.</p>
+                  <p>호출 제한에 맞춘 배치 처리와 실패한 이미지의 재시도를 구현했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -363,40 +325,29 @@
             <button
               aria-controls="image-dialog"
               aria-haspopup="dialog"
-              aria-label="유튜브 영상에서 확인하는 판정 결과 크게 보기"
+              aria-label="유튜브 시청 화면에서 확인하는 판정 결과 크게 보기"
               class="stage"
               data-gallery="bbongguard"
               data-image="0"
               type="button"
             >
-              <img
-                alt="유튜브 영상에서 확인하는 판정 결과"
-                decoding="async"
-                loading="lazy"
-                src="assets/bbongguard-video.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>유튜브 영상에서 확인하는 판정 결과</span><span class="stage-more">화면 2개 모두 보기</span></span
-              >
+              <img alt="유튜브 시청 화면에서 확인하는 판정 결과" decoding="async" loading="lazy" src="assets/bbongguard-video-source.webp" />
+              <span aria-hidden="true" class="stage-caption"><span>유튜브 시청 화면에서 확인하는 판정 결과</span><span class="stage-more">화면 3개 모두 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >유튜브 영상의 주장을 확인하려고 별도로 자료를 찾는 번거로움을 줄이는
-                  <span class="keep-phrase">Chrome 확장 프로그램</span>입니다.</span
-                >
-                <span class="intro-sentence"
-                  >시청 화면에서 주장별 판정과 검증 근거를 <span class="keep-phrase">확인할 수 있습니다</span>.</span
-                >
+                <span class="intro-sentence">유튜브 영상의 주장을 외부 자료와 대조해 사실 확인을 돕는 Chrome 확장 프로그램입니다.</span>
+                <span class="intro-sentence">텍스트·썸네일·음성을 분석하고, 시청 화면에서 주장별 판정과 근거 출처를 보여줍니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
-                <dd>서비스 기획 및 확장 프로그램·서버 개발</dd>
-                <dt>수상</dt>
+                <dd>서비스 기획, 확장 프로그램·분석 서버 개발</dd>
+                <dt>성과</dt>
                 <dd>A+ (8팀 중 1위)</dd>
                 <dt>기술</dt>
-                <dd>Chrome Extensions API, FastAPI, Tavily Search API, Google Cloud Vision API, Naver CLOVA Speech</dd>
+                <dd>Chrome Extensions API, JavaScript, FastAPI, Sentence Transformers, GPT-4o, Tavily, Cloud Vision OCR, CLOVA Speech</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -422,23 +373,24 @@
             </div>
             <ul class="contributions">
               <li class="contribution">
-                <h3>서비스 개발</h3>
+                <h3>확장 프로그램·서버</h3>
                 <div>
-                  <p><span class="keep-phrase">Chrome 확장 프로그램</span>과 FastAPI 서버를 개발했습니다.</p>
-                  <p>
-                    주장 추출, 근거 검색·재정렬, LLM 판정으로 이어지는 <span class="keep-phrase">처리 과정</span>과 결과
-                    화면을 구현했습니다.
-                  </p>
+                  <p>유튜브 화면에서 분석을 요청하는 Chrome 확장 프로그램과 FastAPI 서버를 개발했습니다.</p>
+                  <p>분석 진행 상황을 전송하고, 결과 요약과 상세 근거를 나누어 표시했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
-                <h3>검증 근거 연결</h3>
+                <h3>주장별 근거 검색</h3>
                 <div>
-                  <p>썸네일 OCR과 음성 분석 결과를 텍스트 검증에 반영했습니다.</p>
-                  <p>
-                    요약 결과와 상세 근거를 <span class="keep-phrase">살펴볼 수 있도록</span> 주장별 판정과 참고 출처를
-                    화면에 연결했습니다.
-                  </p>
+                  <p>영상의 주장을 추출하고 웹 검색 결과를 관련성·출처·게시 시점으로 정렬했습니다.</p>
+                  <p>LLM 판정과 함께 근거 문서의 제목과 링크를 제공했습니다.</p>
+                </div>
+              </li>
+              <li class="contribution">
+                <h3>멀티모달 통합</h3>
+                <div>
+                  <p>음성 인식 결과를 텍스트 분석에 재사용하고, 썸네일 OCR·비전 분석을 연결했습니다.</p>
+                  <p>텍스트 검증을 중심으로 이미지·음성의 보조 분석 결과를 종합하도록 했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -460,34 +412,23 @@
               data-image="0"
               type="button"
             >
-              <img
-                alt="상담자별 추천 일자리 목록"
-                decoding="async"
-                loading="lazy"
-                src="assets/veteran-jobs.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>상담자별 추천 일자리 목록</span><span class="stage-more">화면 2개 모두 보기</span></span
-              >
+              <img alt="상담자별 추천 일자리 목록" decoding="async" loading="lazy" src="assets/veteran-jobs-source.webp" />
+              <span aria-hidden="true" class="stage-caption"><span>상담자별 추천 일자리 목록</span><span class="stage-more">화면 2개 모두 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >온라인 구직이 익숙하지 않은 고령자를 위해 전화 상담으로 희망 조건을 듣고 일자리를 추천하는
-                  서비스입니다.</span
-                >
-                <span class="intro-sentence"
-                  >관리자 화면에서는 상담 기록과 추천 결과를 <span class="keep-phrase">확인할 수 있습니다</span>.</span
-                >
+                <span class="intro-sentence">온라인 구직이 익숙하지 않은 고령자를 위해 전화 상담으로 희망 조건을 듣고 일자리를 추천하는 서비스입니다.</span>
+                <span class="intro-sentence">상담 내용을 공공 구인정보와 연결하고, 관리자가 추천 이유와 상담 기록을 확인해 후속 안내를 할 수 있도록 돕습니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
-                <dd>일자리 추천 기능 및 프로토타입 개발</dd>
-                <dt>수상</dt>
+                <dd>일자리 추천·데이터 수집·프로토타입 개발</dd>
+                <dt>성과</dt>
                 <dd>장려상 (195팀 중 4위)</dd>
                 <dt>기술</dt>
-                <dd>FastAPI, LangGraph, Twilio API, Streamlit, 문장 임베딩</dd>
+                <dd>FastAPI, LangGraph, Twilio, Upstage Embeddings, Gemini, RTZR STT, Streamlit, React</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -516,15 +457,22 @@
               <li class="contribution">
                 <h3>추천 데이터 구성</h3>
                 <div>
-                  <p>공공 구인 공고와 직업정보를 수집했습니다.</p>
-                  <p>거주지와 일자리 사이의 거리, 희망 조건을 기준으로 추천 후보를 선별했습니다.</p>
+                  <p>공공 구인 공고를 수집하고 필수 정보가 갖춰진 공고를 추천 데이터로 정리했습니다.</p>
+                  <p>거주 지역으로 후보를 좁히고, 주소를 좌표로 바꾸어 일자리까지의 거리를 계산했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
-                <h3>추천 기능 개발</h3>
+                <h3>맞춤 일자리 추천</h3>
                 <div>
-                  <p>후보 공고에 임베딩 유사도를 적용해 상담 내용과 관련성이 높은 일자리를 추천했습니다.</p>
-                  <p>추천 결과를 확인하는 프로토타입 웹페이지도 개발했습니다.</p>
+                  <p>상담 프로필과 공고의 임베딩 유사도에 거리 점수를 합쳐 추천 순위를 정했습니다.</p>
+                  <p>희망 조건과 공고 내용을 바탕으로 추천 이유를 생성했습니다.</p>
+                </div>
+              </li>
+              <li class="contribution">
+                <h3>프로토타입·결과 연결</h3>
+                <div>
+                  <p>추천 결과를 확인하는 Streamlit 프로토타입을 개발했습니다.</p>
+                  <p>상담 종료 후 추천을 실행하고, 결과를 JSON으로 저장해 관리자 화면에서 활용하도록 했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -540,46 +488,33 @@
             <button
               aria-controls="image-dialog"
               aria-haspopup="dialog"
-              aria-label="문헌 정보 추출과 RAG 레시피 생성 흐름 크게 보기"
+              aria-label="논문을 바탕으로 정리한 제조 레시피 생성 흐름 크게 보기"
               class="stage"
               data-gallery="oxide"
               data-image="0"
               type="button"
             >
-              <img
-                alt="문헌 정보 추출과 RAG 레시피 생성 흐름"
-                decoding="async"
-                loading="lazy"
-                src="assets/oxide-workflow.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>문헌 정보 추출과 RAG 레시피 생성 흐름</span
-                ><span class="stage-more">화면 2개 모두 보기</span></span
-              >
+              <img alt="논문을 바탕으로 정리한 제조 레시피 생성 흐름" decoding="async" loading="lazy" src="assets/architecture-oxide.svg?v=20261117-7" />
+              <span aria-hidden="true" class="stage-caption"><span>논문을 바탕으로 정리한 제조 레시피 생성 흐름</span><span class="stage-more">크게 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >산화물 TFT의 이동도와 안정성 사이의 상충 관계를 고려해 제조 레시피를 제안하는 연구입니다.</span
-                >
-                <span class="intro-sentence"
-                  >아주대학교 인공지능학과 학부연구생으로 신소재공학과 연구실과의 공동 연구에 참여했습니다.</span
-                >
+                <span class="intro-sentence">산화물 TFT의 목표 이동도와 안정성에 맞는 제조 레시피를 제안하는 연구입니다.</span>
+                <span class="intro-sentence">실험 논문에서 공정·성능 정보를 추출하고, 관련 사례를 검색해 재료와 증착·후처리 조건을 생성합니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
                 <dd>모델 실패 사례 분석 및 평가 방식 검토</dd>
-                <dt>수상</dt>
+                <dt>성과</dt>
                 <dd>최우수상 (137팀 중 2위)</dd>
                 <dt>기술</dt>
-                <dd>문헌 정보 추출, Pareto frontier, RAG, vLLM, LLM-as-a-Judge</dd>
+                <dd>EXAONE-4.0-32B, vLLM, RAG, GPT-4o, LLM-as-a-Judge</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
-                    <a href="https://aifactory.space/ko/page/ask2026" rel="noopener noreferrer" target="_blank"
-                      >대회 페이지</a
-                    ><a href="assets/oxide-paper.pdf" rel="noopener noreferrer" target="_blank">논문</a
+                    <a href="assets/oxide-paper.pdf" rel="noopener noreferrer" target="_blank">논문</a
                     ><button
                       aria-controls="detail-dialog"
                       aria-haspopup="dialog"
@@ -595,19 +530,17 @@
             </div>
             <ul class="contributions">
               <li class="contribution">
-                <h3>실패 사례 비교</h3>
+                <h3>실패 유형 분석</h3>
                 <div>
-                  <p>
-                    연구팀의 파이프라인을 적용한 <span class="keep-phrase">EXAONE-4.0-32B와</span> 기준 모델인
-                    <span class="keep-phrase">GPT-4.1-nano의</span> 실패 사례를 비교했습니다.
-                  </p>
+                  <p>EXAONE-4.0-32B와 GPT-4.1-nano의 실패 사례를 비교했습니다.</p>
+                  <p>증착 조건의 수치 정확도 저하와 희귀 재료에서의 성능 저하를 구분해 분석했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
-                <h3>평가 한계 분석</h3>
+                <h3>평가 한계와 개선 방향</h3>
                 <div>
-                  <p>증착 파라미터의 정확도와 희귀 재료에서의 성능 저하를 분석했습니다.</p>
-                  <p>가능한 제조 조건이 여럿일 때 단일 정답과 비교하는 평가 방식의 한계도 정리했습니다.</p>
+                  <p>유효한 공정 경로가 여러 개인데도 단일 참조 레시피와의 차이를 감점하는 문제를 정리했습니다.</p>
+                  <p>공정의 등가성을 반영한 평가와 핵심 수치 제약, 불확실성 표시의 필요성을 제안했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -630,42 +563,27 @@
               data-image="0"
               type="button"
             >
-              <img
-                alt="우회수출 위험 품목 감시 대시보드"
-                decoding="async"
-                loading="lazy"
-                src="assets/trade-dashboard.png"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>우회수출 위험 품목 감시 대시보드</span><span class="stage-more">크게 보기</span></span
-              >
+              <img alt="우회수출 위험 품목 감시 대시보드" decoding="async" loading="lazy" src="assets/trade-dashboard.png" />
+              <span aria-hidden="true" class="stage-caption"><span>우회수출 위험 품목 감시 대시보드</span><span class="stage-more">화면 2개 모두 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >공개 무역통계에서 우회수출 위험이 있는 품목을 선별하는 분석 프레임워크입니다.</span
-                >
-                <span class="intro-sentence"
-                  >품목별 거래 흐름과 관세 차이를 분석해 추가 확인이 필요한 대상을 좁힙니다.</span
-                >
+                <span class="intro-sentence">공개 무역통계에서 우회수출 위험이 있는 품목을 선별하는 분석 프레임워크입니다.</span>
+                <span class="intro-sentence">품목별 거래 흐름과 관세 차이를 분석해 추가 확인이 필요한 대상의 우선순위를 제시합니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
                 <dd>무역통계 분석 및 결과 시각화</dd>
-                <dt>수상</dt>
+                <dt>성과</dt>
                 <dd>장려상 (172팀 중 4위)</dd>
                 <dt>기술</dt>
-                <dd>ECOD, Isolation Forest, HBOS, Conformal p-value, BH FDR</dd>
+                <dd>ECOD, Isolation Forest, HBOS, RRF, Conformal p-value, BH FDR, GMM</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
-                    <a
-                      href="https://www.customs.go.kr/kcs/na/ntt/selectNttInfo.do?bbsId=1362&amp;mi=2891&amp;nttSn=10175787&amp;nttSnUrl=7bd3ca14c15d340efb2d5104fd209075"
-                      rel="noopener noreferrer"
-                      target="_blank"
-                      >대회 결과</a
-                    ><a href="assets/trade-presentation.pdf" rel="noopener noreferrer" target="_blank">발표 자료</a
+                    <a href="assets/trade-presentation.pdf" rel="noopener noreferrer" target="_blank">발표 자료</a
                     ><button
                       aria-controls="detail-dialog"
                       aria-haspopup="dialog"
@@ -684,20 +602,14 @@
                 <h3>위험 지표 구성</h3>
                 <div>
                   <p>공개 무역통계의 품목별 거래 흐름과 관세 차이를 분석했습니다.</p>
-                  <p>
-                    우회수출 위험을 <span class="keep-phrase">살펴볼 수 있도록</span> 분석 결과를 지표로 정리했습니다.
-                  </p>
+                  <p>우회수출 유인과 양국 통계의 불일치를 살펴볼 수 있도록 지표로 정리했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
                 <h3>품목 선별과 시각화</h3>
                 <div>
                   <p>비지도 이상탐지 결과를 의심 품목 순위와 대시보드로 연결했습니다.</p>
-                  <p>
-                    <span class="keep-phrase">4,063개 품목</span> 중 의심 품목
-                    <span class="keep-phrase">107개와</span> 알림 품목
-                    <span class="keep-phrase">34개를</span> 선별했습니다.
-                  </p>
+                  <p>2026년 7월 기준 4,063개 품목에서 의심 품목 107개와 알림 품목 34개를 선별했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -713,35 +625,27 @@
             <button
               aria-controls="image-dialog"
               aria-haspopup="dialog"
-              aria-label="사용자가 확인하는 평가 결과 화면 크게 보기"
+              aria-label="피드백을 취합한 사용자 리뷰 결과 크게 보기"
               class="stage"
               data-gallery="insa"
               data-image="0"
               type="button"
             >
-              <img
-                alt="사용자가 확인하는 평가 결과 화면"
-                decoding="async"
-                loading="lazy"
-                src="assets/insa-report.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>사용자가 확인하는 평가 결과 화면</span><span class="stage-more">크게 보기</span></span
-              >
+              <img alt="피드백을 취합한 사용자 리뷰 결과" decoding="async" loading="lazy" src="assets/insa-review-source.jpeg" />
+              <span aria-hidden="true" class="stage-caption"><span>피드백을 취합한 사용자 리뷰 결과</span><span class="stage-more">화면 2개 모두 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence">동료 평가를 수작업으로 취합하고 전달하는 부담을 줄이는 서비스입니다.</span>
-                <span class="intro-sentence"
-                  >평가 요청부터 피드백 익명화, 취합, 인사고과 보고서 전달까지 자동화합니다.</span
-                >
+                <span class="intro-sentence">동료의 다면평가를 취합해 개인별 피드백과 인사고과 보고서를 만드는 서비스입니다.</span>
+                <span class="intro-sentence">평가 요청과 제출 알림, 피드백 말투 보정, 보고서 전달을 하나의 흐름으로 연결합니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
                 <dd>PM 및 백엔드 기능 개발</dd>
                 <dt>기술</dt>
-                <dd>Streamlit, Flask, SQLite, Upstage API</dd>
+                <dd>Streamlit, Flask, SQLite, LangChain, Solar Pro, ReportLab</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -779,17 +683,15 @@
               <li class="contribution">
                 <h3>알림·보고서 발송</h3>
                 <div>
-                  <p>
-                    팀별 평가 제출 여부를 확인해 미제출자에게 정해진 시점에 알림을 보내고, 생성된 PDF 보고서를
-                    사용자별로 자동 발송하도록 구현했습니다.
-                  </p>
+                  <p>평가 제출 여부와 마감일을 확인해 미제출자에게 알림을 보내도록 구현했습니다.</p>
+                  <p>생성된 PDF 보고서를 사용자별로 자동 발송하는 기능을 연결했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
                 <h3>처리 시간 단축</h3>
                 <div>
                   <p>임베딩·보고서 처리의 병렬화, 도서 데이터 캐시, SQL 일괄 조회를 적용했습니다.</p>
-                  <p>도서 정보 처리와 보고서 생성 시간을 각각 76.2%, 69.2% 줄였습니다.</p>
+                  <p>회고에 기록한 측정에서 도서 정보 처리와 보고서 생성 시간을 각각 76.2%, 69.2% 줄였습니다.</p>
                 </div>
               </li>
             </ul>
@@ -805,35 +707,27 @@
             <button
               aria-controls="image-dialog"
               aria-haspopup="dialog"
-              aria-label="학습 데이터의 선택지 수와 정답 분포 크게 보기"
+              aria-label="학습 데이터의 선택지 수와 정답 분포 (원본 데이터 재시각화) 크게 보기"
               class="stage"
               data-gallery="generation"
               data-image="0"
               type="button"
             >
-              <img
-                alt="학습 데이터의 선택지 수와 정답 분포"
-                decoding="async"
-                loading="lazy"
-                src="assets/generation-data.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>학습 데이터의 선택지 수와 정답 분포</span><span class="stage-more">크게 보기</span></span
-              >
+              <img alt="학습 데이터의 선택지 수와 정답 분포 (원본 데이터 재시각화)" decoding="async" loading="lazy" src="assets/generation-data-source.svg" />
+              <span aria-hidden="true" class="stage-caption"><span>학습 데이터의 선택지 수와 정답 분포 (원본 데이터 재시각화)</span><span class="stage-more">크게 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >한국어 수능형 객관식 문제를 풀도록 소형 언어 모델을 파인튜닝한 프로젝트입니다.</span
-                >
-                <span class="intro-sentence">학습 데이터 구성과 프롬프트에 따른 정답률 변화를 비교했습니다.</span>
+                <span class="intro-sentence">한국어 지문과 질문, 선택지를 읽고 수능형 객관식 문제의 정답을 고르는 언어 모델입니다.</span>
+                <span class="intro-sentence">제한된 GPU 환경에서 소형 모델을 미세 조정하고, 데이터 구성과 프롬프트에 따른 정답률을 비교했습니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
                 <dd>학습 데이터 구성 및 모델 파인튜닝</dd>
                 <dt>기술</dt>
-                <dd>파인튜닝, 프롬프트 엔지니어링, 데이터 증강, Gemini API</dd>
+                <dd>PyTorch, Transformers, TRL, PEFT, bitsandbytes, Qwen2.5, Gemini</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -864,20 +758,15 @@
               <li class="contribution">
                 <h3>학습 데이터 구성</h3>
                 <div>
-                  <p>KorQuAD 문답을 객관식으로 바꾸고 Gemini로 주제와 사전지식 필요 여부를 분류했습니다.</p>
-                  <p>
-                    지문만으로 <span class="keep-phrase">풀 수 있는</span> 문제를 골라 새 질문과 선택지를 생성했습니다.
-                  </p>
+                  <p>Gemini로 문제의 주제와 사전지식 필요 여부를 분류했습니다.</p>
+                  <p>지문만으로 풀 수 있는 문제를 선별해 새 질문과 선택지를 생성하고, KorQuAD 증강도 비교했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
                 <h3>학습과 비교 실험</h3>
                 <div>
-                  <p>지문·질문·선택지를 대화 형식으로 구성해 정답 부분만 학습했습니다.</p>
-                  <p>
-                    출력 형식 지정과 <span class="keep-phrase">zero-shot CoT</span> 프롬프트에 따른 정답률을 같은
-                    모델에서 비교했습니다.
-                  </p>
+                  <p>지문·질문·선택지를 대화 형식으로 구성하고 정답 부분만 학습하도록 설정했습니다.</p>
+                  <p>출력 형식 지정과 zero-shot CoT 프롬프트에 따른 정답률 변화를 같은 모델에서 비교했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -893,36 +782,27 @@
             <button
               aria-controls="image-dialog"
               aria-haspopup="dialog"
-              aria-label="번역기별 역번역 문장 비교 크게 보기"
+              aria-label="번역기별 한국어·일본어 역번역 비교 크게 보기"
               class="stage"
               data-gallery="datacentric"
               data-image="0"
               type="button"
             >
-              <img
-                alt="번역기별 역번역 문장 비교"
-                decoding="async"
-                loading="lazy"
-                src="assets/datacentric-translation.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>번역기별 역번역 문장 비교</span><span class="stage-more">크게 보기</span></span
-              >
+              <img alt="번역기별 한국어·일본어 역번역 비교" decoding="async" loading="lazy" src="assets/datacentric-translation-source.png" />
+              <span aria-hidden="true" class="stage-caption"><span>번역기별 한국어·일본어 역번역 비교</span><span class="stage-more">크게 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >모델 구조를 유지한 채 학습 데이터를 정제하고 증강해 뉴스 주제 분류 성능을 개선한
-                  프로젝트입니다.</span
-                >
-                <span class="intro-sentence">텍스트 손상과 잘못된 라벨을 구분해 처리했습니다.</span>
+                <span class="intro-sentence">뉴스 제목을 일곱 가지 주제로 분류하는 한국어 텍스트 분류 프로젝트입니다.</span>
+                <span class="intro-sentence">모델 구조를 유지한 채 손상된 문장과 잘못된 라벨을 정제하고, 학습 데이터를 증강해 성능을 개선했습니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
                 <dd>학습 데이터 정제 및 증강</dd>
                 <dt>기술</dt>
-                <dd>Gemini API, Cleanlab, DeepL API</dd>
+                <dd>PyTorch, Transformers, RoBERTa, scikit-learn, Cleanlab, Gemini</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -953,15 +833,15 @@
               <li class="contribution">
                 <h3>오류 데이터 정제</h3>
                 <div>
-                  <p>Gemini로 원래 의미를 유지하며 뉴스 제목을 복원하고, 불필요한 설명과 기호를 제거했습니다.</p>
-                  <p>중간 저장과 실패 요청 재시도로 정제 작업을 이어가도록 했습니다.</p>
+                  <p>텍스트 손상과 라벨 오류를 구분하고, Gemini로 뉴스 제목의 의미를 유지하며 문장을 복원했습니다.</p>
+                  <p>중간 저장과 실패 요청 재시도, 불필요한 설명·기호 제거를 적용했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
                 <h3>데이터 증강</h3>
                 <div>
-                  <p>DeepL 역번역과 LLM 생성으로 표현이 다양한 제목과 라벨을 보완했습니다.</p>
-                  <p>단어 중복도를 비교해 유사한 제목을 걸러냈습니다.</p>
+                  <p>한·일 역번역과 예시 기반 LLM 생성으로 표현이 다양한 제목과 라벨을 보완했습니다.</p>
+                  <p>중복 문장과 단어 중복도가 높은 제목을 걸러 학습 데이터를 정리했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -983,29 +863,21 @@
               data-image="0"
               type="button"
             >
-              <img
-                alt="Reader 학습 설정과 EM 점수 비교"
-                decoding="async"
-                loading="lazy"
-                src="assets/odqa-sweep.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>Reader 학습 설정과 EM 점수 비교</span><span class="stage-more">크게 보기</span></span
-              >
+              <img alt="Reader 학습 설정과 EM 점수 비교" decoding="async" loading="lazy" src="assets/odqa-sweep-source.jpeg" />
+              <span aria-hidden="true" class="stage-caption"><span>Reader 학습 설정과 EM 점수 비교</span><span class="stage-more">크게 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >질문과 관련된 문서를 검색하고, 해당 문서에서 정답을 추출하는 한국어 질의응답 모델입니다.</span
-                >
-                <span class="intro-sentence">문서 검색과 답변 추출을 나눠 성능을 검토했습니다.</span>
+                <span class="intro-sentence">한국어 질문에 답할 근거를 위키백과 문서에서 찾는 질의응답 모델입니다.</span>
+                <span class="intro-sentence">키워드·의미 기반 검색으로 관련 문서를 고르고, 독해 모델로 정답에 해당하는 구간을 추출합니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
                 <dd>문서 검색 개선 및 답변 추출 모델 실험</dd>
                 <dt>기술</dt>
-                <dd>Transformers, BM25, DPR, MeCab</dd>
+                <dd>PyTorch, Transformers, RoBERTa, BM25, DPR, Weights &amp; Biases</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -1036,26 +908,15 @@
               <li class="contribution">
                 <h3>검색 점수 보정</h3>
                 <div>
-                  <p>
-                    BM25와 <span class="keep-phrase">Dense Retriever</span> 점수 결합 과정에서 누락된 정규화를
-                    적용했습니다.
-                  </p>
-                  <p>
-                    점수 범위를 맞춰 문서 순위를 계산하고 최종 답변의 <span class="keep-phrase">정확 일치율(EM)</span>을
-                    비교했습니다.
-                  </p>
+                  <p>BM25와 Dense Retriever 점수를 결합하는 과정에서 누락된 정규화를 적용했습니다.</p>
+                  <p>서로 다른 점수의 범위를 맞춘 뒤 최종 답변의 정확 일치율(EM)을 비교했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
                 <h3>답변 추출 실험</h3>
                 <div>
-                  <p>
-                    Reader의 <span class="keep-phrase">입력·답변 길이</span>와 문서 분할 시 겹치는 범위를 조정했습니다.
-                  </p>
-                  <p>
-                    MeCab으로 질문을 증강하고 <span class="keep-phrase">Curriculum Learning</span> 실험용 데이터를
-                    구성했습니다.
-                  </p>
+                  <p>Reader의 입력·답변 길이와 긴 문서를 나눌 때 겹치는 범위를 조정했습니다.</p>
+                  <p>질문 증강과 난이도별 학습도 실험하고, 검증 결과와 실제 질의응답 결과의 차이를 확인했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -1071,35 +932,27 @@
             <button
               aria-controls="image-dialog"
               aria-haspopup="dialog"
-              aria-label="학습 및 검증 데이터의 라벨 분포 크게 보기"
+              aria-label="샘플 수 조정·증강 후 라벨 분포 크게 보기"
               class="stage"
               data-gallery="sts"
               data-image="0"
               type="button"
             >
-              <img
-                alt="학습 및 검증 데이터의 라벨 분포"
-                decoding="async"
-                loading="lazy"
-                src="assets/sts-labels.webp"
-              /><span aria-hidden="true" class="stage-caption"
-                ><span>학습 및 검증 데이터의 라벨 분포</span><span class="stage-more">크게 보기</span></span
-              >
+              <img alt="샘플 수 조정·증강 후 라벨 분포" decoding="async" loading="lazy" src="assets/sts-balanced-source.png" />
+              <span aria-hidden="true" class="stage-caption"><span>샘플 수 조정·증강 후 라벨 분포</span><span class="stage-more">크게 보기</span></span>
             </button>
           </section>
           <section class="panel panel-bottom">
             <div class="about">
               <p class="project-intro">
-                <span class="intro-sentence"
-                  >한국어 문장 두 개의 의미 유사도를 0점에서 5점 사이의 값으로 예측하는 모델입니다.</span
-                >
-                <span class="intro-sentence">데이터 분포와 학습 설정이 예측 성능에 미치는 영향을 비교했습니다.</span>
+                <span class="intro-sentence">한국어 문장 두 개의 의미가 얼마나 비슷한지 0점에서 5점 사이의 값으로 예측하는 모델입니다.</span>
+                <span class="intro-sentence">문장 쌍의 표현과 라벨 분포를 살피고, 사전학습 모델을 미세 조정해 유사도를 계산합니다.</span>
               </p>
               <dl class="facts">
                 <dt>담당</dt>
                 <dd>데이터 구성 및 모델 학습·튜닝</dd>
                 <dt>기술</dt>
-                <dd>PyTorch, Transformers, Optuna, 데이터 증강</dd>
+                <dd>PyTorch, Transformers, DeBERTa-v3, ELECTRA, Optuna, Weights &amp; Biases</dd>
                 <dt>링크</dt>
                 <dd>
                   <div class="links">
@@ -1130,18 +983,15 @@
               <li class="contribution">
                 <h3>데이터 분포 조정</h3>
                 <div>
-                  <p>0점대에 편중된 데이터를 구간별로 조정하고 동일 문장을 짝지어 높은 유사도 데이터를 보완했습니다.</p>
+                  <p>0점대에 편중된 데이터를 구간별로 조정하고 동일 문장 쌍으로 높은 유사도 데이터를 보완했습니다.</p>
                   <p>문장 순서와 조사를 바꿔 증강 전후의 학습 결과를 비교했습니다.</p>
                 </div>
               </li>
               <li class="contribution">
                 <h3>학습과 튜닝</h3>
                 <div>
-                  <p>데이터 로더·모델·평가 지표를 분리한 PyTorch 학습 템플릿을 정리했습니다.</p>
-                  <p>
-                    Optuna로 탐색 코드를 작성하고 DeBERTa-v3에서 <span class="keep-phrase">약 80회</span> 실험하며 검증
-                    성능을 비교했습니다.
-                  </p>
+                  <p>기존 학습 코드를 수정해 Optuna로 하이퍼파라미터를 탐색하도록 구성했습니다.</p>
+                  <p>DeBERTa-v3에서 약 80회 실험하며 입력 길이·학습률 등에 따른 검증 성능을 비교했습니다.</p>
                 </div>
               </li>
             </ul>
@@ -1168,532 +1018,589 @@
       </div>
     </dialog>
     <script id="gallery-data" type="application/json">
+{
+  "finsight": {
+    "title": "Finsight",
+    "items": [
       {
-        "finsight": {
-          "title": "Finsight",
-          "items": [
-            {"src": "assets/finsight-home.png", "caption": "메인 화면"},
-            {"src": "assets/finsight-rag-answer.png", "caption": "법령 질의응답"},
-            {"src": "assets/finsight-report.png", "caption": "기업 분석 보고서"},
-            {"src": "assets/finsight-rag-start.png", "caption": "질문 입력"},
-            {"src": "assets/finsight-citation.png", "caption": "근거 조항과 원문 PDF"},
-            {"src": "assets/finsight-report-search.png", "caption": "기업 검색"},
-            {"src": "assets/finsight-report-stock.png", "caption": "주가 추이"},
-            {"src": "assets/finsight-report-charts.png", "caption": "재무 지표"},
-            {"src": "assets/finsight-report-news.png", "caption": "최근 뉴스 분석"},
-            {"src": "assets/finsight-report-conclusion.png", "caption": "종합 결론"}
-          ]
-        },
-        "veteran": {
-          "title": "Veteran",
-          "items": [
-            {"src": "assets/veteran-jobs.webp", "caption": "상담자별 추천 일자리 목록"},
-            {"src": "assets/veteran-dashboard.webp", "caption": "상담 결과를 확인하는 관리자 화면"}
-          ]
-        },
-        "sos": {
-          "title": "Scam or Safe",
-          "items": [
-            {"src": "assets/sos-scenario.webp", "caption": "피싱 상황에서 선택하며 진행하는 화면"},
-            {"src": "assets/sos-feedback.webp", "caption": "선택 경로와 놓친 단서를 보여주는 화면"}
-          ]
-        },
-        "sillog": {
-          "title": "실록 (SILLOG)",
-          "items": [
-            {"src": "assets/sillog-chat-20261115.webp", "caption": "업무 기록을 검색하고 결과물을 생성하는 채팅"},
-            {"src": "assets/sillog-connectors-20261115.webp", "caption": "외부 서비스 연결과 커넥터 관리"},
-            {"src": "assets/sillog-graph-20261115.webp", "caption": "업무와 자료의 관계를 보여주는 그래프"},
-            {"src": "assets/sillog-organize-20261115.webp", "caption": "작업 맥락에 따른 파일 정리 제안"},
-            {"src": "assets/sillog-privacy-20261115.webp", "caption": "기록 범위와 개인정보 마스킹 설정"},
-            {"src": "assets/sillog-activity-20261115.webp", "caption": "AI에 전송한 기록과 처리 결과 확인"}
-          ]
-        },
-        "bbongguard": {
-          "title": "BbongGuard",
-          "items": [
-            {"src": "assets/bbongguard-video.webp", "caption": "유튜브 영상에서 확인하는 판정 결과"},
-            {"src": "assets/bbongguard-evidence.webp", "caption": "주장별 근거와 참고 출처"}
-          ]
-        },
-        "insa": {
-          "title": "인사를 부탁해 (Boostcamp)",
-          "items": [{"src": "assets/insa-report.webp", "caption": "사용자가 확인하는 평가 결과 화면"}]
-        },
-        "generation": {
-          "title": "수능형 문제 풀이 (Boostcamp)",
-          "items": [{"src": "assets/generation-data.webp", "caption": "학습 데이터의 선택지 수와 정답 분포"}]
-        },
-        "datacentric": {
-          "title": "뉴스 주제 분류 (Boostcamp)",
-          "items": [{"src": "assets/datacentric-translation.webp", "caption": "번역기별 역번역 문장 비교"}]
-        },
-        "odqa": {
-          "title": "오픈도메인 질의 응답 (Boostcamp)",
-          "items": [{"src": "assets/odqa-sweep.webp", "caption": "Reader 학습 설정과 EM 점수 비교"}]
-        },
-        "sts": {
-          "title": "문장 유사도 예측 (Boostcamp)",
-          "items": [{"src": "assets/sts-labels.webp", "caption": "학습 및 검증 데이터의 라벨 분포"}]
-        },
-        "oxide": {
-          "title": "산화물 TFT 제조 레시피 생성",
-          "items": [
-            {"src": "assets/oxide-workflow.webp", "caption": "문헌 정보 추출과 RAG 레시피 생성 흐름"},
-            {"src": "assets/oxide-frontier.webp", "caption": "이동도와 안정성의 상충관계 분석"}
-          ]
-        },
-        "trade": {
-          "title": "우회수출 위험 품목 상시 감시",
-          "items": [{"src": "assets/trade-dashboard.png", "caption": "우회수출 위험 품목 감시 대시보드"}]
-        }
+        "src": "assets/finsight-home.png",
+        "caption": "메인 화면"
+      },
+      {
+        "src": "assets/finsight-rag-answer.png",
+        "caption": "법령 질의응답"
+      },
+      {
+        "src": "assets/finsight-report.png",
+        "caption": "기업 분석 보고서"
+      },
+      {
+        "src": "assets/finsight-rag-start.png",
+        "caption": "질문 입력"
+      },
+      {
+        "src": "assets/finsight-citation.png",
+        "caption": "근거 조항과 원문 PDF"
+      },
+      {
+        "src": "assets/finsight-report-search.png",
+        "caption": "기업 검색"
+      },
+      {
+        "src": "assets/finsight-report-stock.png",
+        "caption": "주가 추이"
+      },
+      {
+        "src": "assets/finsight-report-charts.png",
+        "caption": "재무 지표"
+      },
+      {
+        "src": "assets/finsight-report-news.png",
+        "caption": "최근 뉴스 분석"
+      },
+      {
+        "src": "assets/finsight-report-conclusion.png",
+        "caption": "종합 결론"
       }
+    ]
+  },
+  "veteran": {
+    "title": "Veteran",
+    "items": [
+      {
+        "src": "assets/veteran-jobs-source.webp",
+        "caption": "상담자별 추천 일자리 목록"
+      },
+      {
+        "src": "assets/veteran-dashboard-source.webp",
+        "caption": "상담 현황을 확인하는 관리자 화면"
+      }
+    ]
+  },
+  "sos": {
+    "title": "Scam or Safe",
+    "items": [
+      {
+        "src": "assets/sos-home-source.jpg",
+        "caption": "사례 기반 피싱 예방 체험의 시작 화면"
+      },
+      {
+        "src": "assets/sos-scenario.webp",
+        "caption": "피싱 상황에서 선택하며 진행하는 화면"
+      },
+      {
+        "src": "assets/sos-feedback.webp",
+        "caption": "선택 경로와 놓친 단서를 보여주는 화면"
+      }
+    ]
+  },
+  "sillog": {
+    "title": "실록 (SILLOG)",
+    "items": [
+      {
+        "src": "assets/sillog-chat-20261117.webp",
+        "caption": "업무 기록을 검색하고 답변·문서를 만드는 채팅"
+      },
+      {
+        "src": "assets/sillog-record-answer.webp",
+        "caption": "업무 기록을 근거로 답변하고 출처를 표시하는 채팅 (저장소 데모 화면)"
+      },
+      {
+        "src": "assets/sillog-result-preview.webp",
+        "caption": "채팅에서 만든 문서를 확인하고 내보내는 결과물 화면"
+      },
+      {
+        "src": "assets/sillog-connectors-20261115.webp",
+        "caption": "외부 서비스 연결과 커넥터 관리"
+      },
+      {
+        "src": "assets/sillog-graph-20261115.webp",
+        "caption": "업무와 자료의 관계를 보여주는 그래프"
+      },
+      {
+        "src": "assets/sillog-organize-20261115.webp",
+        "caption": "작업 맥락에 따른 파일 정리 제안"
+      },
+      {
+        "src": "assets/sillog-privacy-20261115.webp",
+        "caption": "기록 범위와 개인정보 마스킹 설정"
+      },
+      {
+        "src": "assets/sillog-activity-20261115.webp",
+        "caption": "AI에 전송한 기록과 처리 결과 확인"
+      }
+    ]
+  },
+  "bbongguard": {
+    "title": "BbongGuard",
+    "items": [
+      {
+        "src": "assets/bbongguard-video-source.webp",
+        "caption": "유튜브 시청 화면에서 확인하는 판정 결과"
+      },
+      {
+        "src": "assets/bbongguard-evidence-source.webp",
+        "caption": "주장별 판정 이유와 참고 출처"
+      },
+      {
+        "src": "assets/bbongguard-summary-source.webp",
+        "caption": "텍스트·이미지·음성 분석의 결과 요약"
+      }
+    ]
+  },
+  "insa": {
+    "title": "인사를 부탁해 (Boostcamp)",
+    "items": [
+      {
+        "src": "assets/insa-review-source.jpeg",
+        "caption": "피드백을 취합한 사용자 리뷰 결과"
+      },
+      {
+        "src": "assets/insa-pdf-source.jpeg",
+        "caption": "관리자가 확인하는 개인별 인사고과 PDF 보고서"
+      }
+    ]
+  },
+  "generation": {
+    "title": "수능형 문제 풀이 (Boostcamp)",
+    "items": [
+      {
+        "src": "assets/generation-data-source.svg",
+        "caption": "학습 데이터의 선택지 수와 정답 분포 (원본 데이터 재시각화)"
+      }
+    ]
+  },
+  "datacentric": {
+    "title": "뉴스 주제 분류 (Boostcamp)",
+    "items": [
+      {
+        "src": "assets/datacentric-translation-source.png",
+        "caption": "번역기별 한국어·일본어 역번역 비교"
+      }
+    ]
+  },
+  "odqa": {
+    "title": "오픈도메인 질의 응답 (Boostcamp)",
+    "items": [
+      {
+        "src": "assets/odqa-sweep-source.jpeg",
+        "caption": "Reader 학습 설정과 EM 점수 비교"
+      }
+    ]
+  },
+  "sts": {
+    "title": "문장 유사도 예측 (Boostcamp)",
+    "items": [
+      {
+        "src": "assets/sts-balanced-source.png",
+        "caption": "샘플 수 조정·증강 후 라벨 분포"
+      }
+    ]
+  },
+  "oxide": {
+    "title": "산화물 TFT 제조 레시피 생성",
+    "items": [
+      {
+        "src": "assets/architecture-oxide.svg?v=20261117-7",
+        "caption": "논문을 바탕으로 정리한 제조 레시피 생성 흐름"
+      }
+    ]
+  },
+  "trade": {
+    "title": "우회수출 위험 품목 상시 감시",
+    "items": [
+      {
+        "src": "assets/trade-dashboard.png",
+        "caption": "우회수출 위험 품목 감시 대시보드"
+      },
+      {
+        "src": "assets/trade-method.webp",
+        "caption": "비지도 이상탐지와 의심군 선별 절차 (발표 자료)"
+      }
+    ]
+  }
+}
     </script>
-    <template id="sillog-details"
-      ><div class="detail-content">
+    <template id="sillog-details">
+      <div class="detail-content">
         <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            여러 앱과 웹에 흩어진 사용 기록을 업무별로 정리하고, 이를 바탕으로 답변과 문서를 만드는 macOS 앱을 개발하고
-            있습니다. 지난 작업에 쓴 자료를 다시 찾고 다음 업무에
-            <span class="keep-phrase">활용할 수 있도록</span> 돕습니다.
-          </p>
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">앱과 웹에 작업 기록이 흩어져 있어, 지난 일을 이어가거나 AI에 설명할 때마다 자료를 다시 찾아야 했습니다.</span><span class="detail-sentence">이 과정을 줄이기 위해 화면 기록을 모아 검색과 문서 작성에 활용하도록 했습니다.</span></p>
+          <p><span class="detail-sentence">업무 기록에는 개인정보와 비공개 내용도 섞여 있어 외부 AI에 그대로 보낼 수 없었습니다.</span><span class="detail-sentence">기록을 보호하면서 문서 작성과 리서치 등 작업에 필요한 자료를 찾고 결과물을 만드는 앱을 개발했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>앱과 웹페이지 사용 내역, 화면 속 텍스트, 다운로드한 파일 등을 자동으로 기록해 기기에 저장합니다.</li>
-            <li>
-              기록을 업무별로 묶고 관련 자료를 그래프로 연결합니다. 기록에서 당시 사용한 파일과 웹페이지를 다시 열 수
-              있습니다.
-            </li>
-            <li>
-              채팅에서 업무 기록과 연결한 서비스의 자료를 함께 활용해 출처가 달린 답변과 문서를 만듭니다. 반복 업무는
-              사용자가 승인한 일정에 맞춰 실행합니다.
-            </li>
-          </ul>
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-sillog.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="실록 (SILLOG) 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-sillog.svg?v=20261117-7" alt="로컬 저장소를 공유하는 기록 정리와 스킬 기반 채팅, 외부 모델 API 및 연결한 서비스의 관계" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다. Laya는 캡스톤 버전에서 분류 옵션을 켠 화면 기록에 적용합니다.</figcaption>
+          </figure>
+          <p><strong class="detail-label">기록 수집과 채팅</strong><span class="detail-sentence">ScreenCaptureKit, 접근성 정보, Vision OCR로 모은 화면 기록을 SQLite에 저장하고 업무별로 정리합니다.</span><span class="detail-sentence">채팅에서는 선택한 업무 기록과 외부 서비스 자료를 검색해 출처가 있는 답변과 문서를 만듭니다.</span><span class="detail-sentence">응답과 도구 실행 과정을 화면에 표시하고, 대화와 결과물의 수정 이력을 로컬에 저장합니다.</span></p>
+          <p><strong class="detail-label">전송 전 개인정보 보호</strong><span class="detail-sentence">개인정보와 API 키는 외부 모델에 전달하기 전에 가리고, 내용 자체가 민감한 화면 기록은 Laya로 분류합니다.</span><span class="detail-sentence">Laya는 캡스톤 버전인 AJOU-SILLOG의 선택 기능으로, 옵션을 켜면 민감한 화면의 텍스트와 스크린샷을 외부 정리 모델에 보내지 않고 채팅 검색에서도 제외합니다.</span></p>
+          <p><strong class="detail-label">스킬 기반 작업</strong><span class="detail-sentence">문서 작성, 리서치, 기획, 학습, 콘텐츠 제작, 작업 자동화의 여섯 스킬로 작업별 절차와 결과물 형식을 정리했습니다.</span><span class="detail-sentence">근거 표시와 같은 공통 규칙은 시스템 지침에 두고, 각 스킬에는 해당 작업의 순서와 완료 기준을 담았습니다.</span></p>
+          <p><strong class="detail-label">검증에서 배포까지</strong><span class="detail-sentence">코드 변경은 PR에서 빌드와 테스트, 앱 번들 실행 검사를 거칩니다.</span><span class="detail-sentence">main에 반영한 버전은 서명된 DMG를 만들고 Apple 공증을 받은 뒤 GitHub 릴리스로 배포하며, Homebrew 설치 정보도 함께 갱신합니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              채팅 탭과 외부 서비스 커넥터를 개발했습니다. 선택한 업무의 기록과 문서·코드·협업 서비스의 자료를 검색해
-              답변에 활용하고, 인용된 출처를 열어 <span class="keep-phrase">확인할 수 있도록</span> 했습니다. 서비스
-              인증과 연결 관리, 도구 실행 과정 표시, 대화와 결과물의 버전 관리도 구현했습니다.
-            </li>
-            <li>
-              외부 LLM에 전달되는 텍스트에서 전화번호·주민등록번호·이메일 등 식별 가능한 개인정보(PII)와 API 키를
-              가렸습니다. 일반 숫자나 업무 내용까지 잘못 가리지 않도록 정규식과 번호 검증 규칙을 함께 적용했습니다.
-            </li>
-            <li>
-              캡스톤디자인용 버전에 <span class="keep-phrase">Laya 기반</span> 로컬 민감정보 분류기를 구축하고 앱에
-              연동했습니다. 식별자를 가린 뒤에도 남는 민감한 내용을 기기 안에서 판별하고, 해당 기록은 외부 AI 전송과
-              채팅 검색에서 제외하도록 했습니다.
-            </li>
-            <li>
-              문서 작성과 조사 등 작업별 스킬에 수행 절차와 결과물 형식을 정의했습니다. Promptfoo로 지시 준수 여부를
-              평가하고, 프롬프트 수정 전후의 응답을 비교했습니다.
-            </li>
-            <li>
-              <span class="keep-phrase">GitHub Actions로</span> PR마다 Swift 빌드·테스트와 앱 번들 실행 검사를
-              자동화했습니다. 빌드 폴더가 없는 환경에서도 실행되는지 확인해 리소스 누락을 점검하고, main 반영 후 앱
-              서명·Apple 공증·DMG 배포·Homebrew 설치 정보 갱신을 자동화했습니다. 모델 연결 점검 CLI와 개발 문서도 작성해
-              팀원이 같은 절차로 빌드·테스트와 문제 점검을 진행하도록 했습니다.
-            </li>
-          </ul>
-        </section>
-      </div></template
-    ><template id="finsight-details"
-      ><div class="detail-content">
-        <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            공시·재무제표·뉴스와 금융 법령을 함께 살펴야 하는 애널리스트의 기업 조사를 돕는 AI 서비스입니다. 대회에서
-            개발한 서비스를 바탕으로, 대회 이후 개인 프로젝트로 분석·검색·채팅 기능을 개선했습니다.
-          </p>
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">SwiftUI와 macOS 수집 API</strong><span class="detail-sentence">macOS의 화면 수집과 문자 인식 기능을 앱 안에서 사용할 수 있도록 SwiftUI에 ScreenCaptureKit과 Vision OCR을 연결했습니다.</span><span class="detail-sentence">화면 텍스트를 추출할 때 별도의 OCR 서버로 이미지를 보낼 필요가 없어, 개인 기록을 로컬에서 처리하는 앱에 적합했습니다.</span></p>
+          <p><strong class="detail-label">SQLite와 LangGraph-Swift</strong><span class="detail-sentence">SQLite는 별도 서버 없이 원본 기록과 업무 관계를 같은 파일에 저장하고, 기록 처리와 그래프 갱신을 한 트랜잭션으로 묶을 수 있어 사용했습니다.</span><span class="detail-sentence">업무 판정은 결과에 따라 다음 단계와 재시도가 달라지므로, Swift 앱 안에서 상태와 조건 분기를 표현할 수 있는 LangGraph-Swift로 구성했습니다.</span></p>
+          <p><strong class="detail-label">Laya Multilingual</strong><span class="detail-sentence">전화번호와 이메일은 규칙으로 가릴 수 있지만, 비공개 건강 정보나 업무 기밀은 문맥을 보고 판단해야 했습니다.</span><span class="detail-sentence">원문을 외부 LLM에 보내지 않고 민감 여부를 확인하기 위해, 한국어를 지원하고 추가 학습이 가능한 Laya를 Mac 안에서 실행했습니다.</span></p>
+          <p><strong class="detail-label">Promptfoo</strong><span class="detail-sentence">같은 요청에도 답변 표현은 달라지므로, 정답 문자열만 비교해서는 스킬 지침을 잘 따랐는지 알기 어려웠습니다.</span><span class="detail-sentence">Promptfoo로 문항별 평가 기준을 정해 지침 변경 전후를 같은 조건에서 비교하고, 응답과 채점 이유도 직접 확인했습니다.</span></p>
+          <p><strong class="detail-label">GitHub Actions</strong><span class="detail-sentence">macOS 앱은 테스트 통과뿐 아니라 설치용 앱 번들의 실행과 서명, 공증까지 확인해야 했습니다.</span><span class="detail-sentence">GitHub Actions의 macOS 환경에서 이 절차를 실행하고 PR 및 main 변경과 연결해, 검증과 배포를 같은 순서로 반복하도록 했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>
-              공시와 재무제표, 시세, 뉴스를 수집해 기업 분석 보고서를 만듭니다. 주요 수치와 차트, 기사 출처를 함께
-              제공합니다.
-            </li>
-            <li>
-              법령과 내규를 검색해 관련 조문을 근거로 답변합니다. 채팅에서 기업 분석, 법령 검토, 뉴스 요약을 함께 요청할
-              수 있습니다.
-            </li>
-          </ul>
+          <h3>4. 내 기여</h3>
+          <p><strong class="detail-label">채팅과 자료 연결</strong><span class="detail-sentence">채팅 탭, 업무 기록 검색, LLM 응답 스트리밍과 외부 서비스의 인증 및 연결 관리를 개발했습니다.</span><span class="detail-sentence">사용자가 선택한 자료를 검색하고, 인용&nbsp;출처와 도구 실행 과정, 대화와 결과물의 버전을 화면에서 확인하도록 했습니다.</span></p>
+          <p><strong class="detail-label">민감정보 분류</strong><span class="detail-sentence">개인정보와 API 키 마스킹을 구현하고, 실제 화면 기록 1,809건(민감 57건)을 수집해 두 차례 라벨링했습니다.</span><span class="detail-sentence">UI 형태와 OCR 잡음을 반영한 합성 기록 10,336건을 더해 Laya를 학습했습니다.</span><span class="detail-sentence">개발용 실제 기록의 4-fold OOF 평가에서 임계값 0.8일 때 재현율은 78.9%, 일반 기록 오차단율은 0.97%였습니다.</span></p>
+          <p><strong class="detail-label">스킬 설계와 평가</strong><span class="detail-sentence">기존 여섯 스킬의 수행 절차와 결과물 형식, 완료 기준을 구체화하고 Promptfoo 평가를 구성했습니다.</span><span class="detail-sentence">12개 합성 문항을 단일 모델로 한 번씩 비교했을 때 이전 지침과 변경 지침이 모두 12개를 통과했습니다.</span><span class="detail-sentence">이 문항 범위에서 지시 준수 여부를 확인한 결과이며, 품질 향상을 입증한 수치는 아닙니다.</span></p>
+          <p><strong class="detail-label">검증과 배포 자동화</strong><span class="detail-sentence">PR의 Swift 빌드와 테스트에, 개발용 빌드 폴더 없이 앱 번들을 실행하는 검사를 추가했습니다.</span><span class="detail-sentence">앱 번들이 한국어와 영어 설정에서 실행되는지 확인하고, main 반영 후 서명과 Apple 공증, DMG 릴리스, Homebrew 설치 정보 갱신을 자동화했습니다.</span></p>
+        </section>
+      </div>
+    </template><template id="finsight-details">
+      <div class="detail-content">
+        <section class="detail-section">
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">기업을 조사하려면 공시와 재무제표, 뉴스, 관련 법령을 각각 찾아 대조해야 했습니다.</span><span class="detail-sentence">흩어진 자료를 모으고, 분석 결과의 수치와 출처까지 확인할 수 있는 도구를 만들고자 했습니다.</span></p>
+          <p><span class="detail-sentence">해커톤에서는 기업 분석 보고서를 개발했고, 대회 이후에는 이를 개인 프로젝트로 확장했습니다.</span><span class="detail-sentence">재무 수치의 계산 근거를 남기고, 여러 조문을 함께 찾아야 하는 법령 질문과 복합 질문을 처리하는 데 집중했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              대회에서 기업 분석 보고서 생성 기능을 맡았습니다. 공시·재무제표·뉴스 수집부터 분석과 차트 생성까지
-              LangGraph로 연결하고, 사용자가 기사 출처를 <span class="keep-phrase">확인할 수 있도록</span> 구현했습니다.
-            </li>
-          </ul>
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-finsight.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="Finsight 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-finsight.svg?v=20261117-7" alt="요청에 필요한 기업 분석, 법령 검색, 뉴스 조사를 병렬로 실행하고 근거를 검증해 답변을 제공하는 흐름" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><strong class="detail-label">기업 분석 보고서</strong><span class="detail-sentence">React에서 기업을 선택하면 FastAPI가 LangGraph 작업 흐름을 실행해 공시와 시세, 뉴스를 수집합니다.</span><span class="detail-sentence">Python이 재무 지표를 계산하고 Claude가 설명을 작성한 뒤, 수치의 출처와 문장의 근거를 검증해 보고서로 조립합니다.</span><span class="detail-sentence">재작성 뒤에도 근거 검증을 통과하지 못한 문장은 결과에서 제외합니다.</span></p>
+          <p><strong class="detail-label">법령 검색</strong><span class="detail-sentence">법령을 조문과 별표 단위로 저장하고, Weaviate의 키워드 검색과 의미 검색으로 관련 내용을 찾습니다.</span><span class="detail-sentence">Neo4j에서는 인용과 위임 관계를 따라가며 시행령과 별표까지 모아 답변의 근거로 사용합니다.</span></p>
+          <p><strong class="detail-label">통합 채팅</strong><span class="detail-sentence">질문을 기업 분석, 법령 검색, 뉴스 조사로 나누어 필요한 작업을 병렬로 실행합니다.</span><span class="detail-sentence">각 작업의 근거를 모아 답변을 작성하고, 검증 과정과 인용&nbsp;출처를 화면에 함께 전달합니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>대회 이후 개인 개선</h3>
-          <ul>
-            <li>
-              LLM이 재무 수치를 추출하고 계산하던 방식을 <span class="keep-phrase">DART API와</span> Python 처리로
-              바꿨습니다. 계산값을 보고서 문장에 연결하고 근거 검증과 재작성 단계를 추가했습니다. 16개 기업의 주요 재무
-              수치를 공시와 대조하고, 검증을 통과하지 못한 문장은 결과에서 제외하도록 했습니다.
-            </li>
-            <li>
-              법령을 조문 단위로 저장하고 인용·위임 관계를 그래프로 연결했습니다. 키워드·의미 검색과 재정렬에 그래프
-              탐색을 결합해 시행령과 별표까지 근거를 찾도록 했습니다. 별표의 표 구조를 복원하고 위임 관계를 법령 API와
-              대조해 검색에 반영했습니다.
-            </li>
-            <li>
-              질문에 따라 기업·법령·뉴스 작업을 나누고, 필요한 작업을 병렬로 실행한 뒤 근거를 모아 답변하는 채팅 기능을
-              개발했습니다. 기업명이 모호하면 다시 묻고, <span class="keep-phrase">처리 과정</span>과 답변을 실시간으로
-              표시하도록 구현했습니다.
-            </li>
-            <li>
-              검색과 답변 품질을 비교할 평가 데이터와 실행 도구를 구성했습니다. 평가 과정에서 발견한 연간 실적 계산
-              오류를 수정하고, 정정 공시 반영과 문서 교체 실패 시 데이터 보존을 보완했습니다. 회귀 테스트와 프론트엔드
-              빌드도 <span class="keep-phrase">GitHub Actions로</span> 자동화했습니다.
-            </li>
-          </ul>
-        </section>
-      </div></template
-    ><template id="sos-details"
-      ><div class="detail-content">
-        <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            실제 피싱 사례를 선택형 시나리오로 체험하며 대응 방법을 익히는 웹 서비스입니다. 사용자가 내린 선택과 그
-            결과를 돌아보며 놓친 위험 신호를 <span class="keep-phrase">확인할 수 있습니다</span>.
-          </p>
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">Python과 Claude의 역할 분리</strong><span class="detail-sentence">보고서의 수치를 다시 계산하고 공시와 대조할 수 있어야 했습니다.</span><span class="detail-sentence">Claude가 숫자까지 새로 작성하는 방식 대신 Python의 계산값을 문장에 연결해, 수치 처리와 설명 생성을 분리했습니다.</span></p>
+          <p><strong class="detail-label">Weaviate와 Neo4j</strong><span class="detail-sentence">질문과 비슷한 조문을 찾아도 세부 요건은 시행령이나 별표에 따로 있을 수 있습니다.</span><span class="detail-sentence">Weaviate로 검색의 시작점을 찾고 Neo4j로 조문 관계를 따라가도록 구성해, 문장 유사도만으로는 드러나지 않는 연결도 근거에 포함했습니다.</span></p>
+          <p><strong class="detail-label">LangGraph</strong><span class="detail-sentence">질문에 따라 작업이 갈라지고, 검증에 실패하면 작성 단계로 돌아가야 하므로 일방향 처리만으로는 흐름을 표현하기 어려웠습니다.</span><span class="detail-sentence">LangGraph의 상태와 조건 분기로 자료 수집, 병렬 작업, 재작성의 순서를 명시했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>
-              기사에서 사기 수법과 피해 상황을 추출해 선택에 따라 전개가 달라지는 시나리오를 만들고, 주요 장면에 삽화를
-              제공합니다.
-            </li>
-            <li>체험이 끝나면 선택 경로와 놓친 단서, 더 안전한 대응 방법을 보여줍니다.</li>
-          </ul>
+          <h3>4. 내 기여</h3>
+          <p><strong class="detail-label">보고서 생성</strong><span class="detail-sentence">해커톤에서 자료 수집부터 분석과 차트 생성까지 이어지는 기업 보고서 기능을 개발했습니다.</span><span class="detail-sentence">기사 제목과 원문 링크를 함께 제공해 사용자가 분석에 쓰인 자료를 확인하도록 했습니다.</span></p>
+          <p><strong class="detail-label">수치와 문장 검증</strong><span class="detail-sentence">문장별 검증과 재작성 단계를 추가하고, 16개 기업의 연간 매출과 영업이익, 순이익을 공시와 대조했습니다.</span><span class="detail-sentence">일부 기업의 연간 순이익 계산 오류를 고친 뒤 해당 평가의 일치율은 95.8%에서 100%로 높아졌습니다.</span></p>
+          <p><strong class="detail-label">법령 검색 확장</strong><span class="detail-sentence">조문 인용 그래프와 검색 결과 재정렬을 추가하고, 별표를 행과 열이 있는 표로 복원했습니다.</span><span class="detail-sentence">본문에서 추출한 위임 관계를 법령 API의 관계 정보와 대조해 검색에 반영했습니다.</span></p>
+          <p><strong class="detail-label">채팅 연결</strong><span class="detail-sentence">질문을 분류해 하위 작업을 실행하고 답변을 합치는 채팅 흐름을 개발했습니다.</span><span class="detail-sentence">대상 기업이 모호할 때는 사용자에게 확인한 뒤 작업을 이어가고, 진행&nbsp;상태와 근거를 대화 화면에 표시했습니다.</span></p>
+        </section>
+      </div>
+    </template><template id="sos-details">
+      <div class="detail-content">
+        <section class="detail-section">
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">피싱 수법을 아는 것과 실제 상황에서 안전한 행동을 선택하는 것은 다릅니다.</span><span class="detail-sentence">실제 사례를 선택형 이야기로 바꾸어, 사용자가 대응을 선택하고 놓친 위험 신호를 돌아보는 체험을 만들고자 했습니다.</span></p>
+          <p><span class="detail-sentence">분기형 이야기는 앞선 선택을 이어받으면서도 적절한 시점에 끝나야 했습니다.</span><span class="detail-sentence">한 번의 LLM 호출로 전체 이야기를 만드는 방식에서 벗어나, 장면 생성과 게임 규칙을 나누어 관리했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              한 번의 LLM 호출로 긴 분기 시나리오를 만들기 어려워, Gemini를 장면별로 호출하며 너비 우선 탐색(BFS) 순서로
-              이야기와 선택지를 확장하도록 설계했습니다. 분기 깊이와 종료 조건은 코드로 관리했습니다.
-            </li>
-            <li>
-              시나리오가 길어지면 과거 장면은 요약하고 최근 장면과 선택지는 그대로 전달하도록 구성했습니다. 입력 분량을
-              줄이면서 이전 선택이 후속 장면에 반영되도록 했습니다.
-            </li>
-            <li>
-              Imagen에 공통 인물 정보를 전달해 장면마다 외형을 일관되게 묘사하도록 했습니다. API 호출 제한에 맞춘 배치
-              처리와 실패한 이미지의 재시도를 구현해 일부 요청이 실패해도 생성을 이어가도록 했습니다.
-            </li>
-          </ul>
-        </section>
-      </div></template
-    ><template id="bbongguard-details"
-      ><div class="detail-content">
-        <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            유튜브 영상의 주장을 확인하려고 별도로 자료를 찾는 번거로움을 줄이는
-            <span class="keep-phrase">Chrome 확장 프로그램</span>입니다. 시청 화면에서 주장별 판정과 검증 근거를
-            <span class="keep-phrase">확인할 수 있습니다</span>.
-          </p>
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-sos.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="Scam or Safe 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-sos.svg?v=20261117-7" alt="피싱 사례로 분기 시나리오와 삽화를 미리 생성하고, 사용자가 저장된 이야기를 체험한 뒤 선택을 복기하는 흐름" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><strong class="detail-label">사례 준비</strong><span class="detail-sentence">Google News RSS에서 수집한 기사를 Gemini가 분석해 피싱 수법과 피해 상황을 정리합니다.</span><span class="detail-sentence">관리자가 분석된 사례를 선택하면 해당 내용을 시나리오 생성의 출발점으로 사용합니다.</span></p>
+          <p><strong class="detail-label">시나리오와 삽화 생성</strong><span class="detail-sentence">FastAPI의 생성 흐름에서 BFS 순서로 장면을 확장하고, 이전 선택과 이야기 요약을 다음 장면에 전달합니다.</span><span class="detail-sentence">Imagen에는 공통 주인공 정보를 포함해 삽화를 요청하며, 완성된 시나리오는 연결 구조를 검증한 뒤 저장합니다.</span></p>
+          <p><strong class="detail-label">체험과 복기</strong><span class="detail-sentence">Next.js 화면은 저장된 시나리오를 읽어 사용자의 선택에 해당하는 다음 장면으로 이동합니다.</span><span class="detail-sentence">종료 후에는 선택 이력과 위험한 선택에 연결된 단서를 보여주어 대응 과정을 돌아보도록 했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>
-              제목·설명·자막에서 검증할 주장을 추출하고, 웹에서 찾은 자료를 관련성에 따라 정렬해 LLM이 근거를 바탕으로
-              판정합니다.
-            </li>
-            <li>썸네일의 텍스트와 음성 분석 결과도 함께 반영해 주장별 판정과 참고 출처를 보여줍니다.</li>
-          </ul>
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">Gemini와 BFS</strong><span class="detail-sentence">전체 이야기를 한 번에 생성하면 분기 깊이와 장면 연결을 제어하기 어려웠습니다.</span><span class="detail-sentence">Gemini는 장면과 선택지를 작성하고 BFS 코드가 확장 순서와 종료&nbsp;조건을 맡도록 나누어, 이야기 생성과 게임 규칙을 별도로 관리했습니다.</span></p>
+          <p><strong class="detail-label">이전 장면의 요약</strong><span class="detail-sentence">이전 이야기를 모두 전달하면 입력이 계속 길어지고, 전부 요약하면 최근 선택의 세부 맥락이 빠질 수 있습니다.</span><span class="detail-sentence">과거 장면만 요약하고 최근 두 장면은 원문으로 남겨, 입력 분량과 선택의 연속성을 함께 고려했습니다.</span></p>
+          <p><strong class="detail-label">JSON 기반 사전 생성</strong><span class="detail-sentence">플레이 중 모델을 호출하는 구조에서는 다음 장면으로 넘어갈 때마다 생성 결과를 기다려야 합니다.</span><span class="detail-sentence">시나리오를 JSON과 이미지로 미리 저장해, 생성은 관리자 단계에서 수행하고 플레이는 완성된 트리를 따라 이동하도록 분리했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              서비스를 기획하고 <span class="keep-phrase">Chrome 확장 프로그램</span>과 FastAPI 서버를 개발했습니다.
-              주장 추출, 근거 검색과 재정렬, LLM 판정으로 이어지는 <span class="keep-phrase">처리 과정</span>과 결과
-              화면을 구현했습니다.
-            </li>
-            <li>
-              썸네일 OCR과 음성 분석 결과를 텍스트 검증에 함께 반영했습니다. 사용자가 요약 결과와 상세 근거를
-              <span class="keep-phrase">살펴볼 수 있도록</span> 주장별 판정과 참고 출처를 화면에 연결했습니다.
-            </li>
-          </ul>
+          <h3>4. 내 기여</h3>
+          <p><strong class="detail-label">분기 생성</strong><span class="detail-sentence">BFS 기반 시나리오 생성 흐름을 개발했습니다.</span><span class="detail-sentence">장면별 선택을 다음 분기로 연결하고, 신뢰도와 자산, 경각심의 변화 및 이야기 깊이에 따라 종료&nbsp;조건을 적용했습니다.</span></p>
+          <p><strong class="detail-label">선택 맥락 유지</strong><span class="detail-sentence">과거 장면을 요약하되 최근 두 장면과 현재 선택은 그대로 전달하는 맥락 압축을 구현했습니다.</span><span class="detail-sentence">각 분기에서 앞서 거친 선택 경로를 바탕으로 다음 장면을 생성하도록 했습니다.</span></p>
+          <p><strong class="detail-label">삽화 생성</strong><span class="detail-sentence">첫 장면에서 정한 주인공 정보를 하위 장면에 전달하는 삽화 생성 흐름을 구현했습니다.</span><span class="detail-sentence">장면마다 같은 인물 정보를 프롬프트에 넣고, 이미지 요청은 호출 한도에 맞춰 배치로 묶어 실행했습니다.</span><span class="detail-sentence">일시적인 오류로 실패한 요청은 재시도했습니다.</span></p>
         </section>
-      </div></template
-    ><template id="veteran-details"
-      ><div class="detail-content">
+      </div>
+    </template><template id="bbongguard-details">
+      <div class="detail-content">
         <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            온라인 구직이 익숙하지 않은 고령자를 위해, 전화 상담으로 희망 조건을 듣고 일자리를 추천하는 서비스입니다.
-          </p>
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">유튜브 영상의 주장을 확인하려면 시청을 멈추고 관련 자료를 따로 검색해야 합니다.</span><span class="detail-sentence">시청 화면에서 검증 결과와 출처를 함께 확인할 수 있는 보조 도구를 만들고자 했습니다.</span></p>
+          <p><span class="detail-sentence">자극적인 제목이나 썸네일만으로 내용의 사실 여부를 판단할 수는 없습니다.</span><span class="detail-sentence">영상의 주장을 외부 자료와 대조하는 텍스트 검증을 중심에 두고, 이미지와 음성 분석은 보조 정보로 활용했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>
-              전화 대화에서 희망 직종, 경력, 거주지를 파악하고 공공 일자리 데이터에서 조건에 맞는 공고를 찾습니다.
-            </li>
-            <li>관리자 화면에서 상담 기록과 추천 결과를 <span class="keep-phrase">확인할 수 있습니다</span>.</li>
-          </ul>
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-bbongguard.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="BbongGuard 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-bbongguard.svg?v=20261117-7" alt="음성 처리 뒤 주장 검증과 썸네일 분석을 병렬로 진행하고 음성 결과와 합쳐 판정하는 흐름" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><strong class="detail-label">영상 입력과 분석</strong><span class="detail-sentence">Chrome 확장 프로그램이 영상 정보를 FastAPI 서버로 전달하면, 서버가 먼저 음성을 텍스트로 변환합니다.</span><span class="detail-sentence">이 결과를 재사용해 주장을 검증하는 동안 썸네일 분석을 함께 실행합니다.</span></p>
+          <p><strong class="detail-label">근거 검색과 판정</strong><span class="detail-sentence">영상에서 추출한 주장으로 Tavily를 검색하고, 문서의 게시 시점과 의미적 관련성, 출처를 반영해 근거를 정렬합니다.</span><span class="detail-sentence">GPT-4o 계열 모델은 선정된 근거와 주장을 비교해 판정과 이유를 작성합니다.</span></p>
+          <p><strong class="detail-label">결과 제공</strong><span class="detail-sentence">텍스트 검증 결과에 썸네일의 자극성과 음성 표현의 분석을 더해 종합 판정을 구성합니다.</span><span class="detail-sentence">확장 프로그램에서는 결과 요약과 상세 근거를 나누어 보여주고, 사용자가 원문 출처를 열어 볼 수 있도록 했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              공공 구인 공고와 직업정보를 수집해 추천 데이터를 구성했습니다. 거주지와 공고 위치의 거리, 희망 조건을
-              기준으로 추천 후보를 선별했습니다.
-            </li>
-            <li>
-              후보 공고에 임베딩 유사도를 적용해 상담 내용과 관련성이 높은 일자리를 추천하도록 구현했습니다. 추천 결과를
-              확인하는 프로토타입 웹페이지도 개발했습니다.
-            </li>
-          </ul>
-        </section>
-      </div></template
-    ><template id="oxide-details"
-      ><div class="detail-content">
-        <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            산화물 TFT의 이동도와 안정성 사이의 상충 관계를 고려해, 목표 성능에 맞는 제조 레시피를 제안하는 연구입니다.
-            아주대학교 인공지능학과 학부연구생으로 신소재공학과 연구실과의 공동 연구에 참여했습니다.
-          </p>
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">Chrome 확장 프로그램</strong><span class="detail-sentence">영상 주소를 별도 서비스에 옮기는 과정 없이 시청 중인 내용을 확인할 수 있어야 했습니다.</span><span class="detail-sentence">Chrome 확장 프로그램으로 현재 영상 정보를 읽고 같은 화면에 결과를 표시해, 분석 요청과 근거 확인을 시청 흐름에 연결했습니다.</span></p>
+          <p><strong class="detail-label">Tavily와 Sentence Transformers</strong><span class="detail-sentence">영상마다 검증할 주제가 달라 요청 시점에 필요한 근거를 검색하는 구조로 구성했습니다.</span><span class="detail-sentence">Tavily의 검색 결과만 Sentence Transformers로 비교하고 재정렬하므로, 사전에 문서를 모아 별도의 벡터 데이터베이스를 구축할 필요가 없었습니다.</span></p>
+          <p><strong class="detail-label">FastAPI의 비동기 처리</strong><span class="detail-sentence">텍스트 검증에는 음성 인식 결과가 필요하지만 썸네일 분석까지 순서대로 기다릴 필요는 없습니다.</span><span class="detail-sentence">FastAPI에서 음성 처리를 먼저 마친 뒤 두 분석을 병렬 실행하고 진행&nbsp;상태를 전달해, 분석의 의존 관계에 맞게 실행 순서를 구성했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>
-              실험 논문에서 성능과 공정 데이터를 추출하고, 이동도와 안정성을 함께 살펴 고성능 소자의 공정 전략을
-              정리합니다.
-            </li>
-            <li>
-              관련 실험 사례를 검색하는 RAG로 레시피를 생성하고, 기존 사례와 비교해 제안한 공정 조건을 평가합니다.
-            </li>
-          </ul>
+          <h3>4. 내 기여</h3>
+          <p><strong class="detail-label">확장 프로그램과 서버</strong><span class="detail-sentence">Chrome 확장 프로그램과 FastAPI 분석 서버를 개발했습니다.</span><span class="detail-sentence">영상 정보 수집부터 분석 요청, 진행&nbsp;상태 표시, 결과 확인까지 시청 화면에서 이어지도록 연결했습니다.</span></p>
+          <p><strong class="detail-label">주장별 검증</strong><span class="detail-sentence">주장 추출, 웹 검색, 근거 재정렬, 판정으로 이어지는 텍스트 분석 흐름을 구현했습니다.</span><span class="detail-sentence">영상 게시일과 근거 문서의 날짜 차이를 정렬에 반영하고, 판정 사유에 출처 링크를 함께 제공했습니다.</span></p>
+          <p><strong class="detail-label">분석 모듈 통합</strong><span class="detail-sentence">이미지와 음성 분석 모듈을 텍스트 검증 및 종합 판정에 연결했습니다.</span><span class="detail-sentence">음성 인식 결과를 텍스트 분석에 재사용하고, 텍스트 검증과 썸네일 분석은 병렬로 실행하도록 구성했습니다.</span></p>
+        </section>
+      </div>
+    </template><template id="veteran-details">
+      <div class="detail-content">
+        <section class="detail-section">
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">온라인 구인정보를 찾거나 지원 조건을 입력하는 일이 익숙하지 않은 고령자를 위한 서비스입니다.</span><span class="detail-sentence">별도 앱 설치 없이 전화로 희망 조건을 전달하고, 상담자가 적합한 공고를 안내할 수 있도록 기획했습니다.</span></p>
+          <p><span class="detail-sentence">추천에는 희망 직종과 경력뿐 아니라 거주지에서 일자리까지의 거리도 반영해야 했습니다.</span><span class="detail-sentence">상담 내용을 공고와 비교할 수 있는 형태로 정리하고, 추천 이유까지 관리자에게 전달하는 흐름이 필요했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              연구팀이 구축한 파이프라인을 적용한 <span class="keep-phrase">EXAONE-4.0-32B와</span> 기준 모델인
-              <span class="keep-phrase">GPT-4.1-nano의</span> 실패 사례를 비교했습니다.
-            </li>
-            <li>
-              증착 파라미터의 정확도 문제와 희귀 재료에서의 성능 저하를 분석했습니다. 가능한 제조 조건이 여럿인 상황에서
-              단일 정답과 비교하는 평가 방식의 한계도 정리했습니다.
-            </li>
-          </ul>
-        </section>
-      </div></template
-    ><template id="insa-details"
-      ><div class="detail-content">
-        <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            동료 평가를 수작업으로 취합하고 전달하는 부담을 줄이기 위한 서비스입니다. 평가 요청부터 피드백 익명화, 취합,
-            인사고과 보고서 전달까지 자동화합니다.
-          </p>
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-veteran.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="Veteran 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-veteran.svg?v=20261117-7" alt="전화 상담 프로필과 별도로 수집한 구인정보를 합쳐 후보 순위를 계산하고 추천 이유를 제공하는 흐름" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><strong class="detail-label">전화 상담</strong><span class="detail-sentence">Twilio가 전화를 FastAPI 서버에 연결하고, RTZR STT가 답변을 텍스트로 변환합니다.</span><span class="detail-sentence">LangGraph는 답변에 필요한 정보가 있는지 확인해 추가 질문을 하며, 상담이 끝나면 경력과 희망 조건을 구조화합니다.</span></p>
+          <p><strong class="detail-label">일자리 추천</strong><span class="detail-sentence">수집한 공공 구인 공고에서 거주 지역에 맞는 후보를 찾고, Upstage Embeddings로 상담 프로필과 공고의 유사도를 계산합니다.</span><span class="detail-sentence">이 점수에 주소로 계산한 직선거리 점수를 합쳐 순위를 정한 뒤, Gemini가 공고별 추천 이유를 작성합니다.</span></p>
+          <p><strong class="detail-label">관리자 확인</strong><span class="detail-sentence">상담 기록과 추천 결과를 JSON으로 저장해 관리자 화면에서 함께 확인하도록 했습니다.</span><span class="detail-sentence">추천 결과를 점검하는 Streamlit 프로토타입과 별도로, 팀의 최종 서비스에는 React 관리자 화면이 연결됩니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>
-              관리자가 평가 기간과 문항을 설정하면 구성원이 동료 평가를 작성합니다. 피드백의 말투를 통일해 작성자를
-              추측하기 어렵게 합니다.
-            </li>
-            <li>평가를 취합해 PDF 보고서와 도서 추천을 만들고, 미제출 알림과 보고서 완료 메일을 보냅니다.</li>
-          </ul>
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">LangGraph</strong><span class="detail-sentence">전화 상담에서는 정해진 항목을 수집하되, 답변이 부족하면 같은 질문으로 돌아가야 했습니다.</span><span class="detail-sentence">LangGraph의 상태와 조건 분기로 질문의 순서와 재질문을 표현해, 일방향 설문으로 처리하기 어려운 대화 흐름을 관리했습니다.</span></p>
+          <p><strong class="detail-label">Upstage Embeddings</strong><span class="detail-sentence">상담에서 말한 경력과 희망 조건은 공고에 쓰인 직무명과 표현이 다를 수 있습니다.</span><span class="detail-sentence">키워드 일치에만 의존하지 않고 프로필과 공고를 임베딩으로 비교해, 의미적 유사도를 추천 점수에 반영했습니다.</span></p>
+          <p><strong class="detail-label">점수 계산과 설명 생성의 분리</strong><span class="detail-sentence">일자리를 추천할 때는 조건의 적합성과 거리를 함께 반영하고 순위 기준도 확인할 수 있어야 했습니다.</span><span class="detail-sentence">순위까지 LLM에 맡기는 대신 유사도와 거리의 가중합으로 후보를 정하고, Gemini는 선정된 공고의 추천 이유를 설명하도록 역할을 나눴습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              PM을 맡아 일정과 개발 우선순위를 조율하고, 백엔드 개발 가이드와 PR 리뷰를 담당했습니다. 팀별 평가 제출
-              여부를 조회해 미제출자에게 정해진 시점에 알림을 보내고, 생성된 PDF 보고서를 각 사용자에게 자동 발송하도록
-              구현했습니다.
-            </li>
-            <li>
-              도서 임베딩 생성과 사용자별 보고서 처리를 병렬화하고, 반복해서 읽던 도서 데이터를 캐시에 저장했습니다.
-              사용자별 SQL 조회를 일괄 조회로 바꿔 도서 정보 처리와 보고서 생성 시간을 각각 76.2%, 69.2% 단축했습니다.
-            </li>
-          </ul>
+          <h3>4. 내 기여</h3>
+          <p><strong class="detail-label">추천 데이터 구성</strong><span class="detail-sentence">한국노인인력개발원의 구인 공고를 수집하고, 채용 제목과 사업장명 등 필수 정보가 있는 공고를 추천 데이터로 정리했습니다.</span><span class="detail-sentence">지역별 후보를 찾고 주소를 좌표로 변환해 거주지와 사업장 사이의 직선거리를 계산했습니다.</span></p>
+          <p><strong class="detail-label">추천 로직</strong><span class="detail-sentence">상담 프로필과 공고의 코사인 유사도에 60%, 거리 점수에 40%를 적용하는 추천 기능을 개발했습니다.</span><span class="detail-sentence">선택된 공고와 상담 내용을 함께 전달해 Gemini가 추천 이유를 작성하도록 했습니다.</span></p>
+          <p><strong class="detail-label">결과 확인과 연동</strong><span class="detail-sentence">프로필과 추천 공고를 확인하는 Streamlit 프로토타입을 개발했습니다.</span><span class="detail-sentence">통화 종료 후 추천을 실행하고 결과를 JSON으로 저장하도록 연결해, 팀이 개발한 최종 관리자 화면에서도 결과를 활용할 수 있게 했습니다.</span></p>
         </section>
-      </div></template
-    ><template id="generation-details"
-      ><div class="detail-content">
+      </div>
+    </template><template id="oxide-details">
+      <div class="detail-content">
         <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            한국어 수능형 객관식 문제를 풀도록 소형 언어 모델을 파인튜닝한 프로젝트입니다. 학습 데이터 구성과 프롬프트에
-            따른 정답률 변화를 비교했습니다.
-          </p>
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">산화물 TFT는 이동도를 높이면 전기적 안정성이 낮아질 수 있어, 두 조건을 함께 만족하는 제조 공정을 찾기 어렵습니다.</span><span class="detail-sentence">실험 조건도 논문마다 달라 연구자가 여러 문헌을 직접 비교해야 했습니다.</span></p>
+          <p><span class="detail-sentence">연구팀은 목표 성능과 비슷한 실험 사례를 찾아 제조 레시피를 제안하는 시스템을 만들었습니다.</span><span class="detail-sentence">저는 생성된 레시피가 어떤 조건에서 실패하는지 분석하고 평가 방식의 한계를 정리했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>선택지 수와 정답 분포가 다른 데이터를 수능형 문제 형식으로 정리해 모델을 학습합니다.</li>
-            <li>문제 유형에 따라 프롬프트를 달리 적용하고, 모델과 학습 설정별 결과를 비교합니다.</li>
-          </ul>
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-oxide.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="산화물 TFT 제조 레시피 생성 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-oxide.svg?v=20261117-7" alt="논문에서 실험 사례를 구조화하고, 목표 성능에 맞는 사례를 검색해 제조 레시피를 생성하고 평가하는 흐름" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><strong class="detail-label">문헌 데이터 구축</strong><span class="detail-sentence">2,005편의 실험 논문에서 재료, 소자 구조, 제조 조건과 전기적 성능을 추출했습니다.</span><span class="detail-sentence">이&nbsp;가운데 이동도와 안정성을 함께 확인할 수 있는 1,030개의 데이터 쌍을 분석했습니다.</span></p>
+          <p><strong class="detail-label">관련 사례 검색과 레시피 생성</strong><span class="detail-sentence">사용자가 목표 성능을 입력하면 임베딩으로 유사한 실험 사례를 검색합니다.</span><span class="detail-sentence">EXAONE-4.0-32B는 검색한 사례를 참고해 재료 조성과 증착 조건, 후처리 방법을 포함한 레시피를 생성합니다.</span></p>
+          <p><strong class="detail-label">평가 결과</strong><span class="detail-sentence">연구팀은 1,198개 테스트 사례를 GPT-4o로 평가했습니다.</span><span class="detail-sentence">14개 항목을 5점 척도로 채점했을 때 EXAONE-4.0-32B의 종합 점수는 4.334점, 비교 모델인 GPT-4.1-nano는 4.225점이었습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              KorQuAD 문답을 객관식 데이터로 변환하고, Gemini로 문제의 주제와 사전지식 필요 여부를 분류했습니다.
-              지문만으로 <span class="keep-phrase">풀 수 있는</span> 문제를 선별해 새 질문과 선택지를 생성하고 학습
-              데이터 형식으로 정리했습니다.
-            </li>
-            <li>
-              모델 탐색과 파인튜닝을 맡았습니다. 지문·질문·선택지를 대화 형식으로 구성하고 정답 부분만 학습하도록
-              설정했습니다. 출력 형식을 지정하는 프롬프트와 <span class="keep-phrase">zero-shot CoT</span>를 비교해 같은
-              모델에서 정답률이 어떻게 달라지는지 확인했습니다.
-            </li>
-          </ul>
-        </section>
-      </div></template
-    ><template id="datacentric-details"
-      ><div class="detail-content">
-        <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            모델 구조를 유지한 채 데이터를 정제하고 증강해 뉴스 주제 분류 성능을 개선한 프로젝트입니다. 텍스트 손상과
-            잘못된 라벨을 구분해 처리했습니다.
-          </p>
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">RAG</strong><span class="detail-sentence">제조 레시피에는 온도나 압력뿐 아니라 재료 구성과 공정 순서 같은 설명도 필요합니다.</span><span class="detail-sentence">수치 회귀만으로는 다루기 어려운 실험 맥락을 함께 제공하기 위해, 관련 문헌을 검색해 생성 모델에 전달하는 RAG를 사용했습니다.</span></p>
+          <p><strong class="detail-label">LLM-as-a-Judge</strong><span class="detail-sentence">문자열이 얼마나 일치하는지만 비교하면 공정의 완전성이나 실현 가능성을 평가하기 어렵습니다.</span><span class="detail-sentence">GPT-4o 기반 LLM-as-a-Judge로 항목별 평가 기준을 적용하되, 단일 참조 레시피와 다르다는 이유로 유효한 공정까지 감점할 수 있다는 한계도 함께 검토했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>손상된 문장을 복원하고 Cleanlab으로 라벨 오류를 교정해 학습 데이터를 정제합니다.</li>
-            <li>역번역과 LLM 생성으로 표현이 다양한 데이터를 보완하고, 유사한 문장을 걸러 중복을 줄입니다.</li>
-          </ul>
+          <h3>4. 내 기여</h3>
+          <p><strong class="detail-label">실패 사례 분석</strong><span class="detail-sentence">EXAONE-4.0-32B와 GPT-4.1-nano의 실패 사례를 비교하며 증착&nbsp;파라미터의 수치 정확도와 드물게 등장하는 재료의 성능 저하를 살폈습니다.</span><span class="detail-sentence">여러 문헌의 조건을 결합하는 과정이 수치 오류를 늘릴 가능성을 검토했습니다.</span></p>
+          <p><strong class="detail-label">평가 방식 검토</strong><span class="detail-sentence">같은 성능을 달성하는 공정이 여러 개일 수 있는데도 하나의 참조 레시피만 정답으로 보는 평가 방식을 검토했습니다.</span><span class="detail-sentence">대체 가능한 공정을 인정하는 평가, 핵심 수치의 제약 조건, 낯선 입력에 대한 불확실성 표시를 후속 개선 방향으로 제안했습니다.</span></p>
+        </section>
+      </div>
+    </template><template id="insa-details">
+      <div class="detail-content">
+        <section class="detail-section">
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">동료 평가를 운영할 때는 피드백 취합부터 미제출자 확인, 결과 전달까지 수작업이 많았습니다.</span><span class="detail-sentence">이 과정을 자동화해 평가 운영자의 부담을 줄이고자 했습니다.</span></p>
+          <p><span class="detail-sentence">평가를 받는 사람도 등급만 통보받으면 자신의 강점과 개선할 점을 파악하기 어려웠습니다.</span><span class="detail-sentence">여러 동료의 의견을 읽기 쉽게 정리하고, 평가 결과와 함께 개인별 성장 방향을 제공하는 서비스를 만들었습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              텍스트 손상과 라벨 오류를 구분한 뒤, Gemini로 원래 의미를 유지하면서 뉴스 제목을 복원했습니다. 응답에 섞인
-              설명과 불필요한 기호를 제거하고, 중간 저장과 실패 요청 재시도를 구현해 정제 작업을 이어갈 수 있도록
-              했습니다.
-            </li>
-            <li>
-              DeepL API로 한국어를 일본어로 번역한 뒤 다시 한국어로 옮겨 표현이 다른 학습 데이터를 만들었습니다. LLM에
-              주제별 예시를 제공해 뉴스 제목과 라벨을 추가 생성하고, 단어 중복도를 비교해 유사한 제목을 걸러냈습니다.
-            </li>
-          </ul>
-        </section>
-      </div></template
-    ><template id="odqa-details"
-      ><div class="detail-content">
-        <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            질문과 관련된 문서를 검색하고, 해당 문서에서 정답을 추출하는 한국어 질의응답 모델입니다. 문서 검색과 답변
-            추출을 나눠 성능을 검토했습니다.
-          </p>
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-insa.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="인사를 부탁해 (Boostcamp) 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-insa.svg?v=20261117-7" alt="동료 평가를 수집해 결과와 추천 도서를 정리한 개인 보고서를 메일로 전달하며 미제출자에게 별도로 알리는 흐름" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><span class="detail-sentence">관리자는 Streamlit 화면에서 평가 문항과 기간을 설정하고, 사용자는 동료에 대한 피드백을 제출합니다.</span><span class="detail-sentence">Flask API는 사용자 정보와 평가 응답을 SQLite에 저장해 제출 현황과 결과를 조회합니다.</span></p>
+          <p><span class="detail-sentence">Document Parse로 기존 평가표의 문항을 읽고, Solar로 질문을 생성하거나 서술형 피드백을 요약합니다.</span><span class="detail-sentence">작성자를 말투로 추측하기 어렵도록 표현을 보정하고, 부족한 역량과 도서 소개의 임베딩을 비교해 추천 도서를 찾습니다.</span></p>
+          <p><span class="detail-sentence">ReportLab으로 평가 점수와 그래프, 요약 피드백, 추천 도서를 담은 PDF를 생성합니다.</span><span class="detail-sentence">평가 기간에는 미제출자에게 알림을 보내고, 보고서가 완성되면 해당 사용자에게 메일로 전달합니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>
-              단어 일치를 활용하는 BM25와 의미 유사도를 활용하는 <span class="keep-phrase">Dense Retriever</span>의
-              점수를 결합해 문서를 찾습니다.
-            </li>
-            <li>Reader가 검색된 문서를 읽고 정답에 해당하는 구간을 추출합니다.</li>
-          </ul>
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">Streamlit과 Flask</strong><span class="detail-sentence">팀원 모두 웹 개발 경험이 적어 Python으로 빠르게 시제품을 만들 수 있어야 했습니다.</span><span class="detail-sentence">복잡한 웹 설정을 줄이고 Python으로 화면과 API를 구현할 수 있는 Streamlit과 Flask를 선택했습니다.</span></p>
+          <p><strong class="detail-label">SQLite</strong><span class="detail-sentence">트래픽이 적은 데모 단계에서는 별도의 데이터베이스 서버를 운영할 필요가 크지 않았습니다.</span><span class="detail-sentence">파일 단위로 데이터를 저장하고 관리할 수 있는 SQLite가 초기 개발 범위에 적합했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              BM25와 <span class="keep-phrase">Dense Retriever</span>의 점수를 결합하는 과정에서 정규화가 빠진 부분을
-              수정했습니다. 서로 다른 범위의 점수를 같은 범위로 맞춰 문서 순위를 계산하도록 바꾸고, 최종 답변의
-              <span class="keep-phrase">정확 일치율(EM)</span>을 비교했습니다.
-            </li>
-            <li>
-              Reader의 최대 입력 길이와 답변 길이, 긴 문서를 나눠 읽을 때 겹치는 범위를 조정하며 성능을 비교했습니다.
-              MeCab으로 질문 데이터를 증강하고, <span class="keep-phrase">Curriculum Learning</span> 실험에 사용할 학습
-              데이터를 구성했습니다.
-            </li>
-          </ul>
+          <h3>4. 내 기여</h3>
+          <p><span class="detail-sentence">PM으로 일정과 개발 우선순위를 조율하고 백엔드 개발 가이드를 작성했습니다.</span><span class="detail-sentence">팀원의 PR을 검토하며 각 기능을 하나의 서비스로 연결했습니다.</span></p>
+          <p><span class="detail-sentence">평가 기간과 제출 여부를 확인해 미제출자에게 리마인드 메일을 보내도록 구현했습니다.</span><span class="detail-sentence">PDF 생성이 끝나면 사용자별 보고서를 첨부해 자동 발송하는 기능도 연결했습니다.</span></p>
+          <p><span class="detail-sentence">반복 API 호출은 ThreadPoolExecutor로 병렬화하고, 도서 데이터 캐시와 SQL 일괄 조회로 중복 처리를 줄였습니다.</span><span class="detail-sentence">당시 측정한 도서 정보 처리 시간과 보고서 생성 시간은 각각 76.2%, 69.2% 줄었습니다.</span></p>
         </section>
-      </div></template
-    ><template id="sts-details"
-      ><div class="detail-content">
+      </div>
+    </template><template id="generation-details">
+      <div class="detail-content">
         <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            한국어 문장 두 개의 의미 유사도를 0점에서 5점 사이의 값으로 예측하는 모델입니다. 데이터 분포와 학습 설정이
-            예측 성능에 미치는 영향을 비교했습니다.
-          </p>
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">수능형 문제에는 지문만 읽으면 풀 수 있는 문제와 외부 지식이 필요한 문제가 섞여 있었습니다.</span><span class="detail-sentence">선택지 수와 정답 분포도 달라, 문제 유형과 데이터 구성을 먼저 살펴야 했습니다.</span></p>
+          <p><span class="detail-sentence">Tesla V100의 32GB 메모리 안에서 한국어 객관식 문제를 풀 모델을 학습해야 했습니다.</span><span class="detail-sentence">실행 가능한 모델을 고른 뒤, 데이터 증강과 프롬프트 변경이 정답률에 미치는 영향을 비교했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>유사도 구간별 데이터 수를 조정하고, 문장 순서와 조사를 바꿔 학습 데이터를 증강합니다.</li>
-            <li>사전학습 모델을 파인튜닝하고 여러 모델의 예측을 결합해 성능을 비교합니다.</li>
-          </ul>
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-generation.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="수능형 문제 풀이 (Boostcamp) 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-generation.svg?v=20261117-7" alt="문항을 보완해 모델을 학습하는 과정과 새 문제의 정답 번호별 확률로 답을 선택하는 예측 과정" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><span class="detail-sentence">지문과 질문, 선택지를 공통 형식으로 정리하고 Gemini로 주제와 사전지식 필요 여부를 분류했습니다.</span><span class="detail-sentence">선별한 지문에서 새 질문과 선택지를 생성해 학습 데이터를 보완했습니다.</span></p>
+          <p><span class="detail-sentence">Qwen2.5-7B-Instruct에 4비트 양자화와 LoRA를 적용하고, TRL의 SFTTrainer로 미세 조정했습니다.</span><span class="detail-sentence">대화 형식으로 입력을 구성하고, 학습 대상은 정답 응답 부분으로 제한했습니다.</span></p>
+          <p><span class="detail-sentence">추론에서는 정답 번호에 해당하는 토큰의 확률을 비교해 선택지를 고릅니다.</span><span class="detail-sentence">학습 데이터와 프롬프트를 바꾸면서 같은 모델의 정답률이 어떻게 달라지는지 확인했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              유사도 0점대에 데이터가 편중된 분포를 확인하고 구간별 샘플 수를 조정했습니다. 동일 문장을 짝지어 높은
-              유사도 데이터를 보완하고, 문장 순서와 조사를 바꿔 증강 전후의 학습 결과를 비교했습니다.
-            </li>
-            <li>
-              데이터 로더, 모델, 평가 지표를 분리한 PyTorch 학습 템플릿을 정리했습니다. Optuna로 하이퍼파라미터를
-              탐색하는 코드를 작성하고, DeBERTa-v3에서 <span class="keep-phrase">약 80회</span> 실험하며 설정에 따른
-              검증 성능을 비교했습니다.
-            </li>
-          </ul>
-        </section>
-      </div></template
-    ><template id="trade-details"
-      ><div class="detail-content">
-        <section class="detail-section">
-          <h3>프로젝트 소개</h3>
-          <p>
-            공개 무역통계를 바탕으로 우회수출 위험이 있는 품목을 선별하는 분석 프레임워크입니다. 품목별 거래 흐름과 관세
-            차이를 분석해 추가 확인이 필요한 대상을 좁힙니다.
-          </p>
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">Qwen2.5</strong><span class="detail-sentence">TinyKo와 LLaMA 계열 모델도 시험했지만, 당시 팀의 비교 실험에서는 Qwen2.5가 더 나은 결과를 보였습니다.</span><span class="detail-sentence">Qwen2.5-7B-Instruct를 선택한 뒤 모델을 고정하고 데이터와 프롬프트 실험을 이어갔습니다.</span></p>
+          <p><strong class="detail-label">4비트 양자화와 LoRA</strong><span class="detail-sentence">7B 모델을 제한된 GPU 메모리에서 학습하기 위해 4비트 양자화를 적용했습니다.</span><span class="detail-sentence">여기에 전체 가중치를 갱신하는 대신 추가 가중치만 학습하는 LoRA를 결합해, 학습할 파라미터 수와 메모리 부담을 줄이도록 구성했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>구현 내용</h3>
-          <ul>
-            <li>
-              관세청, 미국 Census, UN Comtrade의 무역통계를 결합해 우회수출에 따른 이익과 국가 간 신고 통계의 차이를
-              계산합니다.
-            </li>
-            <li>ECOD, Isolation Forest, HBOS의 이상도 순위를 합쳐 의심 품목을 선별하고 월별 분석을 자동화합니다.</li>
-          </ul>
+          <h3>4. 내 기여</h3>
+          <p><span class="detail-sentence">Gemini로 문제의 주제와 사전지식 필요 여부를 분류했습니다.</span><span class="detail-sentence">지문만으로 답할 수 있는 문항을 선별하고, 해당 지문을 바탕으로 새 객관식 문제를 생성했습니다.</span></p>
+          <p><span class="detail-sentence">KorQuAD 문답을 객관식으로 바꿔 학습에 추가했지만 이번 실험에서는 성능이 낮아졌습니다.</span><span class="detail-sentence">수능형 문제와의 형식이나 분포 차이를 원인 후보로 봤습니다.</span></p>
+          <p><span class="detail-sentence">모델 탐색과 파인튜닝을 맡고, 출력 형식 지정과 zero-shot CoT 등 프롬프트를 비교했습니다.</span><span class="detail-sentence">동일한 환경에서 프롬프트만 바꿔도 평가 점수가 0.1 이상 달라지는 경우가 있었지만, 힌트를 추가하는 실험에서는 개선되지 않았습니다.</span></p>
+        </section>
+      </div>
+    </template><template id="datacentric-details">
+      <div class="detail-content">
+        <section class="detail-section">
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">뉴스 제목을 일곱 가지 주제로 분류하는 과제였지만, 학습 데이터에는 글자가 손상된 제목과 주제가 잘못 붙은 라벨이 섞여 있었습니다.</span><span class="detail-sentence">문장의 문제와 라벨의 문제를 구분해야 올바른 학습 데이터를 만들 수 있었습니다.</span></p>
+          <p><span class="detail-sentence">모델 구조를 바꿀 수 없는 조건이어서 데이터 정제와 증강에 집중했습니다.</span><span class="detail-sentence">같은 분류 모델을 유지하면서 어떤 데이터 변경이 성능에 도움이 되는지 비교했습니다.</span></p>
         </section>
         <section class="detail-section">
-          <h3>본인 기여</h3>
-          <ul>
-            <li>
-              공개 무역통계에서 품목별 거래 흐름과 관세 차이를 분석하고, 우회수출 위험을 살펴볼 지표로 정리했습니다.
-            </li>
-            <li>
-              비지도 이상탐지 결과를 의심 품목 순위와 대시보드로 연결해, 확인이 필요한 품목을
-              <span class="keep-phrase">살펴볼 수 있도록</span> 구성했습니다.
-            </li>
-          </ul>
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-datacentric.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="뉴스 주제 분류 (Boostcamp) 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-datacentric.svg?v=20261117-7" alt="손상된 제목 복원 후 라벨을 교정해 분류기를 학습하는 과정과 새 뉴스 제목의 주제를 예측하는 과정" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><span class="detail-sentence">Gemini가 판단한 문장의 자연스러움과 특수문자 비율을 함께 살펴 오류 유형을 나눴습니다.</span><span class="detail-sentence">손상된 뉴스 제목은 원래 의미를 유지하도록 복원했습니다.</span></p>
+          <p><span class="detail-sentence">정제한 문장으로 학습한 RoBERTa의 임베딩과 Random Forest를 이용해 잘못 붙은 라벨을 교정했습니다.</span><span class="detail-sentence">복원한 문장과 교정한 라벨을 합친 뒤 Cleanlab으로 남은 라벨 오류를 점검했습니다.</span></p>
+          <p><span class="detail-sentence">역번역과 새 문장 생성으로 표현을 늘리고 중복을 제거한 뒤 분류 모델을 학습했습니다.</span><span class="detail-sentence">팀의 최종 평가 결과는 정확도 0.8561, F1 0.8533이었습니다.</span></p>
         </section>
-      </div></template
-    >
+        <section class="detail-section">
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">의미를 복원하는 정제</strong><span class="detail-sentence">특수문자만 지워서는 손상된 제목의 의미를 되살리기 어려워, 문맥을 바탕으로 복원할 수 있는 Gemini를 사용했습니다.</span><span class="detail-sentence">다만 문장 분류를 LLM에만 맡겼을 때 오분류가 발견돼 특수문자 비율로 결과를 다시 확인했습니다.</span></p>
+          <p><strong class="detail-label">역번역 방식 비교</strong><span class="detail-sentence">같은 주제를 다른 표현으로 학습시키기 위해 역번역을 비교했고, 이&nbsp;프로젝트에서는 영어보다 일본어를 거친 결과의 성능이 좋았습니다.</span><span class="detail-sentence">번역기별 결과에서는 DeepL이 Google Translate보다 일관되고 자연스러운 문장을 만드는 경향을 보여 한국어에서 일본어를 거쳐 돌아오는 방식을 적용했습니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>4. 내 기여</h3>
+          <p><span class="detail-sentence">텍스트 오류와 라벨 오류를 나누고 Gemini로 손상된 제목을 복원하는 작업을 맡았습니다.</span><span class="detail-sentence">생성된 문장에 섞인 설명이나 불필요한 기호를 걷어내 학습에 사용할 제목으로 정리했습니다.</span><span class="detail-sentence">생성 결과를 중간 저장하고 실패한 요청을 재시도하도록 처리했습니다.</span></p>
+          <p><span class="detail-sentence">DeepL을 이용한 한국어와 일본어 사이의 역번역을 구현하고, 주제별 예시를 넣어 제목과 라벨을 새로 생성했습니다.</span><span class="detail-sentence">원문과 같은 문장이나 단어 중복도가 높은 제목을 걸러 증강 데이터의 중복을 줄였습니다.</span></p>
+        </section>
+      </div>
+    </template><template id="odqa-details">
+      <div class="detail-content">
+        <section class="detail-section">
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">질문만 주어지는 환경에서는 정답이 있는 문서를 찾는 일부터 해결해야 했습니다.</span><span class="detail-sentence">문서를 잘 찾아도 독해 모델이 정답 구간을 틀리면 최종 답변이 잘못되므로 검색과 독해를 함께 개선했습니다.</span></p>
+          <p><span class="detail-sentence">질문과 문서의 표현이 다를 때 검색이 빗나가고, 긴 문서에서는 정답 구간을 놓칠 수 있었습니다.</span><span class="detail-sentence">관련 문서를 고르는 방식과 문서를 읽는 설정을 나누어 실험했습니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-odqa.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="오픈도메인 질의 응답 (Boostcamp) 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-odqa.svg?v=20261117-7" alt="BM25와 DPR로 독립 검색한 문서를 설정별로 결합하고 Reader의 답변 후보 확률을 합쳐 정답을 선택하는 흐름" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><span class="detail-sentence">BM25로 키워드가 일치하는 문서를 찾고, DPR의 질문 및 문서 임베딩으로 의미가 가까운 문서를 검색합니다.</span><span class="detail-sentence">두 결과를 점수 또는 순위로 결합하고 재정렬하는 방식을 비교했습니다.</span></p>
+          <p><span class="detail-sentence">RoBERTa 기반 Reader가 검색된 문서를 읽고 정답의 시작과 끝 위치를 예측합니다.</span><span class="detail-sentence">여러 검색 설정에서 나온 답변 후보의 확률을 soft voting으로 합쳐 최종 답을 선택했습니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">BM25와 DPR</strong><span class="detail-sentence">질문의 핵심 단어가 정답 문서에도 자주 등장해 BM25의 키워드 검색을 활용했습니다.</span><span class="detail-sentence">표현만 다른 관련 문서는 단어 일치로 찾기 어려워, 의미를 비교하는 DPR을 함께 사용했습니다.</span></p>
+          <p><strong class="detail-label">KorQuAD와 RoBERTa</strong><span class="detail-sentence">질문과 문서를 연결해 학습할 한국어 자료가 필요했고, KorQuAD가 주어진 데이터와 형식이 유사했습니다.</span><span class="detail-sentence">한국어로 사전학습된 RoBERTa를 바탕으로 인코더를 학습해 이 자료의 질문과 문서 관계를 반영했습니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>4. 내 기여</h3>
+          <p><span class="detail-sentence">Hybrid Retriever의 결과가 일관되지 않아 코드를 살펴보고, 두 검색기의 점수를 결합할 때 정규화가 빠진 부분을 수정했습니다.</span><span class="detail-sentence">점수 범위를 맞춘 뒤 답변의 일관성과 EM 점수가 개선되는 것을 확인했습니다.</span></p>
+          <p><span class="detail-sentence">Reader의 최대 입력 길이와 답변 길이, 긴 문서를 나눌 때 겹치는 범위를 조정했습니다.</span><span class="detail-sentence">EM 점수로 설정별 결과를 비교하고, 최대 답변 길이를 바꿨을 때는 추론 시간도 확인했습니다.</span></p>
+          <p><span class="detail-sentence">MeCab으로 질문에 주요 키워드를 덧붙이는 증강은 검증 EM이 올라도 최종 테스트에서는 성능이 낮아져 제외했습니다.</span><span class="detail-sentence">쉬운 데이터부터 학습하는 Curriculum Learning도 실험했지만 성능 향상으로 이어지지 않았습니다.</span></p>
+        </section>
+      </div>
+    </template><template id="sts-details">
+      <div class="detail-content">
+        <section class="detail-section">
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">한국어 문장 두 개의 의미가 얼마나 비슷한지 0점에서 5점으로 예측하는 과제였습니다.</span><span class="detail-sentence">같은 뜻도 단어와 어순이 달라 단순한 문자 일치만으로 판단하기 어려웠습니다.</span></p>
+          <p><span class="detail-sentence">학습 데이터는 유사도 0점대에 편중돼 있었습니다.</span><span class="detail-sentence">부족한 구간의 데이터를 보완하고 모델 설정을 바꾸면서 예측 성능을 비교했습니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-sts.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="문장 유사도 예측 (Boostcamp) 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-sts.svg?v=20261117-7" alt="문장 쌍의 점수 분포를 조정해 모델들을 학습하는 과정과 새 문장 쌍의 예측 점수를 결합하는 과정" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><span class="detail-sentence">라벨별 샘플 수를 살펴 많은 구간은 줄이고 부족한 구간은 증강했습니다.</span><span class="detail-sentence">문장 순서를 바꾸거나 동일 문장을 짝짓는 방식으로 학습 데이터를 구성했습니다.</span></p>
+          <p><span class="detail-sentence">Transformers의 사전학습 모델에 두 문장을 함께 입력해 유사도 점수를 예측하도록 학습했습니다.</span><span class="detail-sentence">DeBERTa, ELECTRA, RoBERTa 계열 모델을 검증 Pearson 상관계수로 비교했습니다.</span></p>
+          <p><span class="detail-sentence">팀에서는 모델별 예측을 가중 평균과 블렌딩으로 결합했습니다.</span><span class="detail-sentence">단일 모델과 앙상블의 검증 결과를 비교해 최종 예측을 만들었습니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">한국어 사전학습 모델</strong><span class="detail-sentence">한국어의 문맥과 구어체를 이해해야 해 한국어 데이터로 사전학습된 모델을 우선 검토했습니다.</span><span class="detail-sentence">한국어 STS 실험 사례를 참고해 RoBERTa와 ELECTRA 계열을 후보로 삼고 DeBERTa까지 비교했습니다.</span></p>
+          <p><strong class="detail-label">Optuna와 DeBERTa-v3</strong><span class="detail-sentence">입력 길이와 학습률 등 설정의 조합이 많아 Optuna로 탐색했습니다.</span><span class="detail-sentence">마감까지 모든 모델을 튜닝하기는 어려워, 당시 학습 속도가 빠른 DeBERTa-v3에 반복 실험을 집중했습니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>4. 내 기여</h3>
+          <p><span class="detail-sentence">0점대에 편중된 라벨 분포를 확인하고 구간별 목표 수에 맞춰 데이터를 조정했습니다.</span><span class="detail-sentence">동일 문장 쌍을 추가하거나 문장 순서와 조사를 바꿔 증강 전후의 결과를 비교했습니다.</span></p>
+          <p><span class="detail-sentence">공유받은 학습 코드를 수정해 Optuna 탐색을 구성했습니다.</span><span class="detail-sentence">DeBERTa-v3에서 약 80회 실험해 검증 Pearson 상관계수가 안정적으로 0.93 이상 나오는 설정을 찾았습니다.</span></p>
+          <p><span class="detail-sentence">맞춤법과 띄어쓰기를 교정한 데이터도 실험했지만 성능이 낮아져 사용하지 않았습니다.</span><span class="detail-sentence">테스트 데이터에도 교정되지 않은 표현이 있다는 점을 고려해 전처리 적용 여부를 결정했습니다.</span></p>
+        </section>
+      </div>
+    </template><template id="trade-details">
+      <div class="detail-content">
+        <section class="detail-section">
+          <h3>1. 문제 정의</h3>
+          <p><span class="detail-sentence">약 4,000개의 대미 수출 품목을 모두 점검하기에는 검사 인력이 한정돼 있습니다.</span><span class="detail-sentence">제보나 사후 적발에만 의존하지 않고, 공개 무역통계로 먼저 살펴볼 품목을 좁히는 것이 목표였습니다.</span></p>
+          <p><span class="detail-sentence">관세 차이가 큰 품목이나 양국 무역 기록이 어긋나는 품목을 찾아 위험 순위를 매겼습니다.</span><span class="detail-sentence">이 순위는 추가 검토의 출발점이며, 우회수출을 확정한 결과는 아닙니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>2. 구현 내용</h3>
+          <figure class="architecture">
+            <a href="assets/architecture-trade.svg?v=20261117-7" target="_blank" rel="noopener noreferrer" aria-label="우회수출 위험 품목 상시 감시 전체 아키텍처 원본 보기">
+              <img src="assets/architecture-trade.svg?v=20261117-7" alt="무역과 관세 자료에서 위험 지표를 만들고 세 이상탐지 모델의 순위를 합쳐 검토할 품목을 선별하는 흐름" loading="lazy" decoding="async" />
+            </a>
+            <figcaption>그림을 누르면 원본 크기로 볼 수 있습니다.</figcaption>
+          </figure>
+          <p><strong class="detail-label">위험 지표 구성</strong><span class="detail-sentence">관세청과 미국 Census, UN Comtrade의 무역 실적에 관세 자료를 결합했습니다.</span><span class="detail-sentence">미국의 대중 관세 격차에서 한국의 대중 수입관세를 뺀 순 우회실익과, 미국의 한국산 수입액에서 한국의 대미 수출액을 뺀 미러 갭을 품목별 지표로 만들었습니다.</span></p>
+          <p><strong class="detail-label">품목 선별</strong><span class="detail-sentence">ECOD, Isolation Forest, HBOS로 이상도를 계산하고 RRF로 순위를 합쳤습니다.</span><span class="detail-sentence">Conformal p-value와 BH FDR로 통계적 유의성을 점검한 뒤, BIC로 군집 수를 고른 GMM으로 의심 품목을 나눴습니다.</span></p>
+          <p><strong class="detail-label">선별 결과</strong><span class="detail-sentence">매월 자료를 갱신해 위험 순위와 대시보드를 제공하도록 구성했습니다.</span><span class="detail-sentence">2026년 7월에는 4,063개 품목에서 의심 품목 107개를 선별했고, 이&nbsp;가운데 지속 위험 12개와 급상승 22개를 알림 대상으로 정했습니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>3. 기술 선택 이유</h3>
+          <p><strong class="detail-label">ECOD, Isolation Forest, HBOS</strong><span class="detail-sentence">확정된 우회수출 사례를 학습하지 않아도 통계 분포에서 이상 징후를 찾을 수 있어 비지도 모델을 사용했습니다.</span><span class="detail-sentence">ECOD는 분포의 꼬리, Isolation Forest는 분할 난이도, HBOS는 낮은 밀도를 살펴보므로 한 가지 탐지 방식에만 의존하지 않도록 세 모델을 조합했습니다.</span></p>
+          <p><strong class="detail-label">RRF</strong><span class="detail-sentence">모델마다 점수의 척도가 달라 원점수를 그대로 더하기 어렵습니다.</span><span class="detail-sentence">RRF는 순위를 기준으로 결과를 합칠 수 있어 모델별 점수 단위나 임의의 가중치를 맞추지 않아도 됩니다.</span></p>
+          <p><strong class="detail-label">통계적 검정과 군집화</strong><span class="detail-sentence">수천 개 품목을 동시에 비교하면 우연한 이상 신호도 생길 수 있어 Conformal p-value와 BH FDR로 유의성을 점검했습니다.</span><span class="detail-sentence">의심군을 나눌 때도 고정 점수를 임의로 정하기보다 GMM과 BIC로 데이터 분포에 맞는 경계를 구했습니다.</span></p>
+        </section>
+        <section class="detail-section">
+          <h3>4. 내 기여</h3>
+          <p><strong class="detail-label">위험 지표 분석</strong><span class="detail-sentence">공개 무역통계와 관세 자료를 분석해 품목별 위험 지표를 정리했습니다.</span><span class="detail-sentence">관세 차이와 양국 기록의 불일치를 검사 우선순위에 반영하는 데 초점을 맞췄습니다.</span></p>
+          <p><strong class="detail-label">결과 시각화</strong><span class="detail-sentence">비지도 이상탐지 결과를 품목별 순위와 대시보드로 정리했습니다.</span><span class="detail-sentence">검토자가 위험도가 높은 품목부터 살펴볼 수 있도록 결과를 시각화했습니다.</span></p>
+        </section>
+      </div>
+    </template>
     <dialog aria-labelledby="detail-modal-title" class="detail-dialog" id="detail-dialog">
       <div class="detail-modal-head">
         <h2 id="detail-modal-title"></h2>

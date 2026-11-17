@@ -25,20 +25,14 @@
     window.scrollTo({top: 0, behavior: 'instant'});
     if (focus) current.querySelector('h2').focus({preventScroll: true});
   }
-  // 제목은 한 줄에, 설명 화면은 창 높이 안에 들어오도록 글자 크기를 조금씩 줄인다.
+  // 설명 화면은 창 높이 안에 들어오도록 글자 크기를 조금씩 줄인다.
   function fitText() {
     const bottom = projects[activeIndex].querySelector('.panel-bottom');
-    const title = projects[activeIndex].querySelector('h2');
     let fit = 1;
     bottom.style.setProperty('--fit', fit);
-    title.style.fontSize = '';
     if (!desktop.matches) return;
-    // 긴 제목은 한 줄에 들어올 때까지 글자를 줄인다(CSS에서 줄바꿈을 막아 둠). 32px 아래로는 줄이지 않음.
-    for (let size = parseFloat(getComputedStyle(title).fontSize); title.scrollWidth > title.clientWidth && size > 32;) {
-      title.style.fontSize = `${(size -= 2)}px`;
-    }
-    // shortcut: 0.7배(약 12px)까지만 줄임. 그래도 넘치는 낮은 창에서는 설명 안에서 스크롤. 더 줄여야 하면 내용을 줄일 것.
-    while (bottom.scrollHeight > innerHeight + 1 && fit > 0.7) {
+    // 작은 창에서도 본문은 약 14.5px 이상으로 유지하고, 넘치는 내용은 스크롤해서 읽는다.
+    while (bottom.scrollHeight > innerHeight + 1 && fit > 0.86) {
       fit = Math.round((fit - 0.02) * 100) / 100;
       bottom.style.setProperty('--fit', fit);
     }
@@ -172,7 +166,7 @@
   document.querySelectorAll('[data-details]').forEach(button =>
     button.addEventListener('click', () => {
       const key = button.dataset.details;
-      document.querySelector('#detail-modal-title').textContent = `${data[key].title} · 구현 과정`;
+      document.querySelector('#detail-modal-title').textContent = `${data[key].title} 구현 과정`;
       detailContent.replaceChildren(document.querySelector(`#${key}-details`).content.cloneNode(true));
       openDetailDialog(button);
       detailContent.scrollTop = 0;
