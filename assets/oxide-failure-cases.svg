@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 925" width="1440" height="925" role="img" aria-label="Failure case examples (ID 1165, 8, 2014)">
+<style>text{font-family:ui-monospace,Menlo,Consolas,"Courier New",monospace;font-size:15px;fill:#111}.t{font-family:Georgia,"Times New Roman",serif;font-size:30px;font-weight:700}.h{font-weight:700;font-size:17px}.b{font-weight:700}.r{fill:#c62828}</style>
+<rect width="1440" height="925" fill="#fff"/><rect x="8" y="8" width="1424" height="909" rx="40" fill="#fff" stroke="#333" stroke-width="2.5"/>
+<text class="t" x="720.0" y="62" text-anchor="middle">Failure Case Examples (ID 1165, 8, 2014)</text><line x1="40" y1="92" x2="1400" y2="92" stroke="#333" stroke-width="1.5"/>
+<rect x="30" y="120" width="450" height="765" rx="36" fill="#e6e6e6" stroke="#9a9a9a" stroke-width="2"/><text class="h" x="255.0" y="154" text-anchor="middle">Deposition Parameter Accuracy (ID 1165)</text><line x1="52" y1="168" x2="458" y2="168" stroke="#9a9a9a" stroke-width="2"/>
+<text class="b" x="46" y="198" xml:space="preserve">Ground Truth:</text>
+<text x="46" y="223" xml:space="preserve">- Deposition method: DC sputtering</text>
+<text x="46" y="248" xml:space="preserve">- Power: 30 W</text>
+<text x="46" y="273" xml:space="preserve">- Gas: Ar (4 sccm) 80% + Ar/O₂ (1 sccm) 20%</text>
+<text x="46" y="298" xml:space="preserve">- Process pressure: 3 mTorr</text>
+<text x="46" y="323" xml:space="preserve">- Substrate temperature: Room temperature</text>
+<text class="b" x="46" y="373" xml:space="preserve">EXAONE Prediction:</text>
+<text x="46" y="398" xml:space="preserve">- Deposition method: DC sputtering</text>
+<text x="46" y="423" xml:space="preserve">- Power: <tspan class="r">0.5 kW – 1.0 kW</tspan></text>
+<text x="46" y="448" xml:space="preserve">- Gas: <tspan class="r">Ar only</tspan></text>
+<text x="46" y="473" xml:space="preserve">- Process pressure: <tspan class="r">1.5 mTorr</tspan></text>
+<text x="46" y="498" xml:space="preserve">- Substrate temperature: Room temperature</text>
+<text class="b" x="46" y="548" xml:space="preserve">GPT Prediction:</text>
+<text x="46" y="573" xml:space="preserve">- Deposition method: DC sputtering</text>
+<text x="46" y="598" xml:space="preserve">- Power: <tspan class="r">Not specified</tspan></text>
+<text x="46" y="623" xml:space="preserve">- Gas: <tspan class="r">Ar only</tspan></text>
+<text x="46" y="648" xml:space="preserve">- Process pressure: <tspan class="r">2–3 mTorr</tspan></text>
+<text x="46" y="673" xml:space="preserve">- Substrate temperature: Room temperature</text>
+<text class="b" x="46" y="723" xml:space="preserve">Overall Score: EXAONE 4.15 vs GPT 4.65</text>
+<rect x="495" y="120" width="450" height="765" rx="36" fill="#e6e6e6" stroke="#9a9a9a" stroke-width="2"/><text class="h" x="720.0" y="154" text-anchor="middle">Low Frequency Materials (ID 8)</text><line x1="517" y1="168" x2="923" y2="168" stroke="#9a9a9a" stroke-width="2"/>
+<text class="b" x="511" y="198" xml:space="preserve">Ground Truth:</text>
+<text x="511" y="223" xml:space="preserve">- Target: 4-inch InGaZnO ceramic</text>
+<text x="511" y="248" xml:space="preserve">  (In:Ga:Zn = 1:1:1 in atom, 99.99%)</text>
+<text x="511" y="273" xml:space="preserve">- Deposition method: RF magnetron sputtering</text>
+<text x="511" y="298" xml:space="preserve">- Power: 200 W</text>
+<text x="511" y="323" xml:space="preserve">- Gas: 2% O₂ mixed Ar</text>
+<text x="511" y="348" xml:space="preserve">- Process pressure: 5 mTorr</text>
+<text class="b" x="511" y="398" xml:space="preserve">EXAONE Prediction:</text>
+<text x="511" y="423" xml:space="preserve">- Target: <tspan class="r">ITO (In₂O₃:Sn, 90:10 at.%) + Ga₂O₃</tspan></text>
+<text x="511" y="448" xml:space="preserve">  <tspan class="r">co-sputtering</tspan></text>
+<text x="511" y="473" xml:space="preserve">- Deposition method: RF sputtering</text>
+<text x="511" y="498" xml:space="preserve">- Power: <tspan class="r">ITO 150 W + Ga₂O₃ 100 W</tspan></text>
+<text x="511" y="523" xml:space="preserve">- Gas: <tspan class="r">Ar/5% O₂</tspan></text>
+<text x="511" y="548" xml:space="preserve">- Process pressure: <tspan class="r">0.8 Torr</tspan></text>
+<text class="b" x="511" y="598" xml:space="preserve">GPT Prediction:</text>
+<text x="511" y="623" xml:space="preserve">- Target: <tspan class="r">Sintered InGaZnO ceramic</tspan></text>
+<text x="511" y="648" xml:space="preserve">  <tspan class="r">(In:60%, Ga:10%, Zn:30%)</tspan></text>
+<text x="511" y="673" xml:space="preserve">- Deposition method: RF magnetron sputtering</text>
+<text x="511" y="698" xml:space="preserve">- Power: <tspan class="r">100 W</tspan></text>
+<text x="511" y="723" xml:space="preserve">- Gas: <tspan class="r">Ar only, 20 sccm</tspan></text>
+<text x="511" y="748" xml:space="preserve">- Process pressure: <tspan class="r">~3 mTorr</tspan></text>
+<text class="b" x="511" y="798" xml:space="preserve">Overall Score: EXAONE 4.23 vs GPT 4.23</text>
+<rect x="960" y="120" width="450" height="765" rx="36" fill="#e6e6e6" stroke="#9a9a9a" stroke-width="2"/><text class="h" x="1185.0" y="154" text-anchor="middle">GT Similarity Limit (ID 2104)</text><line x1="982" y1="168" x2="1388" y2="168" stroke="#9a9a9a" stroke-width="2"/>
+<text class="b" x="976" y="198" xml:space="preserve">Ground Truth:</text>
+<text x="976" y="223" xml:space="preserve">- Target: 2-inch polycrystalline sintered</text>
+<text x="976" y="248" xml:space="preserve">  InGaO(ZnO)</text>
+<text x="976" y="273" xml:space="preserve">- Power: 100 W</text>
+<text x="976" y="298" xml:space="preserve">- Gas: Ar/O₂/H₂ = 100:4:1</text>
+<text x="976" y="323" xml:space="preserve">- Process pressure: 0.4 Pa</text>
+<text x="976" y="348" xml:space="preserve">- Substrate temperature: Unheated (~25°C)</text>
+<text x="976" y="373" xml:space="preserve">- Post-annealing: N/A</text>
+<text class="b" x="976" y="423" xml:space="preserve">EXAONE Prediction:</text>
+<text x="976" y="448" xml:space="preserve">- Target: <tspan class="r">ITO + Ga₂O₃ + ZnO (separate targets)</tspan></text>
+<text x="976" y="473" xml:space="preserve">- Power: <tspan class="r">ITO 150 W, Ga₂O₃ 100 W, ZnO 80 W</tspan></text>
+<text x="976" y="498" xml:space="preserve">- Gas: <tspan class="r">Ar/O₂/H₂ = 5:1:0.1</tspan></text>
+<text x="976" y="523" xml:space="preserve">- Process pressure: <tspan class="r">0.8 Pa</tspan></text>
+<text x="976" y="548" xml:space="preserve">- Substrate temperature: Room temperature</text>
+<text x="976" y="573" xml:space="preserve">- Post-annealing: <tspan class="r">250°C, 1h, N₂</tspan></text>
+<text class="b" x="976" y="623" xml:space="preserve">GPT Prediction:</text>
+<text x="976" y="648" xml:space="preserve">- Target: InGaO(ZnO) single target</text>
+<text x="976" y="673" xml:space="preserve">- Power: <tspan class="r">50–100 W</tspan></text>
+<text x="976" y="698" xml:space="preserve">- Gas: <tspan class="r">Ar ~20 sccm, O₂ ~1–3 sccm, H₂ ~1–3 sccm</tspan></text>
+<text x="976" y="723" xml:space="preserve">- Process pressure: <tspan class="r">0.5–1.0 Pa</tspan></text>
+<text x="976" y="748" xml:space="preserve">- Substrate temperature: <tspan class="r">100–200°C</tspan></text>
+<text x="976" y="773" xml:space="preserve">- Post-annealing: <tspan class="r">150–300°C, 1h, forming gas</tspan></text>
+<text x="976" y="798" xml:space="preserve">  <tspan class="r">(5% H₂/N₂) (optional)</tspan></text>
+<text class="b" x="976" y="848" xml:space="preserve">Overall Score: EXAONE 4.25 vs GPT 4.08</text>
+</svg>

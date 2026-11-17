@@ -34,89 +34,57 @@
   --gutter: 32px;
 }
 
-/* 넓은 배경에서도 편안하도록 색의 강도와 밝기를 비슷하게 맞춘다. */
+/* 대표 이미지에서 색조를 뽑고, 밝기·채도는 oklch(0.88 0.07 h)로 통일한다. */
 .project {
   --stage: #e6e8ea;
 }
 
-.project[data-color='mint'] {
-  --stage: #90e5d2;
+.project[data-color='teal'] {
+  --stage: #a1e7e2;
 }
 
-.project[data-color='violet'] {
-  --stage: #a88cd9;
-}
-
-.project[data-color='orange'] {
-  --stage: #e19b79;
-}
-
-.project[data-color='green'] {
-  --stage: #9ce693;
-}
-
-.project[data-color='periwinkle'] {
-  --stage: #8894d7;
-}
-
-.project[data-color='yellow'] {
-  --stage: #f0ec9e;
-}
-
-.project[data-color='lime'] {
-  --stage: #cee98f;
+.project[data-color='indigo'] {
+  --stage: #d1d2ff;
 }
 
 .project[data-color='cyan'] {
-  --stage: #83cde7;
+  --stage: #a2e4f4;
 }
 
-.project[data-color='coral'] {
-  --stage: #dbad9c;
-}
-
-.project[data-color='magenta'] {
-  --stage: #cdb3d2;
+.project[data-color='red'] {
+  --stage: #ffc6c0;
 }
 
 .project[data-color='blue'] {
-  --stage: #a4cbc6;
+  --stage: #c2d7ff;
 }
 
-.project[data-color='amber'] {
-  --stage: #ddd4a5;
-}
-
-.project[data-color='tomato'] {
-  --stage: #b3bfdf;
-}
-
-.project[data-color='pink'] {
-  --stage: #e3c1a4;
-}
-
-.project[data-color='orchid'] {
-  --stage: #c1cea0;
-}
-
-.project[data-color='lavender'] {
-  --stage: #d9b2c0;
+.project[data-color='orange'] {
+  --stage: #f8cfa7;
 }
 
 .project[data-color='sky'] {
-  --stage: #bdb5d8;
+  --stage: #aae0ff;
 }
 
-.project[data-color='aqua'] {
-  --stage: #accbdd;
+.project[data-color='green'] {
+  --stage: #ace7cc;
 }
 
-.project[data-color='gold'] {
-  --stage: #e2c789;
+.project[data-color='azure'] {
+  --stage: #b5dcff;
 }
 
-.project[data-color='clay'] {
-  --stage: #a9cbb6;
+.project[data-color='lime'] {
+  --stage: #c8e1b1;
+}
+
+.project[data-color='lilac'] {
+  --stage: #e6cbfb;
+}
+
+.project[data-color='amber'] {
+  --stage: #e8d7a3;
 }
 
 * {
